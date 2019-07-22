@@ -1,0 +1,119 @@
+
+.mega-dropdown {
+  position: static !important;
+  width:100%;
+}
+.mega-dropdown-menu {
+  margin-left: -99%;
+  width: 600px;
+  height: 6000px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.mega-dropdown-menu:before {
+
+}
+.mega-dropdown-menu:after {
+
+}
+.mega-dropdown-menu > li > ul {
+
+}
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #999;
+  white-space: normal;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+  color: #444;
+  background-color: #f5f5f5;
+}
+
+.mega-dropdown-menu form {
+  margin:3px 20px;
+}
+.mega-dropdown-menu .form-group {
+  margin-bottom: 3px;
+}
+
+
+#DropdownMenu{
+  height: 100%;
+
+}
+
+
+
+div {
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 60px;
+}
+
+
+#1{
+  /**  background-image: url("1.JPG"); **/
+}
+#Photo1 , #Photo2 {
+  width: 100px;
+  height: 110px;
+  border-radius: 20%;
+  margin-top: 10%;
+
+}
+#Photo1{
+
+}
+#Photo2{
+  background-image: url("Savoirfaire.JPG");
+  width: 110px;
+
+}
+
+a:hover {
+
+  color: #e7f038;
+}
+
+
+.zoom {
+
+
+  transition: transform .2s; /* Animation */
+
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/**
+#wrapper #phototitre{
+  visibility: hidden;
+}
+
+#wrapper:hover #phototitre {
+  visibility:visible;
+}
+
+#phototitre{
+  font-size: 20px;
+  color: #e7f038;
+
+}
+
+**/
+
+
+
+

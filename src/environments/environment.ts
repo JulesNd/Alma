@@ -2,8 +2,23 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: 'AIzaSyDEpywVwYr8fYyIjuGJwi-9OvHpk8One70',
+    authDomain: 'almadatabase.firebaseapp.com',
+    databaseURL: 'https://almadatabase.firebaseio.com',
+    projectId: 'almadatabase',
+    storageBucket: '',
+    messagingSenderId: '616749970294',
+    appId: '1:616749970294:web:3f0e6de14a04050d'
+  },
+
+
 };
 
 /*
