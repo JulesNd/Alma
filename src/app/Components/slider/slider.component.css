@@ -1,0 +1,121 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  overflow: hidden;
+  width: 95%;
+  margin: auto;
+
+}
+
+.gallery-item {
+  float: left;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.regular-img-container {
+  margin-right: 10%;
+}
+
+.slider-container {
+  overflow: hidden;
+  height: 10px;
+}
+
+.slide-holder {
+  width: 100%;
+  position: relative;
+  animation: scroller 10s infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+}
+.slide-holder img {
+  width: 25%;
+  display: inline-block;
+  max-width: 25%;
+  margin-right: -4px;
+}
+
+/* need a step for each slide */
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-25%);
+  }
+  40% {
+    transform: translateX(-25%);
+  }
+  60% {
+    transform: translateX(-50%);
+  }
+  70% {
+    transform: translateX(-50%);
+  }
+  90% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+#1{
+background-image: url("1RESIZED.jpg");
+}
+
+#2{
+  background-image: url("1RESIZED.jpg");
+}
+
+#3{
+  background-image: url("1RESIZED.jpg");
+}
+
+
+
+#test{
+  background-image: url("1RESIZED.jpg");
+  width: 100%;
+ height: 480px;
+  background-repeat: no-repeat;
+
+}
+
+#test1 {
+  background-image: url("2RESIZED.jpg") ;
+  width: 100%;
+height: 480px;
+  background-repeat: no-repeat;
+}
+
+#test2{
+  background-image: url("3aRESIZ.jpg");
+  width:100%;
+height: 480px;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  background-image: url("3a.jpg");
+  height: 100%;
+}
+#image{
+  height: 100%;
+  width: 100%;
+}

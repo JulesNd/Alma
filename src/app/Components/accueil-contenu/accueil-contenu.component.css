@@ -1,0 +1,63 @@
+
+
+
+#rectangle{
+
+  height:50%;
+  padding-bottom: 5%;
+  margin-top: 1%;
+ /** background-image: url("almaLogo.png");**/
+}
+
+img{
+
+
+  width: 11%;
+  height: 50%;
+  margin-left: 45%;
+  margin-top: 0.5%;
+}
+
+#histoireimage{
+
+}
+
+
+.jumbotron{
+  width: 100%;
+  height: 600px;
+
+  background-image: url("HISTOIRE.jpg");
+
+}
+
+
+
+
+#1 {
+  background-color: #e7f038;
+
+}
+
+#text{
+  width: 100%;
+  margin-left: 20%;
+  letter-spacing: 2px;
+}
+
+#histoireButton{
+
+  margin-left: 46%;
+  margin-top: 15%;
+  position: relative;
+  height: 120px;
+  width: 220px;
+}
+
+.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited  {
+  background-color: rgba(231, 240, 56, 0.69) !important;
+  border-color: #e7f038;
+}
+.btn-outline-primary{
+  border-color: #e7f038;
+}

@@ -1,0 +1,23 @@
+#image{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("PhotoNotrehistoireALMA.JPG");
+
+
+padding: 2%;
+}
+
+
+h3{
+  padding: 4%;
+ line-height: 30px;
+  font-family: Montserrat, serif;
+  text-space: 5;
+}
+
+
+#Titre {
+  font-size: 50px;
+  margin-left: 5px;
+}

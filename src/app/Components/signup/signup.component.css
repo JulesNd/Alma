@@ -1,0 +1,39 @@
+.card {
+  width: 50%;
+  margin-left: 30%;
+  height: 80%;
+
+}
+
+.card-body {
+  height: 100%;
+
+}
+
+.jumbotron{
+  height: 808px;
+}
+
+#logo {
+height: 200px;
+  width: 200px;
+  margin-left: 35%;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited  {
+  background-color: #e7f038;
+  border-color: #e7f038;
+}
+.btn-primary{
+  border-color: #e7f038;
+}
+.btn-primary:hover {
+  background-color: #e7f038;
+}
+
+#mybutton {
+  margin-left: 40%;
+  margin-top: 2%;
+  height: 70px;
+  width: 110px;
+}
