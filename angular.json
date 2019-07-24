@@ -124,6 +124,9 @@
             }
           }
         },
+
+
+
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {

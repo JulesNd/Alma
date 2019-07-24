@@ -238,21 +238,22 @@ body {
 .product-grid__view:hover {
   background: white;
 }
-/**
+
 #COEUR {
   background-image: url("COEUR.jpg");
-
+  background-size: 5000px;
 }
 
 #Bonny101 {
  margin-top: 10px;
 background-image: url("Bonny101.jpg");
+  background-size: 5000px;
 
 }
 
 #EVERTON2 {
   background-image: url("EVERTON2.jpg");
 
+
 }
 
-**/

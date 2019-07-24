@@ -8,8 +8,7 @@ import { CoupsdecoeursComponent } from './Components/page-espace-pro/coupsdecoeu
 import { InspirationsComponent } from './Components/page-lamarque/inspirations/inspirations.component';
 import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.component';
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
-import {ImageComponent} from './images/image/image.component';
-import {ImageListComponent} from './images/image-list/image-list.component';
+
 import {PageFilleComponent} from './Components/Filles/page-fille/page-fille.component';
 import {MellowdetailsComponent} from './Components/Filles/chaussures-details/mellowdetails/mellowdetails.component';
 import {BonnydetailsComponent} from './Components/Filles/chaussures-details/bonnydetails/bonnydetails.component';
@@ -26,7 +25,7 @@ import {PageGarcon4pattesComponent} from './Components/Garcons/page-garcon4patte
 import {PageGarconJuniorComponent} from './Components/Garcons/page-garcon-junior/page-garcon-junior.component';
 import {PageGarconPremierPasComponent} from './Components/Garcons/page-garcon-premier-pas/page-garcon-premier-pas.component';
 import {SantadetailsComponent} from './Components/Filles/chaussures-details/santadetails/santadetails.component';
-
+import {SignupComponent} from './Components/signup/signup.component';
 
 const routes: Routes = [
   {path: 'Accueil', component: AccueilContenuComponent , },
@@ -40,6 +39,7 @@ const routes: Routes = [
   {path: 'Fille', component: PageFilleComponent},
   {path: 'Garcon', component: PageGarconComponent},
   {path: 'EspacePro' , component: PageEspaceProComponent},
+  {path: 'test', component: SignupComponent},
   {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
   {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
@@ -55,12 +55,6 @@ const routes: Routes = [
   {path: 'Coeur', component: CoeurdetailsComponent},
 
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
-  {path: 'image', component: ImageComponent, children:
-      [
-        { path: 'upload', component: ImageComponent},
-        {path: 'list', component: ImageListComponent}
-
-      ]},
 ];
 
 

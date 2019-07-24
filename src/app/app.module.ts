@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 // tslint:disable-next-line:import-spacing
-import * as $ from  'jquery';
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {environment} from '../environments/environment';
-import {AngularFireModule} from '@angular/fire';
-import {AngularFireStorage, AngularFireStorageModule} from '@angular/fire/storage';
-import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {NgZone} from '@angular/core';
+
+import { FormsModule} from '@angular/forms';
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButton,
@@ -21,7 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import 'bootstrap/dist/js/bootstrap.bundle';
-
+import { AngularFireAuthModule} from '@angular/fire/auth';
 
 
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -42,9 +42,6 @@ import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.c
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
 import { ChaussuresDetailsComponent } from './Components/Filles/chaussures-details/chaussures-details.component';
 import { LoginComponent } from './Components/login/login.component';
-import { ImagesComponent } from './images/images.component';
-import { ImageComponent } from './images/image/image.component';
-import { ImageListComponent } from './images/image-list/image-list.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { BonnydetailsComponent } from './Components/Filles/chaussures-details/bonnydetails/bonnydetails.component';
 import { BrandidetailsComponent } from './Components/Filles/chaussures-details/brandidetails/brandidetails.component';
@@ -66,6 +63,13 @@ import { ChaussuresGarconDetailsComponent } from './Components/Garcons/chaussure
 import { PageLamarqueComponent } from './Components/page-lamarque/page-lamarque.component';
 import { MellowdetailsComponent } from './Components/Filles/chaussures-details/mellowdetails/mellowdetails.component';
 import { SantadetailsComponent } from './Components/Filles/chaussures-details/santadetails/santadetails.component';
+import { EmailComponent } from './Components/email/email.component';
+import { SignupComponent } from './Components/signup/signup.component';
+import { MembersComponent } from './Components/members/members.component';
+import {AuthService} from './Services/auth.service';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireModule} from '@angular/fire';
+
 
 // @ts-ignore
 @NgModule({
@@ -90,9 +94,6 @@ import { SantadetailsComponent } from './Components/Filles/chaussures-details/sa
       DeveloppementsexclusifsComponent,
       ChaussuresDetailsComponent,
       LoginComponent,
-      ImagesComponent,
-      ImageComponent,
-      ImageListComponent,
       BonnydetailsComponent,
       BrandidetailsComponent,
       CoeurdetailsComponent,
@@ -113,12 +114,16 @@ import { SantadetailsComponent } from './Components/Filles/chaussures-details/sa
       PageLamarqueComponent,
       MellowdetailsComponent,
       SantadetailsComponent,
+      EmailComponent,
+      SignupComponent,
+      MembersComponent,
 
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
     [BrowserAnimationsModule],
     MatButtonModule,
     MatMenuModule,
@@ -128,12 +133,11 @@ import { SantadetailsComponent } from './Components/Filles/chaussures-details/sa
     MatListModule,
     MatIconModule,
     MatButtonToggleModule,
-    AngularFireStorageModule,
-    AngularFireDatabaseModule,
+    FormsModule,
     ReactiveFormsModule,
-
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

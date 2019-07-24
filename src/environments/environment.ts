@@ -13,9 +13,10 @@ export const environment = {
     authDomain: 'almadatabase.firebaseapp.com',
     databaseURL: 'https://almadatabase.firebaseio.com',
     projectId: 'almadatabase',
-    storageBucket: '',
+    storageBucket: 'almadatabase.appspot.com',
     messagingSenderId: '616749970294',
     appId: '1:616749970294:web:3f0e6de14a04050d'
+
   },
 
 
