@@ -128,7 +128,7 @@ code {
 
 body {
   color: #777;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
 }
 
 .product-grid {
@@ -185,12 +185,12 @@ body {
   max-height: 95%;
 }
 .product-grid__title {
-  margin-top: .875rem;
+  margin-top: .860rem;
   margin-left: 50%;
   display: block;
-  font-size: 20px;
+  font-size: 70vm;
   color: #222;
-  height: 3em;
+  height: 8em;
   overflow: hidden;
   position: relative;
 }
@@ -200,10 +200,12 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 2.4em;
-  height: 1.5em;
+
+  width: 2vh;
+  height: 2vh;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%);
 }
+
 
 .product-grid__extend-wrapper {
   position: relative;

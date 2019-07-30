@@ -8,7 +8,6 @@ import { CoupsdecoeursComponent } from './Components/page-espace-pro/coupsdecoeu
 import { InspirationsComponent } from './Components/page-lamarque/inspirations/inspirations.component';
 import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.component';
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
-
 import {PageFilleComponent} from './Components/Filles/page-fille/page-fille.component';
 import {MellowdetailsComponent} from './Components/Filles/chaussures-details/mellowdetails/mellowdetails.component';
 import {BonnydetailsComponent} from './Components/Filles/chaussures-details/bonnydetails/bonnydetails.component';
@@ -25,21 +24,26 @@ import {PageGarcon4pattesComponent} from './Components/Garcons/page-garcon4patte
 import {PageGarconJuniorComponent} from './Components/Garcons/page-garcon-junior/page-garcon-junior.component';
 import {PageGarconPremierPasComponent} from './Components/Garcons/page-garcon-premier-pas/page-garcon-premier-pas.component';
 import {SantadetailsComponent} from './Components/Filles/chaussures-details/santadetails/santadetails.component';
+import {LoginComponent} from './Components/login/login.component';
+import {AuthGuard} from './core/auth.guard';
 import {SignupComponent} from './Components/signup/signup.component';
+import {InspirationComponent} from './inspiration/inspiration.component';
+
 
 const routes: Routes = [
   {path: 'Accueil', component: AccueilContenuComponent , },
-  {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
+  {path: '4PattesFilles', component: PageFille4pattesComponent ,   },
   {path: 'JuniorFilles', component: PageFilleJuniorComponent},
   {path: 'PremierPasFilles', component: PageFillePremierPasComponent},
+  {path: 'Inspiration', component: InspirationComponent},
   {path: '4PattesGarçons', component: PageGarcon4pattesComponent},
   {path: 'JuniorGarçons', component: PageGarconJuniorComponent},
   {path: 'PremierPasGarçons', component: PageGarconPremierPasComponent},
   {path: 'Notre-Histoire', component: NotreHistoireComponent },
   {path: 'Fille', component: PageFilleComponent},
-  {path: 'Garcon', component: PageGarconComponent},
-  {path: 'EspacePro' , component: PageEspaceProComponent},
-  {path: 'test', component: SignupComponent},
+  {path: 'Garçon', component: PageGarconComponent},
+  {path: 'EspacePro' , component: PageEspaceProComponent,    },
+  {path: 'Login', component: LoginComponent },
   {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
   {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
@@ -53,13 +57,14 @@ const routes: Routes = [
   {path: 'Brandi', component: BrandidetailsComponent},
   {path: 'Everton', component: EvertondetailsComponent},
   {path: 'Coeur', component: CoeurdetailsComponent},
-
+  {path: 'Signup', component: SignupComponent},
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
 ];
 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard],
 })
 export class AppRoutingModule { }

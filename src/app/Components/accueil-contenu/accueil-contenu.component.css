@@ -1,5 +1,7 @@
 
-
+body{
+  font-family: Montserrat, serif;
+}
 
 #rectangle{
 
@@ -41,8 +43,9 @@ img{
 
 #text{
   width: 100%;
-  margin-left: 20%;
+  margin-left: 10%;
   letter-spacing: 2px;
+  font-size: 3vh;
 }
 
 #histoireButton{
@@ -55,9 +58,52 @@ img{
 }
 
 .btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited  {
-  background-color: rgba(231, 240, 56, 0.69) !important;
+
   border-color: #e7f038;
 }
 .btn-outline-primary{
   border-color: #e7f038;
+}
+
+.btn-outline-primary:hover{
+  background-color: rgba(231, 240, 56, 0.62);
+
+}
+
+@media (max-width: 375px) {
+  img{
+
+
+    width: 21%;
+    height: 60%;
+    margin-left: 40%;
+    margin-top: 0.5%;
+  }
+
+  #text{
+    margin-left: 2.8%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  img{
+
+
+    width: 41%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 0.5%;
+  }
+
+  #text{
+    margin-left: 3.5%;
+
+  }
+
+.jumbotron{
+  margin-top: 40%;
+}
+
 }

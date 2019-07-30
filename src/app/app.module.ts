@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {environment} from '../environments/environment';
 import {NgZone} from '@angular/core';
-
 import { FormsModule} from '@angular/forms';
-
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButton,
@@ -22,8 +20,6 @@ import { AppComponent } from './app.component';
 import { SliderComponent } from './Components/slider/slider.component';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { AngularFireAuthModule} from '@angular/fire/auth';
-
-
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { AccueilContenuComponent } from './Components/accueil-contenu/accueil-contenu.component';
 import { ArticlesComponent } from './Components/articles/articles.component';
@@ -68,7 +64,9 @@ import { SignupComponent } from './Components/signup/signup.component';
 import { MembersComponent } from './Components/members/members.component';
 import {AuthService} from './Services/auth.service';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {AngularFireModule} from '@angular/fire';
+import {AngularFireModule } from '@angular/fire';
+import {AuthGuard} from './core/auth.guard';
+import { InspirationComponent } from './inspiration/inspiration.component';
 
 
 // @ts-ignore
@@ -117,6 +115,7 @@ import {AngularFireModule} from '@angular/fire';
       EmailComponent,
       SignupComponent,
       MembersComponent,
+      InspirationComponent,
 
     ],
   imports: [
@@ -137,7 +136,7 @@ import {AngularFireModule} from '@angular/fire';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

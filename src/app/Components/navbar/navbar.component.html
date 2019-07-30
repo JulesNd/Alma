@@ -1,49 +1,14 @@
-<div class="navbar navbar-expand-sm navbar-light bg-light mb-sm-n3" role="navigation" >
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div    class="collapse navbar-collapse"    id="navbarCollapse"    >
-    <ul class="navbar-nav mr-auto">
-      <li    class="nav-item active ">
-        <a class="nav-link" href="#"  routerLink="/Accueil" > <h4> Accueil </h4><span class="sr-only">(current)</span></a>
-      </li>
-
-
-<!-- DROPDOWN BUTTON FILLE !-->
-      <li class="nav-item dropdown">
-        <a routerLink="/Fille"
-          class="nav-link dropdown-toggle"    id="dropdownFille" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4> Fille </h4></a>
-
-      </li>
-   <!--  -------------------  !-->
-
-      <!-- DROPDOWN BUTTON GARCON !-->
-      <li class="nav-item dropdown">
-        <a routerLink="/Garcon"
-          class="nav-link dropdown-toggle" id="dropdownGarçon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4> Garçon </h4></a>
-
-      </li>
-      <!-- --------------------- !-->
-
-      <!-- DROPDOWN BUTTON LA MARQUE !-->
-      <li class="nav-item dropdown">
-        <a     class="nav-link dropdown-toggle" id="dropdownLamarque" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4> La marque </h4></a>
-      </li>
-      <!-- ------------- !-->
-
-      <!-- DROPDOWN BUTTON ESPACE PRO !-->
-      <li class="nav-item dropdown">
-        <a routerLink="/test"
-           class="nav-link dropdown-toggle" id="EspacePro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4> Espace Pro </h4></a>
-
-      </li>
-      <!-- ------------ !-->
-
-
+<div class="container" style="margin: 3%">
+  <nav class="mobile-menu">
+    <label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+    <input type="checkbox" id="show-menu">
+    <ul id="menu">
+      <li><a  routerLink="/Accueil"  >Accueil</a></li>
+      <li>			<a  routerLink="/Fille"    >Fille</a>		</li>
+      <li>			<a   routerLink="/Garçon"   >Garçon</a>		</li>
+      <li><a  routerLink="/Signup"   >La marque</a></li>
+      <li><a  routerLink="/EspacePro"   >Espace Pro</a></li>
     </ul>
-
-  </div>
+  </nav>
 </div>
-
-

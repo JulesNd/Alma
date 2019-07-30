@@ -8,11 +8,12 @@ html,body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Montserrat, Montserrat, serif;
 
 }
 
 @viewport{
-  zoom: 0.5;
+
 
 }
 

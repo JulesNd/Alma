@@ -1,11 +1,18 @@
-<div class="card"  >
 
-  <div class="card-header"><h3>Acceder à mon Espace pro </h3></div>
 
-  <div class="card-body">
-    <img  id="logo"  src="almafondtransp.jpg">
+  <section class="login-inner">
+
+
+    <div class="login-middle">
+
+
+      <div class="login-details">
+
+
+
 
     <div class="row">
+      <img  id="logo"  src="ACE.jpg">
       <div class="col-12">
         <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
 
@@ -13,31 +20,29 @@
             <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <label for="email">Email</label>
-              <input ngModel #email="ngModel" name="email" type="email" class="form-control">
-            </div>
+
+          <h3>Entrez votre adresse electronique et mot de passe pour acceder à votre Espace professionel.</h3>
+          <label>
+            <input  class="form-control" ngModel #email ="ngModel" name="email"  type="email" placeholder="Adresse email"/>
+          </label>
+          <label>
+            <input class="form-control"  ngModel #password="ngModel"  name="password"     type="password" placeholder="Mot de passe"/>
+          </label>
+
+          <div class="btn-sub">
+            <button type="submit"   class="pink-btn">Valider</button>
+
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <label for="password">Password</label>
-              <input ngModel #password="ngModel" name="password" type="password" class="form-control">
-            </div>
-          </div>
 
-          <div class="row mt-2">
-            <div class="col-12">
-            </div>
 
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Login</button>
-            </div>
-          </div>
+
+
 
         </form>
       </div>
     </div>
-  </div>
-</div>
+      </div>
+    </div>
+  </section>
+

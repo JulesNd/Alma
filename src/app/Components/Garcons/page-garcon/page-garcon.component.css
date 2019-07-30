@@ -19,8 +19,13 @@
 
 
 
-body{
+html,body{
+  width: 100%;
   height: 100%;
+padding: 0;
+overflow-x: hidden;
+font-family: Montserrat, Montserrat, serif;
+
 }
 
 .hero-section{
@@ -171,17 +176,7 @@ img {
   background: #FFFFFF;
 }
 
-.card {
-  position: relative;
 
-  width: 400px;
-  height: 75vh;
-  border-radius: 6px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
 .card__image-container {
   margin: -2rem -2rem 1rem -2rem;
 }
@@ -195,7 +190,7 @@ img {
 }
 .card__title {
   color: #e7f038;
-  margin-top: 10%;
+  margin-top: 5%;
   font-weight: 800;
   letter-spacing: 0.01em;
   background-color: #FFFFFF;
@@ -262,4 +257,125 @@ p{
     opacity: 1;
     filter: blur(0);
   }
+}
+@media screen and (min-width: 320px) and (max-width: 759px ) {
+
+  /** SMARTPHONE **/
+
+  .container{
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 80%;
+  }
+
+  h1{
+    font-size: 10px;
+  }
+
+
+
+  .card__title {
+    color: #e7f038;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    background-color: #FFFFFF;
+    text-align: center;
+  margin-top: 2%;
+
+  }
+
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 25vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+}
+
+@media (min-width: 1020px) {
+
+  .container{
+    margin-left: 3%;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 75vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+
+
+  .container{
+    margin-left: 10%;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 75vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+}
+@media screen and (min-width: 760px) and  (max-width: 800px) {
+
+  /** TABLET **/
+
+
+  .container{
+
+    width: 100%;
+  }
+
+  h1{
+    font-size: 10px;
+  }
+
+
+
+  .card__title {
+    color: #e7f038;
+    margin: 2px auto 0;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    background-color: #FFFFFF;
+    text-align: center;
+
+
+  }
+
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 25vh;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
 }
