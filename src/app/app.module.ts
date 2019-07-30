@@ -67,6 +67,9 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireModule } from '@angular/fire';
 import {AuthGuard} from './core/auth.guard';
 import { InspirationComponent } from './inspiration/inspiration.component';
+import { PagealmaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
+import { CommentaiderlaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
+import { PagetannageComponent } from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 
 
 // @ts-ignore
@@ -116,6 +119,9 @@ import { InspirationComponent } from './inspiration/inspiration.component';
       SignupComponent,
       MembersComponent,
       InspirationComponent,
+      PagealmaplaneteComponent,
+      CommentaiderlaplaneteComponent,
+      PagetannageComponent,
 
     ],
   imports: [

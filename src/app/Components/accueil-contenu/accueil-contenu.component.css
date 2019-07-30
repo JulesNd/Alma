@@ -70,23 +70,24 @@ img{
 
 }
 
-@media (max-width: 375px) {
+@media screen and (min-width: 320px) {
   img{
 
 
-    width: 21%;
-    height: 60%;
-    margin-left: 40%;
+    width: 31%;
+    height: 70%;
+    margin-left: 35%;
     margin-top: 0.5%;
   }
 
   #text{
-    margin-left: 2.8%;
+    margin-left: 15%;
+    font-size: 2em;
   }
 
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 900px) {
 
   img{
 
@@ -99,6 +100,7 @@ img{
 
   #text{
     margin-left: 3.5%;
+    font-size: 2em;
 
   }
 
@@ -106,4 +108,15 @@ img{
   margin-top: 40%;
 }
 
+}
+
+@media screen and (min-width: 1400px){
+  img{
+
+
+    width: 21%;
+    height: 60%;
+    margin-left: 37%;
+    margin-top: 0.5%;
+  }
 }

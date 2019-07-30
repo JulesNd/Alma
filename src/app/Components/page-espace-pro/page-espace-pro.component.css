@@ -21,6 +21,8 @@
   background-color:rgba(255, 69, 0, 0.89);
 }
 
+
+
 html,body{
   width: 100%;
   height: 100%;
@@ -255,7 +257,7 @@ p{
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 700px ) {
+@media screen and (min-width: 320px) {
 
   /** smartphone **/
   #Coupsdecoeurs{
@@ -268,7 +270,7 @@ p{
 
 
   #Inspirations{
-    background-image: url("inspirations.gif");
+    background-image: url("projetcrop.gif");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -279,7 +281,7 @@ p{
 
   #Projets{
 
-    background-image: url("projets.gif");
+    background-image: url("inspirationcrop.gif");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -287,7 +289,7 @@ p{
   }
 
   #Devexclu{
-    background-image: url("dev-exclu.gif");
+    background-image: url("devcrop.gif");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -337,38 +339,50 @@ p{
 @media screen and (min-width: 1020px) and (max-width: 1399px) {
   #Coupsdecoeurs{
     background-image: url("coup-de-coeur.gif");
-    width: 180px;
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .card__title {
+    color: #e7f038;
+
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 40%;
+
   }
 
-
   #Inspirations{
-    background-image: url("inspirations.gif");
-    width: 180px;
+    background-image: url("inspirationcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
 
 
   #Projets{
 
-    background-image: url("projets.gif");
-    width: 180px;
+    background-image: url("projetcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   #Devexclu{
-    background-image: url("dev-exclu.gif");
-    width: 180px;
+    background-image: url("devcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .container{
@@ -391,19 +405,24 @@ p{
 
 @media screen and (min-width: 1400px) {
 
-  #text{
-    margin-left: 10%;
-    width: 40%;
+  h1{
+    font-size: 2rem;
   }
+  .card__title {
+    color: #e7f038;
 
-  h3{
-    margin-left: -150%;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 40%;
+
   }
 
 
   #Coupsdecoeurs{
     background-image: url("coup-de-coeur.gif");
-    width: 180px;
+    width: 185px;
     height: 185px;
     margin-top: 50%;
     margin-left: 20%;
@@ -411,30 +430,30 @@ p{
 
 
   #Inspirations{
-    background-image: url("inspirations.gif");
-    width: 180px;
+    background-image: url("inspirationcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
 
 
   #Projets{
 
-    background-image: url("projets.gif");
-    width: 180px;
+    background-image: url("projetcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   #Devexclu{
-    background-image: url("dev-exclu.gif");
-    width: 180px;
+    background-image: url("devcrop.gif");
+    width: 185px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .container{
@@ -458,70 +477,72 @@ p{
   }
 }
 
-@media screen and (min-width: 701px) and  (max-width: 1000px)  {
+@media screen and (min-width: 500px) and (max-width: 900px)  {
   .container{
     width: 100%;
   }
 
   h1{
-    font-size: 10px;
+    font-size: 1rem;
   }
 
   #Coupsdecoeurs{
     background-image: url("coup-de-coeur.gif");
-    width: 580px;
-    height: 585px;
+    width: 180px;
+    height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 2%;
   }
 
 
   #Inspirations{
-    background-image: url("inspirations.gif");
-    width: 500px;
-    height: 500px;
+    background-image: url("inspirationcrop.gif");
+    width: 180px;
+    height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 
 
 
   #Projets{
 
-    background-image: url("projets.gif");
+    background-image: url("projetcrop.gif");
     width: 180px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 
   #Devexclu{
-    background-image: url("dev-exclu.gif");
+    background-image: url("devcrop.gif");
     width: 180px;
     height: 185px;
     margin-top: 50%;
-    margin-left: 20%;
+    margin-left: 5%;
   }
 
   .card__title {
     color: #e7f038;
-    margin: 2px auto 0;
+
     font-weight: 800;
     letter-spacing: 0.01em;
     background-color: #FFFFFF;
     text-align: center;
+    margin-top: 110%;
+
   }
-
   .card {
-    position: relative;
 
-    width: 100px;
-    height: 25vh;
+
+    width: 300px;
+    height: 50vh;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
   }
+
 
 }

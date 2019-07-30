@@ -28,6 +28,10 @@ import {LoginComponent} from './Components/login/login.component';
 import {AuthGuard} from './core/auth.guard';
 import {SignupComponent} from './Components/signup/signup.component';
 import {InspirationComponent} from './inspiration/inspiration.component';
+import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
+// tslint:disable-next-line:max-line-length
+import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
+import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 
 
 const routes: Routes = [
@@ -58,6 +62,9 @@ const routes: Routes = [
   {path: 'Everton', component: EvertondetailsComponent},
   {path: 'Coeur', component: CoeurdetailsComponent},
   {path: 'Signup', component: SignupComponent},
+  {path: 'Almaplanete', component: PagealmaplaneteComponent},
+  {path: 'commentaiderlaplanete', component: CommentaiderlaplaneteComponent},
+  {path: 'Tannage', component: PagetannageComponent},
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
 ];
 
