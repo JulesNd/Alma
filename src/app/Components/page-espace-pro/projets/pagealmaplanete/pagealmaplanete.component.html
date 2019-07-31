@@ -1,40 +1,187 @@
 
-<img class="float-left , img-fluid" src="" style="padding: 2%">
+<button id="retour"  routerLink="/EspacePro" class="btn btn-default btn-lg"  >Retour</button>
 
 
 
-<div class="jumbotron" style="background-color: rgba(255, 69, 0, 0.89)"> <h2  id="Titre"  style="color: #FFFFFF">Projet Alma planete</h2>    </div>
 
-<h3 >
-<div>
-  <p> <font>1. La tige: </font> tige en tricot exclusif Alma planète, </p>
-  <p>faite à partir de bouteilles recyclées.</p>
-  <p>Pour produire une paire de chaussures il nous faut minimum 3 bouteilles en plastique.
-  </p>
+<!-- Shoe + text !-->
+
+<div class="row">
+
+
+  <div   class="column">
+
+
+    <div  id="chaussure" class="card"   >
+
+      <div class="container-fliud" >
+        <div class="wrapper row">
+          <div class="preview col-md-6">
+
+            <div class="preview-pic tab-content">
+              <div class="tab-pane active" id="pic-1"><img src="NAVY.jpg" /></div>
+              <div class="tab-pane" id="pic-2"><img src="RED.jpg" /></div>
+              <div class="tab-pane " id="pic-3"><img src="MUSTARD.jpg" /></div>
+              <div class="tab-pane" id="pic-4"><img src="ROSE.jpg" /></div>
+              <div class="tab-pane " id="pic-5"><img src="GREY.jpg" /></div>
+
+
+            </div>
+            <ul class="preview-thumbnail nav nav-tabs">
+              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="NAVY.jpg" /></a></li>
+              <li><a data-target="#pic-2" data-toggle="tab"><img src="RED.jpg" /></a></li>
+              <li class="active"><a data-target="#pic-3" data-toggle="tab"><img src="MUSTARD.jpg" /></a></li>
+              <li><a data-target="#pic-4" data-toggle="tab"><img src="ROSE.jpg" /></a></li>
+              <li class="active"><a data-target="#pic-5" data-toggle="tab"><img src="GREY.jpg" /></a></li>
+
+
+
+
+            </ul>
+
+          </div>
+          <div class="details col-md-6">
+            <div class="informations">
+
+
+
+              <div class="form-group"  style="margin-top: 10%"   >
+                <label style="font-size: 2rem">tailles</label>
+               <br> du 27 au 38
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="column">
+    <div  id="descriptions" class="card" style="border-color: #ffffff">
+
+      <h3  >
+        <div>
+          <p> <font>1. La tige: </font> tige en tricot exclusif Alma planète, </p>
+          <p>faite à partir de bouteilles recyclées.</p>
+          <p>Pour produire une paire de chaussures il nous faut minimum 3 bouteilles en plastique.
+          </p>
+        </div>
+        <br>
+
+        <div>
+          <p> <font>2. La semelle:</font> TPR recyclée et certifiée par Global Recycled Standard.</p>
+          <p>(Les details de la composition seront fournis après la confirmation de mise en production).</p>
+        </div>
+
+        <br>
+
+        <div>
+          <p> <font>3. La premiere:</font>  en microfibre antibacérienne et très absorbante. </p>
+        </div>
+
+        <br>
+
+        <div>
+          <p> <font>4. Les lacets:</font> design exclusif Alma planete 100% coton.  </p>
+        </div>
+
+        <br>
+
+        <div>
+          <p> <font>5. L'assemblage: </font>la semelle est piquée sur la tige, sans colle ni solvants.   </p>
+        </div>
+
+      </h3>
+
+
+    </div>
+  </div>
+
+
+
+
 </div>
-<br>
 
-  <div>
-  <p> <font>2. La semelle:</font> TPR recyclée et certifiée par Global Recycled Standard.</p>
-  <p>(Les details de la composition seront fournis après la confirmation de mise en production).</p>
+
+
+
+
+
+<!-- Button to Open the Modal -->
+<button id="montrerlaboite" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Montrer la boite
+</button>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">La boite</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+
+
+
+
+
+
+        <div   class="card"   >
+
+          <div class="container-fliud" >
+            <div class="wrapper row">
+              <div class="preview col-md-6">
+
+                <div class="preview-pic tab-content">
+                  <div class="tab-pane active" id="pic-1a"><img src="argumentsboite.jpg" /></div>
+                  <div class="tab-pane" id="pic-2a"><img src="boiteok.jpg" /></div>
+
+
+
+                </div>
+                <ul class="preview-thumbnail nav nav-tabs">
+                  <li class="active"><a data-target="#pic-1a" data-toggle="tab"><img src="argumentsboite.jpg" /></a></li>
+                  <li><a data-target="#pic-2a" data-toggle="tab"><img src="boiteok.jpg" /></a></li>
+
+
+
+
+
+                </ul>
+
+              </div>
+
+
+
+
+
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+      </div>
+
+    </div>
   </div>
-
-<br>
-
-  <div>
-  <p> <font>3. La premiere:</font>  en microfibre antibacérienne et très absorbante. </p>
-  </div>
-
-  <br>
-
-<div>
-  <p> <font>4. Les lacets:</font> design exclusif Alma planete 100% coton.  </p>
 </div>
-
-  <br>
-
-  <div>
-  <p> <font>5. L'assemblage: </font>la semelle est piquée sur la tige, sans colle ni solvants.   </p>
+    </div>
   </div>
-
-</h3>
+</div>
