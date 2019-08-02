@@ -23,6 +23,7 @@
 
 
 
+
 html,body{
   width: 100%;
   height: 100%;
@@ -30,6 +31,8 @@ html,body{
   padding: 0;
   overflow-x: hidden;
   font-family: Montserrat, Montserrat, serif;
+  background-color: #e5e0e0;
+
 
 }
 .hero-section{

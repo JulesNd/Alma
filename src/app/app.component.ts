@@ -25,4 +25,7 @@ export class AppComponent {
       });
   }
 
+  onActivate($event: any) {
+    window.scroll(50, 50);
+  }
 }

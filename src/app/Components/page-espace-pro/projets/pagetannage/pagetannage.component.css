@@ -1,3 +1,8 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   height: 75vh;
@@ -48,4 +53,327 @@ header .overlay {
 
 video{
   background: url("Nacershoes.mp4");
+}
+
+@media screen and (min-width: 320px){
+
+}
+.titre{
+  font-size: 4rem;
+  color: rgba(255, 69, 0, 0.89);
+}
+
+.article{
+  font-size: 2rem;
+  margin-top: 5%;
+
+}
+
+#imagetannage{
+  background-image: url("TV2.jpg");
+  width: 500px;
+  height: 500px;
+  float: left;
+  background-repeat: no-repeat;
+
+  animation-delay: 2s;
+}
+
+
+
+#Tanveg{
+  background-image: url("TanVeg.jpg");
+  width: 300px;
+  height: 300px;
+  float: right;
+  background-repeat: no-repeat;
+
+  animation-delay: 2s;
+}
+
+#Tanchrome{
+  background-image: url("TANN3transp.png");
+  width: 50px;
+  height: 50px;
+  float: left;
+
+  background-repeat: no-repeat;
+
+  animation-delay: 2s;
+}
+
+
+
+
+
+#retour{
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+
+btn-default
+
+{
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+  margin-top: 25%;
+
+
+
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+
+
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+}
+
+
+
+
+
+#chrome{
+
+  animation-delay: 7s;
+  background-color:rgba(255, 69, 0, 0.89) ;
+
+}
+#vegetal{
+
+  animation-delay: 7s;
+  background-color: rgba(255, 69, 0, 0.89);
+}
+
+
+#Avantage{
+  background-image: url("TV4.jpg");
+  width: 500px;
+  height: 500px;
+  float: right;
+  background-repeat: no-repeat;
+  margin-bottom: 50%;
+animation-delay: 4s;
+
+}
+
+#cardcommentçamarche{
+  background-color: #e9ecef;
+  padding: 5%;
+  animation-delay: 2s;
+
+}
+
+#cardAvantages{
+  padding: 5%;
+  animation-delay: 4s;
+}
+
+#Compare1{
+  padding: 5%;
+  animation-delay: 2s;
+  float: left;
+
+
+}
+#Compare2{
+  padding: 5%;
+  animation-delay: 4s;
+  float: left;
+
+
+}
+
+/** FADEIN LEFT **/
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-100px);
+    -moz-transform: translatex(-100px);
+    -o-transform: translatex(-100px);
+    transform: translatex(-100px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+.in-left {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-duration:1s;
+  animation-delay: 1s;
+
+}
+
+
+
+/** FADEIN RIGHT **/
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(10px);
+    -moz-transform: translatex(10px);
+    -o-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(10px);
+    -moz-transform: translatex(10px);
+    -o-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@keyframes fadeInRight{
+  from {
+    opacity:0;
+    -webkit-transform: translatex(100px);
+    -moz-transform: translatex(100px);
+    -o-transform: translatex(100px);
+    transform: translatex(100px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+.in-right {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-duration:1s;
+  animation-delay: 1s;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:460px ){
+  header{
+    background-image: url("TV1.jpg");
+    background-repeat: no-repeat;
+  }
+
+  #imagetannage{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-repeat: no-repeat;
+
+    animation-delay: 2s;
+  }
+
+
+  #Avantage{
+    background-image: url("TV4.jpg");
+    width: 200px;
+    height: 200px;
+    float: right;
+    background-repeat: no-repeat;
+    margin-bottom: 50%;
+    animation-delay: 4s;
+
+  }
+
+
+
+  .titre{
+    font-size: 2rem;
+    color: rgba(255, 69, 0, 0.89);
+  }
+
+  .article{
+    font-size: 1rem;
+    margin-top: 5%;
+
+  }
 }

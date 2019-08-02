@@ -150,6 +150,20 @@ button {
 }
 
 
+.third {
+  border-color: rgba(255, 69, 0, 0.89);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgba(255, 69, 0, 0.89) inset, 0 0 0 0 rgba(255, 69, 0, 0.89);
+  transition: all 150ms ease-in-out;
+  margin-left: 40%;
+  margin-top: 5%;
+  height: 30%;
+  width: 15%;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 rgba(255, 69, 0, 0.89) inset, 0 0 10px 4px rgba(255, 69, 0, 0.89);
+  color: rgba(255, 69, 0, 0.89);
+}
 
 
 
@@ -169,7 +183,7 @@ input:focus, input:hover{outline: none;}
 .btn-sub button {border-bottom: 2px solid rgba(255, 69, 0, 0.89);box-shadow: none;border-radius: 3px; width: 145px;}
 .btn-sub button:hover{background: rgba(255, 106, 0, 0.87); border-radius: 3px; box-shadow: none;}
 .login-details {max-width: 666px;margin: 0 auto;background: #fff;padding: 35px;border-radius: 7px; box-shadow: 0 0 7px rgba(0,0,0,0.1);}
-.login-inner {height: 100%;display: table;width: 100%; background-color: #e9ecef; }
+.login-inner {height: 100%;display: table;width: 100%; background-color: #e5e0e0; }
 .btn-sub {margin-left: 30%; margin-top: 5%;}
 
 
@@ -187,6 +201,7 @@ input:focus, input:hover{outline: none;}
 }
   @media screen and (min-width: 1400px){
     .btn-sub{margin-left: 35%}
+
 
   }
 

@@ -32,6 +32,7 @@ import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pag
 // tslint:disable-next-line:max-line-length
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
+import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
 
 
 const routes: Routes = [
@@ -65,12 +66,13 @@ const routes: Routes = [
   {path: 'Almaplanete', component: PagealmaplaneteComponent},
   {path: 'commentaiderlaplanete', component: CommentaiderlaplaneteComponent},
   {path: 'Tannage', component: PagetannageComponent},
+  {path: 'Noustrouver', component: PageNoustrouverComponent},
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule],
   providers: [AuthGuard],
 })

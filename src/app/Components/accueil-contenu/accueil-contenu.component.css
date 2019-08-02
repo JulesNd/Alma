@@ -2,7 +2,6 @@
 body{
   font-family: Montserrat, serif;
 }
-
 #rectangle{
 
   height:50%;
@@ -10,7 +9,6 @@ body{
   margin-top: 1%;
  /** background-image: url("almaLogo.png");**/
 }
-
 img{
 
 
@@ -19,33 +17,13 @@ img{
   margin-left: 45%;
   margin-top: 0.5%;
 }
-
 #histoireimage{
 
 }
 
-
-.jumbotron{
-  width: 100%;
-  height: 600px;
-
-  background-image: url("HISTOIRE.jpg");
-
-}
-
-
-
-
 #1 {
   background-color: #e7f038;
 
-}
-
-#text{
-  width: 100%;
-  margin-left: 10%;
-  letter-spacing: 2px;
-  font-size: 3vh;
 }
 
 #histoireButton{
@@ -56,7 +34,6 @@ img{
   height: 120px;
   width: 220px;
 }
-
 .btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited  {
 
   border-color: #e7f038;
@@ -64,12 +41,14 @@ img{
 .btn-outline-primary{
   border-color: #e7f038;
 }
-
 .btn-outline-primary:hover{
   background-color: rgba(231, 240, 56, 0.62);
 
 }
 
+
+
+/** MOBILE **/
 @media screen and (min-width: 320px) {
   img{
 
@@ -79,14 +58,67 @@ img{
     margin-left: 35%;
     margin-top: 0.5%;
   }
-
   #text{
-    margin-left: 15%;
-    font-size: 2em;
+    margin-left: 10%;
+    font-size: 1.5em;
+  }
+  #ig1{
+    background-image: url("IG1.JPG");
+    width: 70px;
+    height: 70px;
+    margin-left: 5%;
+
+  }
+  #ig2{
+    background-image: url("IG2.jpg");
+    width: 70px;
+    height: 70px;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+  #ig3{
+    background-image: url("IG3.jpg");
+    width: 70px;
+    height: 70px;
+    margin-left: 2%;
+
+  }
+  #ig4{
+    background-image: url("IG4.jpg");
+    width: 70px;
+    height: 70px;
+    margin-left: 1%;
+    margin-top: 30%;
+  }
+  #ig5{
+    background-image: url("IG5.jpg");
+    width: 70px;
+    height: 70px;
+    margin-left: 1%;
+  }
+  #suiveznous{
+    font-size: 2rem;
+    margin-left: 25%;
+  }
+  .jumbotron{
+    width: 400px;
+    height: 150px;
+    background-size: 400px 150px;
+    background-repeat: no-repeat;
+    background-image: url("HISTOIRE.jpg");
+  }
+
+  #histoireButton{
+    width: 135px;
+    height: 50px;
+    margin-left: 35%;
+    margin-top: 10%;
   }
 
 }
+/** ---------- **/
 
+/** Tablet **/
 @media screen and (min-width: 500px) and (max-width: 900px) {
 
   img{
@@ -97,18 +129,71 @@ img{
     margin-left: 30%;
     margin-top: 0.5%;
   }
-
   #text{
-    margin-left: 3.5%;
+    margin-left: 10%;
     font-size: 2em;
 
   }
-
 .jumbotron{
   margin-top: 40%;
 }
+  #ig1{
+    background-image: url("IG1.JPG");
+    width: 105px;
+    height: 105px;
+    margin-left: 5%;
+
+  }
+  #ig2{
+    background-image: url("IG2.jpg");
+    width: 105px;
+    height: 105px;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+  #ig3{
+    background-image: url("IG3.jpg");
+    width: 105px;
+    height: 105px;
+    margin-left: 2%;
+
+  }
+  #ig4{
+    background-image: url("IG4.jpg");
+    width: 105px;
+    height: 105px;
+    margin-left: 1%;
+    margin-top: 30%;
+  }
+  #ig5{
+    background-image: url("IG5.jpg");
+    width: 105px;
+    height: 105px;
+    margin-left: 1%;
+  }
+
+  .jumbotron{
+    margin-top: 5%;
+    width: 550px;
+    height: 350px;
+    background-size: 550px 350px;
+    background-repeat: no-repeat;
+    background-image: url("HISTOIRE.jpg");
+  }
+
+  #histoireButton{
+    width: 250px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+
+
 
 }
+
+/**    **/
+
 
 @media screen and (min-width: 1400px){
   img{
@@ -119,4 +204,162 @@ img{
     margin-left: 37%;
     margin-top: 0.5%;
   }
+  #ig1{
+    background-image: url("IG1.JPG");
+    width: 260px;
+    height: 260px;
+    margin-left: 5%;
+
+  }
+  #ig2{
+    background-image: url("IG2.jpg");
+    width: 260px;
+    height: 260px;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+  #ig3{
+    background-image: url("IG3.jpg");
+    width: 260px;
+    height: 260px;
+    margin-left: 2%;
+
+  }
+  #ig4{
+    background-image: url("IG4.jpg");
+    width: 260px;
+    height: 260px;
+    margin-left: 1%;
+    margin-top: 30%;
+  }
+  #ig5{
+    background-image: url("IG5.jpg");
+    width: 260px;
+    height: 260px;
+    margin-left: 1%;
+  }
+
+  #suiveznous{
+    font-size: 3rem;
+    margin-left: 35%;
+  }
+  .jumbotron{
+    width: 100%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("HISTOIRE.jpg");
+
+  }
+  #histoireButton{
+    width: 250px;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 15%;
+  }
+  #text{
+    margin-left: 15%;
+    font-size: 2.5em;
+  }
 }
+@media screen and (min-width: 1020px) and (max-width: 1399px){
+  .jumbotron{
+    width: 100%;
+    height: 550px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("HISTOIRE.jpg");
+
+  }
+  #histoireButton{
+    width: 250px;
+    height: 100px;
+    margin-left: 38%;
+    margin-top: 18%;
+  }
+  #text{
+    margin-left: 12%;
+    font-size: 2.3em;
+  }
+  #ig1{
+    background-image: url("IG1.JPG");
+    width: 180px;
+    height: 180px;
+    margin-left: 5%;
+
+  }
+  #ig2{
+    background-image: url("IG2.jpg");
+    width: 180px;
+    height: 180px;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+  #ig3{
+    background-image: url("IG3.jpg");
+    width: 180px;
+    height: 180px;
+    margin-left: 2%;
+
+  }
+  #ig4{
+    background-image: url("IG4.jpg");
+    width: 180px;
+    height: 180px;
+    margin-left: 1%;
+    margin-top: 30%;
+  }
+  #ig5{
+    background-image: url("IG5.jpg");
+    width: 180px;
+    height: 180px;
+    margin-left: 1%;
+  }
+  #suiveznous{
+    font-size: 3rem;
+    margin-left: 35%;
+  }
+  img{
+
+
+    width: 21%;
+    height: 60%;
+    margin-left: 37%;
+    margin-top: 0.5%;
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1{
+  margin-left: 38%;
+}
+
+.jumbotron-fluid{
+  margin-top: 5%;
+}
+
+a:hover{
+ background-color: #e7f038;
+}
+
+.column {
+  float: left;
+  width: 20.33%;
+  margin-left: 1%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+

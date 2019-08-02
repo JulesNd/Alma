@@ -182,3 +182,11 @@ a{
     @media screen and (min-width: 701px) and  (max-width: 1000px){
 
     }
+
+@media screen and (min-width: 320px){
+  .mobile-menu{
+    margin:0;
+  }
+}
+
+

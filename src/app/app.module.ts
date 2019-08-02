@@ -68,8 +68,12 @@ import {AngularFireModule } from '@angular/fire';
 import {AuthGuard} from './core/auth.guard';
 import { InspirationComponent } from './inspiration/inspiration.component';
 import { PagealmaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
+// tslint:disable-next-line:max-line-length
 import { CommentaiderlaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import { PagetannageComponent } from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
+import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
+import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
+import {Alert} from 'selenium-webdriver';
 
 
 // @ts-ignore
@@ -122,6 +126,7 @@ import { PagetannageComponent } from './Components/page-espace-pro/projets/paget
       PagealmaplaneteComponent,
       CommentaiderlaplaneteComponent,
       PagetannageComponent,
+      PageNoustrouverComponent,
 
     ],
   imports: [
@@ -140,6 +145,8 @@ import { PagetannageComponent } from './Components/page-espace-pro/projets/paget
     MatButtonToggleModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [AuthService, AuthGuard],
