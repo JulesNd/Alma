@@ -1,0 +1,406 @@
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Montserrat, Montserrat, serif;
+  background-color: #002147;
+
+}
+.hero-section{
+  align-items: flex-start;
+  background-color: rgba(0, 9, 209, 0);
+  display: flex;
+  min-height: 60%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+
+
+}
+
+.cgrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  transition: box-shadow .3s;
+
+}
+
+
+
+
+
+.card{
+  list-style: none;
+  position: relative;
+
+
+
+}
+
+
+#active{
+  background-image: url("active.jpg");
+}
+#bonbon{
+  background-image: url("BONBONS.jpg");
+}
+#disco{
+  background-image: url("disco.jpg");
+}
+
+
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.cardbg{
+
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition:
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .cardbg{
+  transform: scale(1.10) translateZ(0);
+
+
+
+}
+
+.ccontent{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+
+.textcard{
+  color: var(--text-lighter);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+
+  word-spacing: 100vw;
+  margin-top: 100%;
+}
+
+h2{
+  margin-left: 45%;
+
+  font-weight:bold;
+
+}
+
+.rainbow{
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+
+
+
+.card-footer{
+  background-color:  #a3a4a6;
+  margin-top: 127%;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: #FFFFFF;
+}
+
+
+.card__image-container {
+  margin: -2rem -2rem 1rem -2rem;
+}
+.card__line {
+  opacity: 0;
+  animation: LineFadeIn .8s .8s forwards ease-in;
+}
+.card__image {
+  opacity: 0;
+  animation: ImageFadeIn .8s 1.4s forwards;
+}
+.card__title {
+  color: #FFFFFF;
+  margin: 2px auto 0;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  background-color:rgba(255, 69, 0, 0.89);
+  text-align: center;
+
+}
+
+.card__content {
+  margin-top: -1rem;
+  opacity: 0;
+  animation: ContentFadeIn .8s 0.5s forwards;
+}
+.card__svg {
+  position: absolute;
+  left: 0;
+  top: 115px;
+}
+
+
+p{
+  font-size: 10px;
+  color: #3d3d3d;
+}
+
+
+@keyframes LineFadeIn {
+  0% {
+    opacity: 0;
+    d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+    stroke: #fff;
+  }
+  50% {
+    opacity: 1;
+    d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+    stroke: #888BFF;
+  }
+  100% {
+    opacity: 1;
+    d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+    stroke: #545581;
+  }
+}
+@keyframes ContentFadeIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes ImageFadeIn {
+  0% {
+    transform: translate(-0.5rem, -0.5rem) scale(1.05);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media screen and (min-width: 320px)  {
+  /** smartphone **/
+
+  .container{
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 80%;
+  }
+
+  h1{
+    font-size: 10px;
+  }
+
+  a{
+    text-decoration: none;
+    color:#fff;
+    font-size:2rem;
+  }
+
+
+  .card__title {
+
+
+    font-weight: 800;
+    letter-spacing: 0.01em;
+
+    text-align: center;
+    margin-top: 1%;
+
+  }
+
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 25vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (min-width: 1020px) {
+
+  .container{
+    margin-left: 3%;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 75vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  h1{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+  .container{
+    margin-left: 10%;
+    width: 100%;
+  }
+  .card {
+    position: relative;
+
+    width: 400px;
+    height: 75vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  h1{
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .container{
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 80%;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+
+
+  .card__title {
+
+
+    font-weight: 800;
+    letter-spacing: 0.01em;
+
+    text-align: center;
+    margin-top: 80%;
+
+  }
+
+  .card {
+
+
+    width: 300px;
+    height: 50vh;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+}

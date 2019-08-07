@@ -15,8 +15,7 @@ import {
   MatSidenavModule,
   MatListModule, MatIconModule, MatButtonToggleModule
 } from '@angular/material';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
 import { SliderComponent } from './Components/slider/slider.component';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { AngularFireAuthModule} from '@angular/fire/auth';
@@ -39,8 +38,8 @@ import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/d
 import { ChaussuresDetailsComponent } from './Components/Filles/chaussures-details/chaussures-details.component';
 import { LoginComponent } from './Components/login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import { BonnydetailsComponent } from './Components/Filles/chaussures-details/bonnydetails/bonnydetails.component';
-import { BrandidetailsComponent } from './Components/Filles/chaussures-details/brandidetails/brandidetails.component';
+import {BonnydetailsComponent} from './Components/Garcons/chaussures-garcon-details/bonnydetails/bonnydetails.component';
+import {BrandidetailsComponent} from './Components/Garcons/chaussures-garcon-details/brandidetails/brandidetails.component';
 import { CoeurdetailsComponent } from './Components/Filles/chaussures-details/coeurdetails/coeurdetails.component';
 import { CosmosdetailsComponent } from './Components/Filles/chaussures-details/cosmosdetails/cosmosdetails.component';
 import { CookiedetailsComponent } from './Components/Filles/chaussures-details/cookiedetails/cookiedetails.component';
@@ -74,6 +73,9 @@ import { PagetannageComponent } from './Components/page-espace-pro/projets/paget
 import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
 import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
 import {Alert} from 'selenium-webdriver';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {from} from 'rxjs';
 
 
 // @ts-ignore
@@ -99,8 +101,8 @@ import {Alert} from 'selenium-webdriver';
       DeveloppementsexclusifsComponent,
       ChaussuresDetailsComponent,
       LoginComponent,
-      BonnydetailsComponent,
       BrandidetailsComponent,
+      BonnydetailsComponent,
       CoeurdetailsComponent,
       CosmosdetailsComponent,
       CookiedetailsComponent,

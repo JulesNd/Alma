@@ -24,7 +24,7 @@ a{
 
 body{
   width: 100%;
-  background-color: #e5e0e0;
+  background-color: #002147;
 }
 
 .hero-section{
@@ -308,6 +308,7 @@ p{
 
 #retour{
   margin-top: 1%;
+ color: #FFFFFF;
   margin-left: 2%;
 }
 
@@ -315,7 +316,6 @@ p{
 btn-default
 
 {
-
   background-color: rgba(255, 69, 0, 0.89);
 
   color:#FFF;
@@ -323,8 +323,6 @@ btn-default
   border-color: rgba(255, 69, 0, 0.89);
 
   margin-top: 25%;
-
-
 
 }
 

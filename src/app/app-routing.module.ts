@@ -10,8 +10,7 @@ import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.c
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
 import {PageFilleComponent} from './Components/Filles/page-fille/page-fille.component';
 import {MellowdetailsComponent} from './Components/Filles/chaussures-details/mellowdetails/mellowdetails.component';
-import {BonnydetailsComponent} from './Components/Filles/chaussures-details/bonnydetails/bonnydetails.component';
-import {BrandidetailsComponent} from './Components/Filles/chaussures-details/brandidetails/brandidetails.component';
+
 import {CookiedetailsComponent} from './Components/Filles/chaussures-details/cookiedetails/cookiedetails.component';
 import {EtoiledetailsComponent} from './Components/Filles/chaussures-details/etoiledetails/etoiledetails.component';
 import {EvertondetailsComponent} from './Components/Filles/chaussures-details/evertondetails/evertondetails.component';
@@ -36,6 +35,7 @@ import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noust
 
 
 const routes: Routes = [
+  {path: '', component: AccueilContenuComponent },
   {path: 'Accueil', component: AccueilContenuComponent , },
   {path: '4PattesFilles', component: PageFille4pattesComponent ,   },
   {path: 'JuniorFilles', component: PageFilleJuniorComponent},
@@ -55,11 +55,10 @@ const routes: Routes = [
   {path: 'Developpements-exclusifs', component: DeveloppementsexclusifsComponent},
   {path: 'Mellow', component: MellowdetailsComponent},
   {path: 'Santa', component: SantadetailsComponent},
-  {path: 'Bonny' , component: BonnydetailsComponent},
   {path: 'Cookie', component: CookiedetailsComponent},
   {path: 'Cosmos', component: CosmosdetailsComponent},
   {path: 'Etoile', component: EtoiledetailsComponent},
-  {path: 'Brandi', component: BrandidetailsComponent},
+
   {path: 'Everton', component: EvertondetailsComponent},
   {path: 'Coeur', component: CoeurdetailsComponent},
   {path: 'Signup', component: SignupComponent},
@@ -72,7 +71,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [AuthGuard],
 })

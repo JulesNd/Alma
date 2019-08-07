@@ -21,8 +21,18 @@
   background-color:rgba(255, 69, 0, 0.89);
 }
 
+h3{
+  color: #FFFFFF;
+}
 
+.btn-default{
+  color: #FFFFFF;
+}
 
+p{
+  font-size: 10px;
+  color: #FFFFFF;
+}
 
 html,body{
   width: 100%;
@@ -31,7 +41,7 @@ html,body{
   padding: 0;
   overflow-x: hidden;
   font-family: Montserrat, Montserrat, serif;
-  background-color: #e5e0e0;
+  background-color: #002147;
 
 
 }
@@ -210,10 +220,7 @@ img {
 }
 
 
-p{
-  font-size: 10px;
-  color: #3d3d3d;
-}
+
 
 
 @keyframes LineFadeIn {
@@ -264,7 +271,7 @@ p{
 
   /** smartphone **/
   #Coupsdecoeurs{
-    background-image: url("coup-de-coeur.gif");
+    background-image: url("Coupsdecoeur.jpg");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -273,7 +280,7 @@ p{
 
 
   #Inspirations{
-    background-image: url("projetcrop.gif");
+    background-image: url("Nosprojets.jpg");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -284,7 +291,7 @@ p{
 
   #Projets{
 
-    background-image: url("inspirationcrop.gif");
+    background-image: url("Inspirations.jpg");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -292,7 +299,7 @@ p{
   }
 
   #Devexclu{
-    background-image: url("devcrop.gif");
+    background-image: url("Devexclusif.jpg");
     width: 80px;
     height: 85px;
     margin-top: 50%;
@@ -341,7 +348,7 @@ p{
 
 @media screen and (min-width: 1020px) and (max-width: 1399px) {
   #Coupsdecoeurs{
-    background-image: url("coup-de-coeur.gif");
+    background-image: url("Coupsdecoeur.jpg");
     width: 185px;
     height: 185px;
     margin-top: 50%;
@@ -362,7 +369,7 @@ p{
   }
 
   #Inspirations{
-    background-image: url("inspirationcrop.gif");
+    background-image: url("Inspirations.jpg");
     width: 185px;
     height: 185px;
     margin-top: 50%;
@@ -373,7 +380,7 @@ p{
 
   #Projets{
 
-    background-image: url("projetcrop.gif");
+    background-image: url("Nosprojets.jpg");
     width: 185px;
     height: 185px;
     margin-top: 50%;
@@ -381,7 +388,7 @@ p{
   }
 
   #Devexclu{
-    background-image: url("devcrop.gif");
+    background-image: url("Devexclusif.jpg");
     width: 185px;
     height: 185px;
     margin-top: 50%;
@@ -424,39 +431,45 @@ p{
 
 
   #Coupsdecoeurs{
-    background-image: url("coup-de-coeur.gif");
-    width: 185px;
-    height: 185px;
-    margin-top: 50%;
-    margin-left: 20%;
+    background-image: url("Coupsdecoeur.jpg");
+    width: 350px;
+    height: 600px;
+    margin-left: -10%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+
   }
 
 
   #Inspirations{
-    background-image: url("inspirationcrop.gif");
-    width: 185px;
-    height: 185px;
-    margin-top: 50%;
-    margin-left: 15%;
+    background-image: url("Inspirations.jpg");
+    width: 300px;
+    height: 600px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
 
 
   #Projets{
 
-    background-image: url("projetcrop.gif");
-    width: 185px;
-    height: 185px;
-    margin-top: 50%;
-    margin-left: 15%;
+    background-image: url("Nosprojets.jpg");
+    width: 500px;
+    height: 500px;
+    margin-left: -35%;
+    margin-top: 0;
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+
+
   }
 
   #Devexclu{
-    background-image: url("devcrop.gif");
-    width: 185px;
-    height: 185px;
-    margin-top: 50%;
-    margin-left: 15%;
+    background-image: url("Devexclusif.jpg");
+    width: 400px;
+    height: 600px;
+    margin-left: -10%;
+    margin-top: 0;
   }
 
   .container{
@@ -490,7 +503,7 @@ p{
   }
 
   #Coupsdecoeurs{
-    background-image: url("coup-de-coeur.gif");
+    background-image: url("Coupsdecoeur.jpg");
     width: 180px;
     height: 185px;
     margin-top: 50%;
@@ -499,7 +512,7 @@ p{
 
 
   #Inspirations{
-    background-image: url("inspirationcrop.gif");
+    background-image: url("Inspirations.jpg");
     width: 180px;
     height: 185px;
     margin-top: 50%;
@@ -510,7 +523,7 @@ p{
 
   #Projets{
 
-    background-image: url("projetcrop.gif");
+    background-image: url("Nosprojets.jpg");
     width: 180px;
     height: 185px;
     margin-top: 50%;
@@ -518,7 +531,7 @@ p{
   }
 
   #Devexclu{
-    background-image: url("devcrop.gif");
+    background-image: url("Devexclusif.jpg");
     width: 180px;
     height: 185px;
     margin-top: 50%;
