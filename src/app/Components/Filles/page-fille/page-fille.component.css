@@ -123,17 +123,18 @@ h2{
 }
 
 #4Pattes{
-  background-image: url("4pattesfilles.jpg");
-
-}
-
-#junior{
-  background-image: url("juniorfille.jpg");
+  background-image: url("http://drive.google.com/uc?export=view&id=1YPPkzpx4yxwPEaDp5szeogRanRpBy7JI");
 }
 
 #premierpas{
-  background-image: url("ppfille.jpg");
+  background-image: url("http://drive.google.com/uc?export=view&id=1XV0UD1rcXjUwqrrrfHubrJDBaBu20yW0");
 }
+
+
+#junior{
+  background-image: url("http://drive.google.com/uc?export=view&id=14z5d3u2AoEf3X4f5ZQccSLD2Lmu5LTFq");
+}
+
 
 .card-footer{
   background-color:  #a3a4a6;

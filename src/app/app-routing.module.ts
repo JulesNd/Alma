@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import {Routes, RouterModule, CanActivate} from '@angular/router';
 import { AccueilContenuComponent } from './Components/accueil-contenu/accueil-contenu.component';
 import {PageFille4pattesComponent} from './Components/Filles/Page-Fille-4pattes/page-fille4pattes.component';
 import {NotreHistoireComponent} from './Components/page-lamarque/notre-histoire/notre-histoire.component';
@@ -32,12 +32,13 @@ import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pag
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
+import {canActivate} from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
   {path: '', component: AccueilContenuComponent },
   {path: 'Accueil', component: AccueilContenuComponent , },
-  {path: '4PattesFilles', component: PageFille4pattesComponent ,   },
+  {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
   {path: 'JuniorFilles', component: PageFilleJuniorComponent},
   {path: 'PremierPasFilles', component: PageFillePremierPasComponent},
   {path: 'Inspiration', component: InspirationComponent},
