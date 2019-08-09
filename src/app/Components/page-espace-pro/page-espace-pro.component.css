@@ -272,19 +272,19 @@ img {
   /** smartphone **/
   #Coupsdecoeurs{
     background-image: url("Coupsdecoeur.jpg");
-    width: 80px;
-    height: 85px;
-    margin-top: 50%;
-    margin-left: 20%;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 
 
   #Inspirations{
     background-image: url("Nosprojets.jpg");
-    width: 80px;
-    height: 85px;
-    margin-top: 50%;
-    margin-left: 20%;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 
 
@@ -292,18 +292,18 @@ img {
   #Projets{
 
     background-image: url("Inspirations.jpg");
-    width: 80px;
-    height: 85px;
-    margin-top: 50%;
-    margin-left: 20%;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   #Devexclu{
     background-image: url("Devexclusif.jpg");
-    width: 80px;
-    height: 85px;
-    margin-top: 50%;
-    margin-left: 20%;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 
 
@@ -335,8 +335,8 @@ img {
   .card {
     position: relative;
 
-    width: 400px;
-    height: 25vh;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;

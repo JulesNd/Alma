@@ -10,6 +10,20 @@
   --width-container: 1200px;
 }
 
+
+
+#active{
+  background-image: url("http://drive.google.com/uc?export=view&id=1i1fGfX7PlvXiWsIDQwY4bVJmvlfmrpKN");
+}
+#disco{
+  background-image: url("http://drive.google.com/uc?export=view&id=1HTpqNFQnt2cH0ciA6zDzRikZFcBwjzWF");
+}
+
+#bonbon{
+  background-image: url("http://drive.google.com/uc?export=view&id=1nEDNXD-I34CG0OGWlru4a0gXVzGX5JkC");
+}
+
+
 *{
   border: 0;
   margin: 0;
@@ -309,8 +323,8 @@ p{
   .card {
     position: relative;
 
-    width: 400px;
-    height: 25vh;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     padding: 2rem;
     color: #aaa;
