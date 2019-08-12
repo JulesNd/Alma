@@ -25,8 +25,10 @@ import {PageGarconPremierPasComponent} from './Components/Garcons/page-garcon-pr
 import {SantadetailsComponent} from './Components/Filles/chaussures-details/santadetails/santadetails.component';
 import {LoginComponent} from './Components/login/login.component';
 import {AuthGuard} from './core/auth.guard';
+import {PageNouscontacterComponent} from './Components/page-nouscontacter/page-nouscontacter.component';
 import {SignupComponent} from './Components/signup/signup.component';
-import {InspirationComponent} from './inspiration/inspiration.component';
+import {PageLamarqueComponent} from './Components/page-lamarque/page-lamarque.component';
+import {InspirationComponent} from './Components/page-espace-pro/inspiration/inspiration.component';
 import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
 // tslint:disable-next-line:max-line-length
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
@@ -36,7 +38,7 @@ import {canActivate} from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
-  {path: '', component: AccueilContenuComponent },
+
   {path: 'Accueil', component: AccueilContenuComponent , },
   {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
   {path: 'JuniorFilles', component: PageFilleJuniorComponent},
@@ -50,6 +52,7 @@ const routes: Routes = [
   {path: 'Garçon', component: PageGarconComponent},
   {path: 'EspacePro' , component: PageEspaceProComponent,    },
   {path: 'Login', component: LoginComponent },
+  {path: 'NousContacter', component: PageNouscontacterComponent},
   {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
   {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
@@ -59,7 +62,7 @@ const routes: Routes = [
   {path: 'Cookie', component: CookiedetailsComponent},
   {path: 'Cosmos', component: CosmosdetailsComponent},
   {path: 'Etoile', component: EtoiledetailsComponent},
-
+  {path: 'La marque', component: PageLamarqueComponent},
   {path: 'Everton', component: EvertondetailsComponent},
   {path: 'Coeur', component: CoeurdetailsComponent},
   {path: 'Signup', component: SignupComponent},

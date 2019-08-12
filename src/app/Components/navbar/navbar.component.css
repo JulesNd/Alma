@@ -55,10 +55,7 @@ body {
 }
 
 
-#menu{
-  font-family: Montserrat, serif;
 
-}
 
 
 
@@ -79,6 +76,7 @@ body {
 /*Hover state for dropdown links*/
 .mobile-menu li:hover .mobile-menu ul a:hover {
   color: #e7f038;
+
 }
 
 /*Hide dropdown links until they are needed*/
@@ -190,3 +188,46 @@ a{
 }
 
 
+img{
+  height: 40px;
+  width: 40px;
+
+}
+
+#noustrouver{
+  height: 50px;
+  width: 50px;
+}
+
+li {
+  margin: 2%;
+}
+
+#menu{
+  font-family: Montserrat, serif;
+
+
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
+}
+.btn-1::before,
+.btn-1::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-1:hover {
+  color: #2ecc71;
+}

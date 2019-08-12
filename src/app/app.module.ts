@@ -65,7 +65,7 @@ import {AuthService} from './Services/auth.service';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireModule } from '@angular/fire';
 import {AuthGuard} from './core/auth.guard';
-import { InspirationComponent } from './inspiration/inspiration.component';
+import { InspirationComponent } from './Components/page-espace-pro/inspiration/inspiration.component';
 import { PagealmaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
 // tslint:disable-next-line:max-line-length
 import { CommentaiderlaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
@@ -76,8 +76,14 @@ import {Alert} from 'selenium-webdriver';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {from} from 'rxjs';
+import { PageNouscontacterComponent } from './Components/page-nouscontacter/page-nouscontacter.component';
+import {RouterModule, Routes} from '@angular/router';
 
+const route: Routes = [
 
+  {path: '' , component: AccueilContenuComponent, },
+
+];
 // @ts-ignore
 @NgModule({
     declarations: [
@@ -129,6 +135,8 @@ import {from} from 'rxjs';
       CommentaiderlaplaneteComponent,
       PagetannageComponent,
       PageNoustrouverComponent,
+      PageNouscontacterComponent,
+
 
     ],
   imports: [
@@ -150,6 +158,7 @@ import {from} from 'rxjs';
     HttpClientModule,
     HttpClientJsonpModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    RouterModule.forRoot(route),
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
