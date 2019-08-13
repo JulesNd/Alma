@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
 import {AngularFireAuth} from '@angular/fire/auth';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -13,12 +15,14 @@ import {AngularFireAuth} from '@angular/fire/auth';
 
 export class AppComponent {
   constructor(
+    private router: Router,
     private afAuth: AngularFireAuth
   ) {}
 
 
   // tslint:disable-next-line:use-life-cycle-interface
   ngOnInit() {
+    this.router.navigate(['Accueil']);
     this.afAuth.authState
       .subscribe(user => {
         console.log(user);

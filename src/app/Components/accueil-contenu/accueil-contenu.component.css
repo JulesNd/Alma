@@ -17,8 +17,9 @@ img{
   margin-left: 45%;
   margin-top: 0.5%;
 }
-#histoireimage{
-
+#jumbtext{
+background-color: #e7f038;
+  color: #FFFFFF;
 }
 
 #1 {
@@ -100,7 +101,7 @@ img{
     font-size: 2rem;
     margin-left: 25%;
   }
-  .jumbotron{
+  #jumbhist{
     width: 400px;
     height: 200px;
     background-size: 400px 200px;
@@ -239,11 +240,16 @@ img{
     margin-left: 1%;
   }
 
+  .jumbotron{
+    background-color: #e7f038;
+    color: #FFFFFF;
+  }
+
   #suiveznous{
     font-size: 3rem;
-    margin-left: 35%;
+    margin-left: 25%;
   }
-  .jumbotron{
+  #jumbhist{
     width: 100%;
     height: 700px;
     background-size: 100% 100%;
@@ -362,4 +368,44 @@ a:hover{
   display: table;
 
 }
+
+.line-1{
+  position: relative;
+  top: 50%;
+  width: 100em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(45) 1s 1 normal both,
+  blinkTextCursor 500ms steps(80)  normal;
+
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 40em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+.anim-typewriter2{
+  animation: typewriter2 4s steps(45) 1s 1 normal both,
+  blinkTextCursor 500ms steps(80)  normal;
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 20em;}
+}
+
+
 

@@ -51,9 +51,7 @@ header .overlay {
   }
 }
 
-video{
-  background: url("Nacershoes.mp4");
-}
+
 
 @media screen and (min-width: 320px){
 
@@ -395,7 +393,7 @@ animation-delay: 4s;
 
 
   #Avantage{
-    background-image: url("TV4.jpg");
+
     width: 200px;
     height: 200px;
     float: right;

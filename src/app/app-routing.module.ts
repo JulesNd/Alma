@@ -30,6 +30,7 @@ import {SignupComponent} from './Components/signup/signup.component';
 import {PageLamarqueComponent} from './Components/page-lamarque/page-lamarque.component';
 import {InspirationComponent} from './Components/page-espace-pro/inspiration/inspiration.component';
 import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
+import {AppComponent} from './app.component';
 // tslint:disable-next-line:max-line-length
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
@@ -38,8 +39,7 @@ import {canActivate} from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
-
-  {path: 'Accueil', component: AccueilContenuComponent , },
+   {path: 'Accueil', component: AccueilContenuComponent , },
   {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
   {path: 'JuniorFilles', component: PageFilleJuniorComponent},
   {path: 'PremierPasFilles', component: PageFillePremierPasComponent},
@@ -71,6 +71,9 @@ const routes: Routes = [
   {path: 'Tannage', component: PagetannageComponent},
   {path: 'Noustrouver', component: PageNoustrouverComponent},
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
+  {
+    path: '', redirectTo: '/Accueil' , pathMatch: 'full'
+  },
 ];
 
 

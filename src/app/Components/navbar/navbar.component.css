@@ -1,233 +1,253 @@
-*{
-  margin:0;
-  padding:0;
-}
 body {
-  font-family: Montserrat, serif;
-
-}
-.mobile-menu {
-  display:block;
-  width:100%;
-  background: #8aa8bd/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
-  line-height: 1.6em;
-  font-weight: 400;
-  width:100%;
-  text-align:center;
-
-  margin:0 auto;
-}
-/*Strip the ul of padding and list styling*/
-.mobile-menu ul {
-  list-style-type:none;
-  margin: 0 auto;
-  padding-left:0;
-  text-align:center;
-  width:100%;
-
-  background: #f8f9fa;
+  margin: 0;
 }
 
-/*Create a horizontal list with spacing*/
-.mobile-menu li {
-  display:inline-block;
-  /*float: left;
-    margin-right: 1px;*/
+#Logo {
+  height: 30%;
+  width: 30%;
 }
 
-/*Style for menu links*/
-.mobile-menu li a {
-  display:block;
-  min-width:140px;
-  text-align: center;
-  font-family: Montserrat, serif;
-  color: #222222;
-
-  background: #f8f9fa;
-  text-decoration: none;
-  margin-left:-5px;
-  padding: 10px 0;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+#Accueil , #Noustrouver , #Lamarque , #EspacePro , #Fille , #Garçon {
+  height: 30%;
+  width: 30%;
 }
 
-
-
-
-
-
-/*Hover state for top level links*/
-.mobile-menu li:hover a {
-  color: #222222;
-  background-color:#e7f038;
-}
-
-/*Style for dropdown links*/
-.mobile-menu li:hover ul a {
-  background: #f8f9fa;
-  color: #222222;
-  height: 40px;
-  line-height: 40px;
-}
-
-/*Hover state for dropdown links*/
-.mobile-menu li:hover .mobile-menu ul a:hover {
-  color: #e7f038;
-
-}
-
-/*Hide dropdown links until they are needed*/
-.mobile-menu li ul {
-  display: none;
-}
-
-/*Make dropdown links vertical*/
-.mobile-menu li ul li {
-  display: block;
-  float: none;
-}
-
-/*Prevent text wrapping*/
-.mobile-menu li ul li a {
-  width: auto;
-  min-width: 100px;
-  padding: 0 20px;
-}
-
-
-/*Style 'show menu' label button and hide it by default*/
-.mobile-menu .show-menu {
-  text-decoration: none;
-  color: #222222;
-  background: #e7f038;
-  text-align: center;
-  padding: 10px 15px;
-  display: none;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.mobile-menu .show-menu span{
-  padding-left: 35px;
-}
-
-/*Hide checkbox*/
-.mobile-menu input[type=checkbox]{
-  display: none;
-}
-
-/*Show menu when invisible checkbox is checked*/
-.mobile-menu input[type=checkbox]:checked ~ #menu{
-  display: block;
-}
-
-/*Responsive Styles*/
-
-@media screen and (max-width : 800px){
-  .mobile-menu .lines {
-    border-bottom: 15px double #f8f8f8;
-    border-top: 5px solid #f8f8f8;
-    content:"";
-    height: 5px;
-    width:20px;
-    padding-right:15px;
-    float: right;
-  }
-  /*Make dropdown links appear inline*/
-  .mobile-menu ul {
-    position: static;
-    display: none;
-    font-size: 20px;
-  }
-  /*Create vertical spacing*/
-  .mobile-menu li {
-    margin-bottom: 1px;
-  }
-  /*Make all menu links full width*/
-  .mobile-menu ul li, .mobile-menu li a {
-    width: 100%;
-  }
-  /*Display 'show menu' link*/
-  .mobile-menu .show-menu {
-    display:block;
-  }
-}
-
-a{
-  font-size: 2vh;
-}
-
-
-@media screen and (min-width: 1020px) and (max-width: 1399px){
-
-
-
-}
-
-  @media screen and (min-width: 1400px){
-    #menu{
-      margin-left: 10%;
-    }
-    .mobile-menu{
-      background-color: white;
-    }
-  }
-
-
-    @media screen and (min-width: 701px) and  (max-width: 1000px){
-
-    }
-
-@media screen and (min-width: 320px){
-  .mobile-menu{
-    margin:0;
-  }
-}
-
-
-img{
-  height: 40px;
-  width: 40px;
-
-}
-
-#noustrouver{
-  height: 50px;
-  width: 50px;
-}
-
-li {
-  margin: 2%;
-}
-
-#menu{
-  font-family: Montserrat, serif;
-
-
-}
-
-/* BUTTON 1 */
-.btn-1::after {
-  height: 0;
-  left: 0;
+.header-fixed {
+  position: sticky;
   top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #FFFFFF;
+
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 60px;
+}
+
+.navbar .logo {
+  flex: 3;
+}
+
+.navbar .logo a {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+
+  text-decoration: none;
+}
+.navbar .logo a:hover {
+  color: #777777;
+}
+
+.navbar .li:hover{
+  background-color: #e7f038;
+}
+
+.navbar nav {
+  flex: 8;
+}
+
+.navbar label {
+  user-select: none;
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar label i {
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  font-style: normal;
+  font-weight: normal;
+}
+.navbar label i:before,
+.navbar label i:after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.navbar label i,
+.navbar label i:before,
+.navbar label i:after {
+  display: block;
+  background: #eee;
+}
+.navbar label i:before {
+  top: 5px;
+}
+.navbar label i:after {
+  top: -5px;
+}
+
+.navbar #navbar-toggle {
+  display: none;
+}
+
+.header #navbar-toggle:checked ~ .menu {
+  visibility: visible;
+  opacity: 0.99;
+}
+.header #navbar-toggle:checked ~ label {
+  background: #212121;
+  border-radius: 50%;
+}
+.header #navbar-toggle:checked ~ label i {
+  background: transparent;
+}
+.header #navbar-toggle:checked ~ label i:before {
+  transform: rotate(-45deg);
+}
+.header #navbar-toggle:checked ~ label i:after {
+  transform: rotate(45deg);
+}
+.header #navbar-toggle:checked ~ label:not(.steps) i:before,
+.header #navbar-toggle:checked ~ label:not(.steps) i:after {
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar nav {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    display: table;
+    background: #ddd;
+  }
+
+  #Accueil , #Noustrouver , #Lamarque , #EspacePro , #Fille , #Garçon {
+    height: 15%;
+    width: 15%;
+  }
+  .navbar nav ul {
+    margin: 0;
+    padding: 20px 0;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .navbar nav li {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 20px;
+    min-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .navbar nav li:hover {
+    background: #212121;
+  }
+  .navbar nav li:hover a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+  }
+  .navbar nav li a {
+    color: #212121;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+  }
+  .navbar nav li {
+    flex: 1;
+  }
+  .navbar nav li a {
+    display: block;
+    padding: 0 8px;
+    font-size: 16px;
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .navbar nav li.active {
+    background: #555;
+  }
+  .navbar nav li:hover {
+
+  }
+
+
+
+  .navbar label {
+    display: none;
+  }
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #e7f038;
+  height: 3px;
+}
+nav.stroke ul li a:hover:after {
   width: 100%;
 }
 
-.btn-1:hover:after {
-  height: 100%;
-}
-.btn-1::before,
-.btn-1::after {
-  background: #fff;
-  content: '';
-  position: absolute;
-  z-index: -1;
+nav.fill ul li a {
+  transition: all 2s;
 }
 
-.btn-1:hover {
-  color: #2ecc71;
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #e7f038;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #e7f038;
 }

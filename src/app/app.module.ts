@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+
 // tslint:disable-next-line:import-spacing
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {environment} from '../environments/environment';
@@ -78,11 +79,11 @@ import {AppComponent} from './app.component';
 import {from} from 'rxjs';
 import { PageNouscontacterComponent } from './Components/page-nouscontacter/page-nouscontacter.component';
 import {RouterModule, Routes} from '@angular/router';
+import { HistoireimageComponent } from './histoireimage/histoireimage.component';
 
-const route: Routes = [
-
-  {path: '' , component: AccueilContenuComponent, },
-
+const routes: Routes = [
+  {path: 'Accueil', component: AccueilContenuComponent , },
+  {path: '' , redirectTo: 'Accueil' , pathMatch: 'full' },
 ];
 // @ts-ignore
 @NgModule({
@@ -136,6 +137,7 @@ const route: Routes = [
       PagetannageComponent,
       PageNoustrouverComponent,
       PageNouscontacterComponent,
+      HistoireimageComponent,
 
 
     ],
@@ -158,7 +160,7 @@ const route: Routes = [
     HttpClientModule,
     HttpClientJsonpModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    RouterModule.forRoot(route),
+    RouterModule.forRoot(routes),
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
