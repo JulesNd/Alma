@@ -1,9 +1,9 @@
-<body>
-<div   style="margin-top: 2%; margin-left: 20%">
-  <div id="text">
-    <p *ngIf="user">Bienvenue sur votre espace pro: <br> {{ user?.displayName }}  </p>
-    <button class="btn btn-default btn-lg " *ngIf="user" (click)="logout()">Se deconnecter</button>
-    <h3 style=" font-size: 1.5vw "    *ngIf="!user">Vous devez vous connecter pour acceder à l'espace professionel</h3>
+<body >
+<div  style=" margin-left: 18%">
+  <div class="connect" >
+    <p class="text" *ngIf="user">Ace vous souhaite la bienvenue !  <br> {{ user?.displayName }}  </p>
+    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <h3 style=" font-size: 3vh"    *ngIf="!user">Vous devez vous connecter pour acceder à l'espace professionel</h3>
     <button    routerLink="/Login" class="btn btn-default btn-lg" *ngIf="!user" >Se connecter</button>
   </div>
 </div>

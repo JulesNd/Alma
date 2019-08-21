@@ -10,6 +10,14 @@
   --width-container: 1200px;
 }
 
+h3{
+height: 100%;
+}
+
+body{
+
+}
+
 *{
   border: 0;
   margin: 0;
@@ -27,6 +35,7 @@ h3{
 
 .btn-default{
   color: #FFFFFF;
+  font-size: 3vh;
 }
 
 p{
@@ -488,8 +497,9 @@ img {
     overflow: hidden;
   }
 
-  #text{
+  .text{
     margin-left: 80%;
+    font-size: 2vh;
   }
 }
 

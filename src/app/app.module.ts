@@ -80,6 +80,8 @@ import {from} from 'rxjs';
 import { PageNouscontacterComponent } from './Components/page-nouscontacter/page-nouscontacter.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HistoireimageComponent } from './histoireimage/histoireimage.component';
+import { PagechromefreeComponent } from './Components/page-espace-pro/projets/pagechromefree/pagechromefree.component';
+import { FloraldetailsComponent } from './Components/Filles/chaussures-details/floraldetails/floraldetails.component';
 
 const routes: Routes = [
   {path: 'Accueil', component: AccueilContenuComponent , },
@@ -138,6 +140,8 @@ const routes: Routes = [
       PageNoustrouverComponent,
       PageNouscontacterComponent,
       HistoireimageComponent,
+      PagechromefreeComponent,
+      FloraldetailsComponent,
 
 
     ],

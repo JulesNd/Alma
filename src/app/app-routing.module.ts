@@ -35,7 +35,9 @@ import {AppComponent} from './app.component';
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
+import {PagechromefreeComponent} from './Components/page-espace-pro/projets/pagechromefree/pagechromefree.component';
 import {canActivate} from '@angular/fire/auth-guard';
+import {FloraldetailsComponent} from './Components/Filles/chaussures-details/floraldetails/floraldetails.component';
 
 
 const routes: Routes = [
@@ -54,6 +56,7 @@ const routes: Routes = [
   {path: 'Login', component: LoginComponent },
   {path: 'NousContacter', component: PageNouscontacterComponent},
   {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
+  {path: 'Floral', component: FloraldetailsComponent },
   {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
   {path: 'Developpements-exclusifs', component: DeveloppementsexclusifsComponent},
@@ -70,6 +73,7 @@ const routes: Routes = [
   {path: 'commentaiderlaplanete', component: CommentaiderlaplaneteComponent},
   {path: 'Tannage', component: PagetannageComponent},
   {path: 'Noustrouver', component: PageNoustrouverComponent},
+  {path: 'Chromefree', component: PagechromefreeComponent},
   {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
   {
     path: '', redirectTo: '/Accueil' , pathMatch: 'full'

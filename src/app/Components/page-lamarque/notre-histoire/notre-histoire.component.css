@@ -1,21 +1,367 @@
-#image{
+
+html{
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  position: relative;
 
-padding: 2%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+
+  }
+  header video {
+    display: none;
+  }
 }
 
 
-h3{
-  padding: 4%;
- line-height: 30px;
-  font-family: Montserrat, serif;
-  text-space: 5;
+
+
+.titre{
+  font-size: 4rem;
+  color: #002147;
+}
+
+.article{
+  font-size: 2rem;
+  margin-top: 5%;
+
+}
+
+.jumbotron{
+  background-color: white;
 }
 
 
-#Titre {
-  font-size: 50px;
-  margin-left: 5px;
+.wrapper{
+
+  background-image: url("https://drive.google.com/uc?export=view&id=1FjZSKpnY4uSNvPIYoNCWrOWUWhkCpba9");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 }
+#savoirfair{
+  background-size: 130% 100%;
+}
+
+
+#retour{
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+
+btn-default
+
+{
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+  margin-top: 25%;
+
+
+
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+
+
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+}
+font{
+  font-size: 2rem;
+}
+
+#imagemicrofibre{
+
+  width: 506px;
+  height: 506px;
+  float: left;
+
+  animation-delay: 2s;
+}
+
+
+
+
+#txtmicrofibre{
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 5%;
+  animation-delay: 2s;
+
+}
+
+#txtPremiereTanveg{
+  padding: 2%;
+  animation-delay: 2s;
+  background-color: rgba(255, 255, 255, 0.61);
+
+}
+#txtmouton{
+  float: right;
+  padding: 5%;
+  animation-delay: 2s;
+  background-color:#002147 ;
+  color: #ffffff;
+}
+#imagemouton{
+  width: 510px;
+  height: 510px;
+  float: left;
+
+
+  animation-delay: 2s;
+
+}
+
+#lespremieres{
+  background-color: rgba(255, 69, 0, 0.89);
+}
+
+#PremiereTanveg{
+
+  float: right;
+  background-repeat: no-repeat;
+  margin-bottom: 50%;
+  animation-delay: 2s;
+  height: 506px;
+  width: 506px;
+
+}
+#txtlespremieres{
+  color: #ffffff;
+  margin-top: 0;
+}
+
+
+
+
+/**ANIMATIONS ** /
+
+/** FADEIN LEFT **/
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-10px);
+    -moz-transform: translatex(-10px);
+    -o-transform: translatex(-10px);
+    transform: translatex(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(-100px);
+    -moz-transform: translatex(-100px);
+    -o-transform: translatex(-100px);
+    transform: translatex(-100px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+.in-left {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-duration:1s;
+  animation-delay: 1s;
+
+}
+
+
+
+/** FADEIN RIGHT **/
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(10px);
+    -moz-transform: translatex(10px);
+    -o-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  from {
+    opacity:0;
+    -webkit-transform: translatex(10px);
+    -moz-transform: translatex(10px);
+    -o-transform: translatex(10px);
+    transform: translatex(10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+@keyframes fadeInRight{
+  from {
+    opacity:0;
+    -webkit-transform: translatex(100px);
+    -moz-transform: translatex(100px);
+    -o-transform: translatex(100px);
+    transform: translatex(100px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatex(0);
+    -moz-transform: translatex(0);
+    -o-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+.in-right {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-duration:1s;
+  animation-delay: 1s;
+}
+
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to { opacity: 1 }
+}
+/**    **/
+
+@media screen and (min-width: 320px) and (max-width:460px ){
+  header{
+
+    background-repeat: no-repeat;
+  }
+
+  #imagemicrofibre{
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-repeat: no-repeat;
+
+    animation-delay: 2s;
+  }
+
+
+  #PremiereTanveg{
+
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-bottom: 50%;
+    animation-delay: 4s;
+
+  }
+
+
+
+  .titre{
+    font-size: 2rem;
+    color: #e7f038;
+  }
+
+  .article{
+    font-size: 1rem;
+    margin-top: 5%;
+
+  }
+}
+

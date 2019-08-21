@@ -45,3 +45,22 @@ body {
     display: none;
   }
 }
+#slide1{
+  height: 400px;
+  width: 350px;
+}
+
+#h1{
+
+  color: black;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  #slide1{
+    height: 170px;
+    width: 150px;
+
+  }
+
+
+}

@@ -1,6 +1,10 @@
-body {
-  margin: 0;
+
+
+li{
+  font-family:concert, serif
 }
+
+
 
 #Logo {
   height: 30%;
@@ -131,7 +135,7 @@ body {
     height: 100%;
     transition: all 0.3s ease-out;
     display: table;
-    background: #ddd;
+    background: rgba(221, 221, 221, 0.75);
   }
 
   #Accueil , #Noustrouver , #Lamarque , #EspacePro , #Fille , #Garçon {
@@ -156,7 +160,7 @@ body {
     transition: all 0.3s ease-out;
   }
   .navbar nav li:hover {
-    background: #212121;
+    background: #e7f038;
   }
   .navbar nav li:hover a {
     color: #fff;

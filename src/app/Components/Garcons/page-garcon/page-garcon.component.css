@@ -261,6 +261,9 @@ p{
 
 @media screen and (min-width: 320px)  {
   /** smartphone **/
+  p{
+    font-size: 1.5vh;
+  }
 
   .container{
     margin-left: 2%;
@@ -342,7 +345,9 @@ p{
   h1{
     font-size: 2rem;
   }
-
+  p{
+    font-size: 2.2vh;
+  }
 
 }
 

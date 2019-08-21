@@ -26,6 +26,7 @@
 
 .container{
   width: 100%;
+
 }
 
 
@@ -199,9 +200,21 @@
 
 
 
-#Eclipse, #Eclipse2, #Etoile1 ,#Etoile2 , #Mellow3, #Mellow2 , #Mellow1 , #Santa1 , #Santa2 , #Santa3 ,#Coeur , #Cookie1 , #Cookie2 , #Floral    {
+#Catty, #Cookie{
   height: 200px;
-  width: 200px;
-margin-left: 15%;
+  width: 250px;
+margin-left: 8%;
   margin-top: 15%;
+}
+#Lucky{
+  height: 195px;
+  width: 265px;
+  margin-left: 6%;
+  margin-top: 17%;
+}
+#Canino {
+  height: 200px;
+  width: 250px;
+  margin-left: 8%;
+  margin-top: 18%;
 }

@@ -10,7 +10,40 @@
   --width-container: 1200px;
 }
 
+#retour{
+  margin-top: 1%;
+  margin-left: 2%;
+  color: #ffffff;
+}
 
+
+btn-default
+
+{
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+  margin-top: 25%;
+
+
+
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+
+
+
+  background-color: rgba(255, 69, 0, 0.89);
+
+  color:#FFF;
+
+  border-color: rgba(255, 69, 0, 0.89);
+
+}
 
 #active{
   background-image: url("//drive.google.com/uc?export=view&id=1i1fGfX7PlvXiWsIDQwY4bVJmvlfmrpKN");

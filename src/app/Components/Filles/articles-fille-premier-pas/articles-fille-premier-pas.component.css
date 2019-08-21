@@ -190,9 +190,15 @@
 
 
 
-#Eclipse, #Eclipse2, #Etoile1 ,#Etoile2 , #Mellow3, #Mellow2 , #Mellow1 , #Santa1 , #Santa2 , #Santa3 ,#Coeur , #Cookie1 , #Cookie2 , #Floral    {
+#Eclipse, #Eclipse2, #Etoile1  ,#Etoile2 , #Mellow3, #Mellow2 , #Mellow1 , #Santa1 , #Santa2 , #Santa3 ,#Coeur , #Cookie1 , #Cookie2 , #Floral    {
   height: 200px;
   width: 200px;
   margin-left: 15%;
   margin-top: 15%;
+}
+#Cosmos{
+  height: 250px;
+  width: 250px;
+  margin-left: 15%;
+  margin-top: 10%;
 }
