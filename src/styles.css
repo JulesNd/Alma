@@ -1,9 +1,23 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+@font-face {
+  font-family: Sonorous;
+  src: url("assets/sonorous.ttf") format("opentype");
 
+
+}
+@font-face {
+  font-family: cat;
+  src: url("assets/CAT.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: concert;
+  src: url("assets/concertone-regular.ttf") format("opentype");
+}
 
 html,body {
-  font-family: Montserrat, serif;
+  font-family: Happymaker, serif;
   margin: 0;
 }
 

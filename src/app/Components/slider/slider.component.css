@@ -1,25 +1,9 @@
-#slider {
-  /*height: 350px;
-  overflow: hidden;
-  width: 100%;*/
-  position: relative;
-  margin: 5%;
-}
-
-li{
-  background-color: #e7f038;
-  width: 80px;
-  height: 80px;
+video{
+  height: 320px;
+  width: 100%;
 
 }
-ol{
-  margin-left: 20%;
-}
 
-
-.carousel-item {
-  height: 350px;
-}
 
 .carousel-indicators li {
   width: 40px;
@@ -31,10 +15,10 @@ ol{
 
 }
 
-
 .jumbotron{
 
 }
+
 
 body {
   background-color: lightslategray;
@@ -55,12 +39,49 @@ body {
   color: black;
 }
 
+
+@media only screen and (min-width: 961px){
+  #video{
+  background-size: cover;
+  }
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
   #slide1{
     height: 170px;
     width: 150px;
 
   }
+  video{
+    background: none;
+    background-size: 100% 320px;
+
+}
 
 
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+  video {
+  display: none;
+  }
+  source{
+    display: none;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    width: 101%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .container{
+    display: none;
+  }
 }

@@ -1,68 +1,51 @@
-
 <body>
 
-<button id="retour"  routerLink="/EspacePro" class="btn btn-default btn-lg"  >Retour</button>
+<div class="container-fluid"  >
+  <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1_U7WgoVxl98rSTr4ovkOmM0uPyGp9F1N">
 
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+  </p>
+</div>
+<div class="jumbotron">
+  <button routerLink="/EspacePro" class="btn btn-default btn-lg text">Retour</button>
+  <div id="Page"> Inspirations  </div>
+  <div class="desc"> Retrouvez tous nos themes et inspirations pour l'hiver 2019 </div>
 
-<div class="container" >
+</div>
+<div class="container">
+  <div  class="wrap">
 
+    <div   class="box one">
 
-
-
-
-  <div class="card">
-    <a href="//drive.google.com/open?id=1Elvc4kbOEtoaDY-6Djzxa9r9HZnxjpQ0" download  target="_blank"  >
-    <div class="card__image-container" >
-      <div class="cardbg" style="background-image: url(http://drive.google.com/uc?export=view&id=1HTpqNFQnt2cH0ciA6zDzRikZFcBwjzWF)" id="bonbon"  ></div>
+      <div class="poster p1">
+        <a  href="https://drive.google.com/open?id=1Elvc4kbOEtoaDY-6Djzxa9r9HZnxjpQ0" download  target="_blank"  >
+        <div class="title" >Haute Tension</div>
+        </a>
+      </div>
     </div>
-    <div class="card__content">
 
-        <h1 class="card__title" style="background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);" >Theme 1</h1>
+    <div     class="box two">
 
+      <div class="poster p2">
+        <a href="https://drive.google.com/open?id=1Xo8rUJ9PTBgqIpesZIJb9vUyBKyiHMRJ" download target="_blank" >
+        <div class="title">Active</div>
+        </a>
+      </div>
     </div>
-    </a>
+
+    <div       class="box three">
+
+      <div class="poster p3">
+
+        <a href="https://drive.google.com/open?id=1rIvBje-kmlBf-c2oWVH8b99EsG1V3S0v" download  target="_blank"  >
+        <div class="title" >Disco club</div>
+        </a>
+      </div>
+    </div>
   </div>
-
-
-
-
-
-
-  <div class="card" >
-    <a href="//drive.google.com/open?id=1Xo8rUJ9PTBgqIpesZIJb9vUyBKyiHMRJ" download target="_blank" >
-    <div class="card__image-container" >
-      <div class="cardbg " style="background-image: url(http://drive.google.com/uc?export=view&id=1i1fGfX7PlvXiWsIDQwY4bVJmvlfmrpKN)" id="active"  ></div>
-    </div>
-    <div class="card__content">
-
-      <h1 class="card__title" style="background: radial-gradient(circle, rgba(34,193,195,1) 19%, rgba(253,187,45,1) 89%);" >Theme 2</h1>
-
-    </div>
-    </a>
-  </div>
-
-
-
-
-
-  <div class="card">
-    <a href="//drive.google.com/open?id=1rIvBje-kmlBf-c2oWVH8b99EsG1V3S0v" download  target="_blank"  >
-    <div class="card__image-container" >
-      <div class="cardbg" style="background-image:url(http://drive.google.com/uc?export=view&id=1nEDNXD-I34CG0OGWlru4a0gXVzGX5JkC)" id="disco" ></div>
-    </div>
-    <div class="card__content">
-
-        <h1 class="card__title rainbow" >Theme 3</h1>
-
-    </div>
-    </a>
-  </div>
-
-
-
-
-
-
-
 </div>
 </body>

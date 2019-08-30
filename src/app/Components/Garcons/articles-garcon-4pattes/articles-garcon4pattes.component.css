@@ -28,7 +28,7 @@
 }
 
 .tag-sale {
-  background-color: #e7f038;
+  background-color: #e8eb38;
   width: 86px;
   height: 98px;
   position: absolute;
@@ -68,7 +68,7 @@
   background: #fff;
   width: 100px;
   height: 100px;
-  color: #e7f038;
+  color: #e8eb38;
   border-radius: 50%;
   font-size: 25px;
   text-align: center;
@@ -83,12 +83,12 @@
 
 .product-link:hover {
   text-decoration: none;
-  color: #e7f038;
+  color: #e8eb38;
 }
 
 
 .hover-link {
-  background-color: #e7f038;
+  background-color: #e8eb38;
   position: absolute;
   left: 0;
   top: 0;
@@ -120,7 +120,7 @@
   font-size: 23px;
   text-align: right;
   font-weight: bold;
-  color: #e7f038;
+  color: #e8eb38;
   margin-bottom: 5px;
 }
 
@@ -190,9 +190,15 @@
 
 
 
-#Cannes1, #Cannes2, #Victor1 ,#Victor2{
+#Cannes1, #Cannes2 {
   height: 200px;
   width: 200px;
   margin-left: 15%;
   margin-top: 15%;
+}
+#Victor1 ,#Victor2{
+  height: 170px;
+  width: 220px;
+  margin-left: 15%;
+  margin-top: 25%;
 }

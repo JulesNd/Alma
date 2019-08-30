@@ -15,8 +15,8 @@ import {Router} from '@angular/router';
 
 export class AppComponent {
   constructor(
-    private router: Router,
-    private afAuth: AngularFireAuth
+    public router: Router,
+    public afAuth: AngularFireAuth
   ) {}
 
 
@@ -30,6 +30,6 @@ export class AppComponent {
   }
 
   onActivate($event: any) {
-    window.scroll(50, 50);
+    window.scroll(0, 0);
   }
 }

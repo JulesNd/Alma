@@ -67,39 +67,6 @@ header .overlay {
 
 }
 
-#imagetannage{
-  background-image: url("TV2.jpg");
-  width: 500px;
-  height: 500px;
-  float: left;
-  background-repeat: no-repeat;
-
-  animation-delay: 2s;
-}
-
-
-
-#Tanveg{
-
-  width: 348px;
-  height: 348px;
-  float: right;
-  background-repeat: no-repeat;
-  background-image: url("TANN4-removebg-preview.png");
-  animation-delay: 2s;
-  background-size: 20000px;
-}
-
-#Tanchrome{
-  background-image: url("TANN1-removebg-preview.png");
-  width: 100px;
-  height: 100px;
-  float: left;
-
-  background-repeat: no-repeat;
-
-  animation-delay: 2s;
-}
 
 
 
@@ -183,16 +150,8 @@ width: 350px;
 }
 
 
-#Avantage{
-  background-image: url("TV4.jpg");
-  width: 500px;
-  height: 500px;
-  float: right;
-  background-repeat: no-repeat;
-  margin-bottom: 50%;
-animation-delay: 4s;
 
-}
+
 
 #cardcommentçamarche{
   background-color: #e9ecef;
@@ -378,7 +337,9 @@ animation-delay: 4s;
 
 @media screen and (min-width: 320px) and (max-width:460px ){
   header{
-    background-image: url("TV1.jpg");
+    width: 100%;
+    height: auto;
+    background-image: url("https://drive.google.com/uc?export=view&id=1u9c5ybKF1wAKHMuw7eIC9n2MHSX-ZuyF");
     background-repeat: no-repeat;
   }
 

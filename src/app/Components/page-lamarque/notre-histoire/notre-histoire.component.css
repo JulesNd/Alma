@@ -38,12 +38,15 @@ header .overlay {
   }
 }
 
+.container{
+  width: 99%;
 
+}
 
 
 .titre{
-  font-size: 4rem;
-  color: #002147;
+  font-size: 5rem;
+  color: #e7f038;
 }
 
 .article{
@@ -54,14 +57,36 @@ header .overlay {
 
 .jumbotron{
   background-color: white;
+  width: 100%;
+
+
+}
+
+.mytitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow:
+    0 0 5px #e7f038,
+    0 0 10px #e7f038,
+    0 0 20px #e7f038,
+    0 0 40px #e7f038,
+    0 0 80px #e7f038,
+    0 0 90px #e7f038,
+    0 0 100px #e7f038,
+    0 0 150px #e7f038;
+  font-size: 5vh;
+  font-weight: 400;
 }
 
 
-.wrapper{
 
-  background-image: url("https://drive.google.com/uc?export=view&id=1FjZSKpnY4uSNvPIYoNCWrOWUWhkCpba9");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+#wraphistoire{
+
+
+
 
 }
 #savoirfair{
@@ -108,27 +133,89 @@ font{
 
 #imagemicrofibre{
 
-  width: 506px;
-  height: 506px;
+  width: 100%;
+  height: auto;
+ position: relative;
+
+
+}
+
+#Souplesse{
+
+  width: 300px;
+  height: 300px;
+  float: right;
+
+  animation-delay: 2s;
+}
+#Confort{
+  width: 300px;
+  height: 270px;
+  float: left;
+
+  animation-delay: 2s;
+}
+#Durabilité{
+  width: 300px;
+  height: 300px;
+  float: right;
+
+  animation-delay: 2s;
+}
+#Creativité{
+  width: 300px;
+  height: 300px;
   float: left;
 
   animation-delay: 2s;
 }
 
-
-
-
+#Histoire{
+  margin-bottom: 0;
+}
 #txtmicrofibre{
   background-color: rgba(255, 255, 255, 0.61);
-  padding: 5%;
+  padding: 1%;
   animation-delay: 2s;
+
+
+}
+#txtSouplesse{
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 1%;
+  animation-delay: 2s;
+  -webkit-box-shadow: 0px 0px 4px 3px #e7f038;
+  -moz-box-shadow: 0px 0px 4px 3px #e7f038;
+  box-shadow: 0px 0px 4px 3px #e7f038;
 
 }
 
-#txtPremiereTanveg{
-  padding: 2%;
-  animation-delay: 2s;
+#txtConfort{
   background-color: rgba(255, 255, 255, 0.61);
+  padding: 1%;
+  margin-left: 15%;
+  animation-delay: 2s;
+  -webkit-box-shadow: 0px 0px 4px 3px #e7f038;
+  -moz-box-shadow: 0px 0px 4px 3px #e7f038;
+  box-shadow: 0px 0px 4px 3px #e7f038;
+}
+#txtDurabilité{
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 1%;
+  animation-delay: 2s;
+  -webkit-box-shadow: 0px 0px 4px 3px #e7f038;
+  -moz-box-shadow: 0px 0px 4px 3px #e7f038;
+  box-shadow: 0px 0px 4px 3px #e7f038;
+
+}
+#txtCreavitité{
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 1%;
+  animation-delay: 2s;
+  margin-left: 15%;
+  -webkit-box-shadow: 0px 0px 4px 3px #e7f038;
+  -moz-box-shadow: 0px 0px 4px 3px #e7f038;
+  box-shadow: 0px 0px 4px 3px #e7f038;
 
 }
 #txtmouton{
@@ -324,33 +411,59 @@ font{
 }
 /**    **/
 
-@media screen and (min-width: 320px) and (max-width:460px ){
+@media only screen and (max-width: 400px){
   header{
 
     background-repeat: no-repeat;
   }
 
   #imagemicrofibre{
-    width: 200px;
-    height: 200px;
-    float: left;
-    background-repeat: no-repeat;
 
-    animation-delay: 2s;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 
 
-  #PremiereTanveg{
+#txtSouplesse{
 
-    width: 200px;
-    height: 200px;
-    float: left;
-    background-repeat: no-repeat;
-    margin-bottom: 50%;
-    animation-delay: 4s;
+}
+#Souplesse{
 
+  height: 100px;
+  width: 100px;
+}
+#Confort{
+
+  height: 100px;
+  width: 100px;
+}
+#Durabilité{
+  height: 100px;
+  width: 100px;
+}
+#Creativité{
+  height: 100px;
+  width: 100px;
+}
+  .mytitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow:
+      0 0 5px #e7f038,
+      0 0 10px #e7f038,
+      0 0 20px #e7f038,
+      0 0 40px #e7f038,
+      0 0 80px #e7f038,
+      0 0 90px #e7f038,
+      0 0 100px #e7f038,
+      0 0 150px #e7f038;
+    font-size: 2vh;
+    font-weight: 100;
   }
-
 
 
   .titre{

@@ -1,4 +1,21 @@
+<body>
+<div class="container-fluid"  >
+  <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1_U7WgoVxl98rSTr4ovkOmM0uPyGp9F1N">
 
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+  </p>
+</div>
+<div class="jumbotron">
+  <button routerLink="/EspacePro" class="btn btn-default btn-lg text">Retour</button>
+  <div class="Page"> Developpements exclusifs  </div>
+  <div class="desc"> Nous sommes la pour discuter et trouver
+    des nouvelles idées ensemble, faites votre demande ! </div>
+</div>
+<img id="devexclu"    src="https://drive.google.com/uc?export=view&id=1rwKQvxzCY1SAehsPuNFPXsBqtwEbZpld" >
 <iframe
   id="JotFormIFrame-92173503767360"
   title="File Upload Form"
@@ -75,3 +92,4 @@
     window.attachEvent("onmessage", handleIFrameMessage);
   }
 </script>
+</body>

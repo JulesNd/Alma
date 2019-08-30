@@ -168,12 +168,6 @@
 
 }
 
-#alma {
-  background-image: url("../almafondtransp.jpg");
-  width: 15%;
-  height: 15%;
-  margin-left: 85%;
-}
 
 
 @media screen and (min-width: 1400px){
@@ -234,10 +228,5 @@
   }
   #sel1{
     width: 30%}
-  #alma {
-    background-image: url("../almafondtransp.jpg");
-    width: 30%;
-    height: 15%;
-    margin-left: 70%;
-  }
+
 }

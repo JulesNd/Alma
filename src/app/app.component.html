@@ -1,11 +1,11 @@
 <div class="main">
-<header>
-  <app-navbar></app-navbar>
-
-
+<header  *ngIf="!(router.url === '/EspacePro' || router.url === '/Inspiration'
+|| router.url === '/Projets'|| router.url === '/Developpements-exclusifs'|| router.url === '/Almaplanete'
+|| router.url === '/Tannage'|| router.url === '/Chromefree')">
+  <app-navbar      ></app-navbar>
 </header>
-  <body>
-  <router-outlet ></router-outlet>
+  <body >
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
   </body>
 
   <footer class="footer-area footer--light">

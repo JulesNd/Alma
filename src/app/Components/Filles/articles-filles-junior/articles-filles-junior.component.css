@@ -31,7 +31,7 @@
 }
 
 .tag-sale {
-  background-color: #e7f038;
+  background-color: #e8eb38;
   width: 86px;
   height: 98px;
   position: absolute;
@@ -71,7 +71,7 @@
   background: #fff;
   width: 100px;
   height: 100px;
-  color: #e7f038;
+  color: #e8eb38;
   border-radius: 50%;
   font-size: 25px;
   text-align: center;
@@ -91,7 +91,7 @@
 
 
 .hover-link {
-  background-color: #e7f038;
+  background-color: #e8eb38;
   position: absolute;
   left: 0;
   top: 0;
@@ -123,7 +123,7 @@
   font-size: 23px;
   text-align: right;
   font-weight: bold;
-  color: #e7f038;
+  color: #e8eb38;
   margin-bottom: 5px;
 }
 
@@ -193,9 +193,25 @@
 
 
 
-  #Alasca, #Alasca2, #Antonia ,#Antonia2 , #Antonia3, #Carliera , #Carlita , #Carlita2 , #Coral , #Coral2    {
+ #Carliera , #Carlita , #Carlita2 , #Coral , #Coral2    {
   height: 180px;
   width: 200px;
   margin-left: 15%;
   margin-top: 15%;
+}
+
+  #Alasca, #Alasca2{
+    height: 220px;
+    width: 200px;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+  #Antonia ,#Antonia2 , #Antonia3{
+    height: 170px;
+    width: 210px;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+#Antonia{
+  margin-top: 30%;
 }

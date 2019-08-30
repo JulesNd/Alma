@@ -1,64 +1,62 @@
-<body>
-<button id="retour"  routerLink="/EspacePro" class="btn btn-default btn-lg"  >Retour</button>
-<div    class="container" style="width: 100%;">
+<body >
+<div *ngIf="user"  class="conatiner">
 
 
 
-  <div class="card">
-    <div class="card__image-container" routerLink="/Almaplanete">
-      <div class="cardbg"  id="Almaplanette"  style=""></div>
-    </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Alma planete</h1>
+  <div class="container-fluid"  >
+    <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1_U7WgoVxl98rSTr4ovkOmM0uPyGp9F1N">
 
-    </div>
+    <p class="text" id="welcome" *ngIf="(user)">
+      Connecté(e)
+      <strong> {{ user?.displayName }}</strong>
+      <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+      <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+    </p>
+
+  </div>
+
+
+  <div class="jumbotron" >
+    <button routerLink="/EspacePro" class="btn btn-default btn-lg text">Retour</button>
+    <p  id="Page"> Nos projets  </p>
+
   </div>
 
 
 
+  <div class="wrap">
 
+    <div     routerLink="/Almaplanete"  class="box one">
 
-
-  <div class="card" >
-    <div class="card__image-container" routerLink="/Tannage" >
-      <div class="cardbg"  id="Tannagevegetal"  style=""></div>
+      <div class="poster p1">
+        <div class="title">AlmaPlanete</div>
+      </div>
     </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89); color: #FFFFFF">Tannage vegetal </h1>
 
+    <div routerLink="/Tannage"  class="box two">
+
+      <div class="poster p2">
+        <div class="title">Tannage vegetal</div>
+      </div>
     </div>
+
+    <div routerLink="/Chromefree" class="box three">
+
+      <div class="poster p3">
+        <div class="title">Chrome free</div>
+      </div>
+    </div>
+
+    <div routerLink="/Homme" class="box five">
+
+      <div class="poster p4">
+        <div class="title">Homme</div>
+      </div>
+    </div>
+
+
+
   </div>
-
-
-
-
-
-  <div class="card">
-    <div class="card__image-container" routerLink="/Chromefree">
-
-      <div class="cardbg"  id="ChromeFree"  style=""></div>
-    </div>
-    <div class="card__content">
-
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Chrome free </h1>
-
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card__image-container" routerLink="">
-      <div class="cardbg"  id="Homme"  style=""></div>
-    </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Homme </h1>
-
-    </div>
-  </div>
-
-
-
-
-
-
 </div>
+
 </body>

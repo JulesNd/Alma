@@ -1,57 +1,80 @@
 
-body{
-  font-family: Montserrat, serif;
-}
-#rectangle{
-
-  height:50%;
-  padding-bottom: 5%;
-  margin-top: 1%;
- /** background-image: url("almaLogo.png");**/
-}
-img{
 
 
-  width: 11%;
-  height: 50%;
-  margin-left: 45%;
-  margin-top: 0.5%;
-}
+
 #jumbtext{
 background-color: #e7f038;
   color: #FFFFFF;
 
 }
 
-#1 {
-  background-color: #e7f038;
 
-}
+.container{
+  width: 110%;
+  height: 50%;
 
-#histoireButton{
-
-  margin-left: 46%;
-  margin-top: 15%;
   position: relative;
-  height: 120px;
-  width: 220px;
-}
-.btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:visited  {
 
-  border-color: #e7f038;
 }
-.btn-outline-primary{
-  border-color: #e7f038;
-}
-.btn-outline-primary:hover{
-  background-color: rgba(231, 240, 56, 0.62);
 
+#Explorer{
+  margin-left: 5%;
+  font-size: 3.5vh;
+}
+
+
+
+#notrehistoire{
+  width: 110%;
+  height: auto;
+  margin: 0;
+}
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+.writ{
+  color: #fff;
+  text-shadow:
+    0 0 5px #e8eb38,
+    0 0 10px #e8eb38,
+    0 0 20px #e8eb38,
+    0 0 40px #e8eb38,
+    0 0 80px #e8eb38,
+    0 0 90px #e8eb38,
+    0 0 100px #e8eb38,
+    0 0 150px #e8eb38;
+  font-size: 4vh;
+  font-weight: 100;
+}
+
+.button {
+
+  color: #e7f038;
+  -webkit-box-shadow: 0px 0px 5px 2px #e8eb38;
+  -moz-box-shadow: 0px 0px 5px 2px #e8eb38;
+  box-shadow: 0px 0px 5px 2px #e8eb38;
+  padding: 15px 40px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: #e7f038;
+  -webkit-box-shadow: 0px 0px 5px 5px #e8eb38;
+  -moz-box-shadow: 0px 0px 5px 5px #e8eb38;
+  box-shadow: 0px 0px 5px 5px #e8eb38;
 }
 
 
 
 /** MOBILE **/
-@media screen and (min-width: 320px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   img{
 
 
@@ -107,7 +130,7 @@ background-color: #e7f038;
     height: 200px;
     background-size: 400px 200px;
     background-repeat: no-repeat;
-    background-image: url("HISTOIRE.jpg");
+
   }
 
   #histoireButton{
@@ -121,6 +144,9 @@ background-color: #e7f038;
     margin-top: 1%;
   }
 
+  #Explorer{
+    font-size: 2vh;
+  }
 
 
 
@@ -131,22 +157,13 @@ background-color: #e7f038;
 /** Tablet **/
 @media screen and (min-width: 500px) and (max-width: 900px) {
 
-  img{
 
-
-    width: 41%;
-    height: 80%;
-    margin-left: 30%;
-    margin-top: 0.5%;
-  }
   #text{
     margin-left: 25%;
     font-size: 2em;
 
   }
-.jumbotron{
-  margin-top: 40%;
-}
+
   #ig1{
     background-image: url("IG1.JPG");
     width: 105px;
@@ -183,12 +200,11 @@ background-color: #e7f038;
   }
 
   .jumbotron{
-    margin-top: 5%;
-    width: 550px;
-    height: 350px;
-    background-size: 550px 350px;
-    background-repeat: no-repeat;
-    background-image: url("HISTOIRE.jpg");
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+
+
   }
 
   #histoireButton{
@@ -205,15 +221,8 @@ background-color: #e7f038;
 /**    **/
 
 
-@media screen and (min-width: 1366px){
-  img{
+@media only screen and (min-width: 961px) {
 
-
-    width: 21%;
-    height: 60%;
-    margin-left: 37%;
-    margin-top: 0.5%;
-  }
   #ig1{
 
     width: 260px;
@@ -250,12 +259,12 @@ background-color: #e7f038;
   }
 
   .jumbotron{
-    background-color: #e7f038;
+    background-color: #e8eb38;
     color: #FFFFFF;
   }
 
   #suiveznous{
-    font-size: 3rem;
+    font-size: 3.5vh;
     margin-left: 37%;
   }
   #jumbhist{
@@ -274,208 +283,58 @@ background-color: #e7f038;
   }
   #text{
     margin-left: 15%;
-    font-size: 2.5em;
+    font-size: 2.5vh;
   }
-  .snowflakes {
-    width: 100%;
 
-    position: absolute;
-    top: 550px;
-    left: 0;
-  }
-  i,
-  i:after,
-  i:before {
-    background: snow;
-  }
-  i {
-    display: inline-block;
-    -webkit-animation: snowflakes 2s linear 2s 20;
-    -moz-animation: snowflakes 2s linear 2s 20;
-    position: relative;
-  }
-  i:after,
-  i:before {
-    height: 100%;
-    width: 100%;
-    content: ".";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    -webkit-transform: rotate(120deg);
-  }
-  i:before {
-    -webkit-transform: rotate(240deg);
-  }
-  @-webkit-keyframes snowflakes {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
-    }
-    100% {
-      -webkit-transform: translate3d(15px, 700px, 0px) rotate(360deg) scale(0.6);
-    }
-  }
-  .snowflakes i:nth-child(3n) {
-    width: 16px;
-    height: 4px;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: 30;
-    -webkit-transform-origin: right -45px;
-  }
-  .snowflakes i:nth-child(3n+1) {
-    width: 24px;
-    height: 6px;
-    -webkit-animation-duration: 6s;
-    -webkit-animation-iteration-count: 45;
-    -webkit-transform-origin: right -30px;
-  }
-  .snowflakes i:nth-child(3n+2) {
-    width: 32px;
-    height: 8px;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: 60;
-    -webkit-transform-origin: right -15px;
-  }
-  /* different delays so they don't all start at the same time */
-  .snowflakes i:nth-child(7n) {
-    opacity: 0.3;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-timing-function: ease-in;
-  }
-  .snowflakes i:nth-child(7n+1) {
-    opacity: 0.4;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-timing-function: ease-out;
-  }
-  .snowflakes i:nth-child(7n+2) {
-    opacity: 0.5;
-    -webkit-animation-delay: 1.5s;
-    -webkit-animation-timing-function: linear;
-  }
-  .snowflakes i:nth-child(7n+3) {
-    opacity: 0.6;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-timing-function: ease-in;
-  }
-  .snowflakes i:nth-child(7n+4) {
-    opacity: 0.7;
-    -webkit-animation-delay: 2.5s;
-    -webkit-animation-timing-function: linear;
-  }
-  .snowflakes i:nth-child(7n+5) {
-    opacity: 0.8;
-    -webkit-animation-delay: 3s;
-    -webkit-animation-timing-function: ease-out;
-  }
-  .snowflakes i:nth-child(7n+6) {
-    opacity: 0.9;
-    -webkit-animation-delay: 3.5s;
-    -webkit-animation-timing-function: ease-in;
-  }
 
 }
-@media screen and (min-width: 1020px) and (max-width: 1365px){
-  .jumbotron{
-    width: 100%;
-    height: 550px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-image: url("HISTOIRE.jpg");
+@media only screen and (min-width: 961px){
 
-  }
-  #histoireButton{
-    width: 250px;
-    height: 100px;
-    margin-left: 38%;
-    margin-top: 18%;
-  }
+
   #text{
     margin-left: 12%;
     font-size: 2.3em;
   }
   #ig1{
     background-image: url("IG1.JPG");
-    width: 180px;
-    height: 180px;
+    width: 270px;
+    height: 270px;
     margin-left: 5%;
 
   }
   #ig2{
     background-image: url("IG2.jpg");
-    width: 180px;
-    height: 180px;
+    width: 270px;
+    height: 270px;
     margin-left: 5%;
     margin-top: 30%;
   }
   #ig3{
     background-image: url("IG3.jpg");
-    width: 180px;
-    height: 180px;
+    width: 270px;
+    height: 270px;
     margin-left: 2%;
 
   }
   #ig4{
     background-image: url("IG4.jpg");
-    width: 180px;
-    height: 180px;
+    width: 270px;
+    height: 270px;
     margin-left: 1%;
     margin-top: 30%;
   }
   #ig5{
     background-image: url("IG5.jpg");
-    width: 180px;
-    height: 180px;
+    width: 270px;
+    height: 270px;
     margin-left: 1%;
   }
   #suiveznous{
     font-size: 3rem;
     margin-left: 35%;
   }
-  img{
 
 
-    width: 21%;
-    height: 60%;
-    margin-left: 37%;
-    margin-top: 0.5%;
-  }
-  /* Animation */
-  .line-1{
-    position: relative;
-    top: 50%;
-    width: 100em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(0);
-  }
-
-  .anim-typewriter{
-    animation: typewriter 4s steps(45) 1s 1 normal both,
-    blinkTextCursor 500ms steps(80)  normal;
-
-  }
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 40em;}
-  }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
-
-
-  .anim-typewriter2{
-    animation: typewriter2 4s steps(45) 1s 1 normal both,
-    blinkTextCursor 500ms steps(80)  normal;
-  }
-  @keyframes typewriter2{
-    from{width: 0;}
-    to{width: 20em;}
-  }
 }
 
 
@@ -495,7 +354,7 @@ h1{
 }
 
 a:hover{
- background-color: #e7f038;
+ background-color: #e3e81d;
 }
 
 .column {

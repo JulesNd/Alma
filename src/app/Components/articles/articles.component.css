@@ -30,6 +30,9 @@
 }
 
 
+
+
+
 .product-container {
   background-color: #fff;
   height: 400px;
@@ -64,6 +67,7 @@
 .product-description {
   border-top: 1px solid #EFEFEF;
   padding: 10px 20px;
+  margin-bottom: 25%;
  background-color:  #FFFFFF;
 }
 
@@ -123,7 +127,7 @@
 }
 
 .product-description p {
-  color: #C4C4C4;
+
 }
 
 .product-description .price {
@@ -217,4 +221,9 @@ margin-left: 8%;
   width: 250px;
   margin-left: 8%;
   margin-top: 18%;
+}
+
+.shoedesc{
+  font-size: 1.35rem;
+  margin: 0;
 }

@@ -1,70 +1,68 @@
 <body >
 <div  style=" margin-left: 18%">
   <div class="connect" >
-    <p class="text" *ngIf="user">Ace vous souhaite la bienvenue !  <br> {{ user?.displayName }}  </p>
-    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
-    <h3 style=" font-size: 3vh"    *ngIf="!user">Vous devez vous connecter pour acceder à l'espace professionel</h3>
-    <button    routerLink="/Login" class="btn btn-default btn-lg" *ngIf="!user" >Se connecter</button>
+    <div *ngIf="!user">  <app-vousdevezvousconnecter></app-vousdevezvousconnecter>       </div>
+
   </div>
 </div>
 
-
-
-<div  *ngIf="user"  class="container" >
-
+<div *ngIf="user"  class="conatiner">
 
 
 
+  <div class="container-fluid"  >
+    <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1_U7WgoVxl98rSTr4ovkOmM0uPyGp9F1N">
 
-  <div class="card" >
-    <div     class="card__image-container" routerLink="">
-      <div class="cardbg"  id="Coupsdecoeurs"  style=""></div>
-    </div>
-    <div class="card__content">
-
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Coups de coeurs</h1>
-
-    </div>
-  </div>
-
-
-  <div class="card" >
-
-    <div class="card__image-container" routerLink="/Inspiration"     >
-      <div class="cardbg"  id="Inspirations" style=""></div>
-    </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89); color: #FFFFFF">Inspirations </h1>
-
-    </div>
+    <p class="text" id="welcome" *ngIf="(user)">
+      Connecté(e)
+      <strong> {{ user?.displayName }}</strong>
+      <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+      <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+    </p>
 
   </div>
 
 
-  <div class="card">
-    <div class="card__image-container" routerLink="/Projets">
-      <div class="cardbg"  id="Projets"  style=""></div>
-    </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Projets </h1>
+  <div class="jumbotron" *ngIf="(router.url === '/EspacePro' || router.url === '/Inspiration' )    ">
+      <p  id="Page"> Espace professionnel </p>
 
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card__image-container" routerLink="/Developpements-exclusifs">
-      <div class="cardbg"  id="Devexclu"  style=""></div>
-    </div>
-    <div class="card__content">
-      <h1 class="card__title" style="background-color: rgba(255, 69, 0, 0.89);color: #FFFFFF">Developpements exclusifs </h1>
-
-    </div>
   </div>
 
 
 
+  <div class="wrap">
+
+    <div class="box one">
+
+      <div class="poster p1">
+        <div class="title">Coups de coeur</div>
+      </div>
+    </div>
+
+    <div routerLink="/Inspiration"  class="box two">
+
+      <div class="poster p2">
+        <div class="title">Inspiration</div>
+      </div>
+    </div>
+
+    <div routerLink="/Projets" class="box three">
+
+      <div class="poster p3">
+        <div class="title">Projets</div>
+      </div>
+    </div>
+
+    <div routerLink="/Developpements-exclusifs" class="box five">
+
+      <div class="poster p4">
+        <div class="title">Developpement exclusifs</div>
+      </div>
+    </div>
 
 
 
+  </div>
 </div>
+
 </body>

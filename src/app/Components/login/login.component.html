@@ -1,48 +1,23 @@
 
+<div id="wrapper">
 
-  <section class="login-inner">
+  <div class="form-layout">
+    <div class="form-left">
+      <div id="info" class="info" style="color: #e3e81d"><span style="color: #e3e81d">Nouveau client ?</span> Demander un compte</div>
+      <div class="footer">
 
-
-    <div class="login-middle">
-
-
-      <div class="login-details">
-
-
-
-
-    <div class="row">
-      <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1_U7WgoVxl98rSTr4ovkOmM0uPyGp9F1N">
-      <div class="col-12">
-        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-
-          <div class="row" *ngIf="authError">
-            <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
-          </div>
-
-
-          <h3>Entrez votre adresse electronique et mot de passe pour acceder à votre Espace professionel.</h3>
-          <label>
-            <input  class="form-control" ngModel #email ="ngModel" name="email"  type="email" placeholder="Adresse email"/>
-          </label>
-          <label>
-            <input class="form-control"  ngModel #password="ngModel"  name="password"     type="password" placeholder="Mot de passe"/>
-          </label>
-
-
-            <button type="submit"  class="btn third">Valider</button>
-
-
-
-
-
-
-
-
-        </form>
       </div>
     </div>
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-right">
+      <div>
+        <input   type="email" ngModel #email="ngModel"  name="email" id="email" placeholder="Email" autocomplete="off" />
       </div>
-    </div>
-  </section>
-
+      <div>
+        <input type="password" ngModel #password="ngModel"  name="password" id="password" placeholder="Password" autocomplete="off" />
+      </div>
+      <div class="buttons">
+        <button id="valider" class=" buttons button btnFloat btnOrange"  type="submit">Valider</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,22 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
-
-// tslint:disable-next-line:import-spacing
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import { NgModule} from '@angular/core';
 import {environment} from '../environments/environment';
-import {NgZone} from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-  MatButton,
   MatButtonModule,
-  MatCheckboxModule,
   MatMenuModule,
   MatCardModule,
   MatToolbarModule,
   MatSidenavModule,
   MatListModule, MatIconModule, MatButtonToggleModule
 } from '@angular/material';
-
 import { SliderComponent } from './Components/slider/slider.component';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { AngularFireAuthModule} from '@angular/fire/auth';
@@ -36,16 +30,12 @@ import { CoupsdecoeursComponent } from './Components/page-espace-pro/coupsdecoeu
 import { InspirationsComponent } from './Components/page-lamarque/inspirations/inspirations.component';
 import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.component';
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
-import { ChaussuresDetailsComponent } from './Components/Filles/chaussures-details/chaussures-details.component';
 import { LoginComponent } from './Components/login/login.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {BonnydetailsComponent} from './Components/Garcons/chaussures-garcon-details/bonnydetails/bonnydetails.component';
-import {BrandidetailsComponent} from './Components/Garcons/chaussures-garcon-details/brandidetails/brandidetails.component';
-import { CoeurdetailsComponent } from './Components/Filles/chaussures-details/coeurdetails/coeurdetails.component';
-import { CosmosdetailsComponent } from './Components/Filles/chaussures-details/cosmosdetails/cosmosdetails.component';
-import { CookiedetailsComponent } from './Components/Filles/chaussures-details/cookiedetails/cookiedetails.component';
-import { EtoiledetailsComponent } from './Components/Filles/chaussures-details/etoiledetails/etoiledetails.component';
-import { EvertondetailsComponent } from './Components/Filles/chaussures-details/evertondetails/evertondetails.component';
+import { CoeurdetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/coeurdetails/coeurdetails.component';
+import { CosmosdetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/cosmosdetails/cosmosdetails.component';
+import { CookiedetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/cookiedetails/cookiedetails.component';
+import { EtoiledetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/etoiledetails/etoiledetails.component';
 import { PageFilleJuniorComponent } from './Components/Filles/page-fille-junior/page-fille-junior.component';
 import { PageFillePremierPasComponent } from './Components/Filles/page-fille-premierpas/page-fille-premier-pas.component';
 import { ArticlesFillePremierPasComponent } from './Components/Filles/articles-fille-premier-pas/articles-fille-premier-pas.component';
@@ -55,10 +45,9 @@ import { ArticlesGarconJuniorComponent } from './Components/Garcons/articles-gar
 import { PageGarcon4pattesComponent } from './Components/Garcons/page-garcon4pattes/page-garcon4pattes.component';
 import { PageGarconPremierPasComponent } from './Components/Garcons/page-garcon-premier-pas/page-garcon-premier-pas.component';
 import { PageGarconJuniorComponent } from './Components/Garcons/page-garcon-junior/page-garcon-junior.component';
-import { ChaussuresGarconDetailsComponent } from './Components/Garcons/chaussures-garcon-details/chaussures-garcon-details.component';
 import { PageLamarqueComponent } from './Components/page-lamarque/page-lamarque.component';
-import { MellowdetailsComponent } from './Components/Filles/chaussures-details/mellowdetails/mellowdetails.component';
-import { SantadetailsComponent } from './Components/Filles/chaussures-details/santadetails/santadetails.component';
+import { MellowdetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/mellowdetails/mellowdetails.component';
+import { SantadetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/santadetails/santadetails.component';
 import { EmailComponent } from './Components/email/email.component';
 import { SignupComponent } from './Components/signup/signup.component';
 import { MembersComponent } from './Components/members/members.component';
@@ -66,22 +55,40 @@ import {AuthService} from './Services/auth.service';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireModule } from '@angular/fire';
 import {AuthGuard} from './core/auth.guard';
+import {EclipsedetailsComponent} from './Components/Filles/chaussures-details/Details Premier Pas Filles/eclipsedetails/eclipsedetails.component';
 import { InspirationComponent } from './Components/page-espace-pro/inspiration/inspiration.component';
 import { PagealmaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
-// tslint:disable-next-line:max-line-length
 import { CommentaiderlaplaneteComponent } from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import { PagetannageComponent } from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
 import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
-import {Alert} from 'selenium-webdriver';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {from} from 'rxjs';
 import { PageNouscontacterComponent } from './Components/page-nouscontacter/page-nouscontacter.component';
 import {RouterModule, Routes} from '@angular/router';
 import { HistoireimageComponent } from './histoireimage/histoireimage.component';
 import { PagechromefreeComponent } from './Components/page-espace-pro/projets/pagechromefree/pagechromefree.component';
-import { FloraldetailsComponent } from './Components/Filles/chaussures-details/floraldetails/floraldetails.component';
+import { FloraldetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/floraldetails/floraldetails.component';
+import { CattydetailsComponent } from './Components/Filles/chaussures-details/Details 4Pattes Filles/cattydetails/cattydetails.component';
+import { VincidetailsComponent } from './Components/Filles/chaussures-details/Details 4Pattes Filles/vincidetails/vincidetails.component';
+import { CoraldetailsComponent } from './Components/Filles/chaussures-details/Details Junior Filles/coraldetails/coraldetails.component';
+import { AlsascadetailsComponent } from './Components/Filles/chaussures-details/Details Junior Filles/alsascadetails/alsascadetails.component';
+import { AntoniadetailsComponent } from './Components/Filles/chaussures-details/Details Junior Filles/antoniadetails/antoniadetails.component';
+import { CarlieradetailsComponent } from './Components/Filles/chaussures-details/Details Junior Filles/carlieradetails/carlieradetails.component';
+import { CarlitadetailsComponent } from './Components/Filles/chaussures-details/Details Junior Filles/carlitadetails/carlitadetails.component';
+import { CannesdetailsComponent } from './Components/Garcons/chaussures-garcon-details/details 4 pattes garçons/cannesdetails/cannesdetails.component';
+import { VictordetailsComponent } from './Components/Garcons/chaussures-garcon-details/details 4 pattes garçons/victordetails/victordetails.component';
+import { BonnydetailsComponent } from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/bonnydetails/bonnydetails.component';
+import { BrandidetailsComponent } from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/brandidetails/brandidetails.component';
+import { BrutusdetailsComponent } from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/brutusdetails/brutusdetails.component';
+import { CaninodetailsComponent } from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/caninodetails/caninodetails.component';
+import { CarmindetailsComponent } from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/carmindetails/carmindetails.component';
+import {EvertondetailsComponent} from './Components/Garcons/chaussures-garcon-details/details premier pas garçons/evertondetails/evertondetails.component';
+import { CamarodetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/camarodetails/camarodetails.component';
+import { CassiodetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/cassiodetails/cassiodetails.component';
+import { LeondetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/leondetails/leondetails.component';
+import { LuckydetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/luckydetails/luckydetails.component';
+import {VousdevezvousconnecterComponent} from './Components/page-espace-pro/vousdevezvousconnecter/vousdevezvousconnecter.component';
 
 const routes: Routes = [
   {path: 'Accueil', component: AccueilContenuComponent , },
@@ -108,10 +115,7 @@ const routes: Routes = [
       InspirationsComponent,
       ProjetsComponent,
       DeveloppementsexclusifsComponent,
-      ChaussuresDetailsComponent,
       LoginComponent,
-      BrandidetailsComponent,
-      BonnydetailsComponent,
       CoeurdetailsComponent,
       CosmosdetailsComponent,
       CookiedetailsComponent,
@@ -126,9 +130,9 @@ const routes: Routes = [
       PageGarcon4pattesComponent,
       PageGarconPremierPasComponent,
       PageGarconJuniorComponent,
-      ChaussuresGarconDetailsComponent,
       PageLamarqueComponent,
       MellowdetailsComponent,
+      EclipsedetailsComponent,
       SantadetailsComponent,
       EmailComponent,
       SignupComponent,
@@ -142,7 +146,25 @@ const routes: Routes = [
       HistoireimageComponent,
       PagechromefreeComponent,
       FloraldetailsComponent,
-
+      CattydetailsComponent,
+      VincidetailsComponent,
+      CoraldetailsComponent,
+      AlsascadetailsComponent,
+      AntoniadetailsComponent,
+      CarlieradetailsComponent,
+      CarlitadetailsComponent,
+      CannesdetailsComponent,
+      VictordetailsComponent,
+      BonnydetailsComponent,
+      BrandidetailsComponent,
+      BrutusdetailsComponent,
+      CaninodetailsComponent,
+      CarmindetailsComponent,
+      CamarodetailsComponent,
+      CassiodetailsComponent,
+      LeondetailsComponent,
+      LuckydetailsComponent,
+      VousdevezvousconnecterComponent,
 
     ],
   imports: [

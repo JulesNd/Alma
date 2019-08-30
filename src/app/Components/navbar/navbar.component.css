@@ -1,6 +1,6 @@
 
 
-li{
+li a{
   font-family:concert, serif
 }
 
@@ -17,16 +17,33 @@ li{
 }
 
 .header-fixed {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: #FFFFFF;
+  outline: none;
+  text-decoration: none;
+  background-color: #ffffff;
+  display: flex;
 
+
+
+}
+.hline { width:100%; height:1px; background: #e4e4e4
 }
 
 
 
+a:link{
+  text-decoration: none!important;
+  border: none!important;
+}
+
+ a {
+  color: #FFFFFF;
+  text-decoration: none!important;
+   border: none!important;
+}
 
 .navbar {
   display: flex;
@@ -48,12 +65,11 @@ li{
 
   text-decoration: none;
 }
-.navbar .logo a:hover {
-  color: #777777;
-}
+
 
 .navbar .li:hover{
-  background-color: #e7f038;
+  background-color: #e8eb38;
+  text-decoration: none;
 }
 
 .navbar nav {
@@ -88,7 +104,7 @@ li{
 .navbar label i:before,
 .navbar label i:after {
   display: block;
-  background: #eee;
+  background: #e8eb38;
 }
 .navbar label i:before {
   top: 5px;
@@ -152,7 +168,6 @@ li{
     display: block;
     text-align: center;
     padding: 5px 0;
-    text-align: center;
     font-size: 20px;
     min-height: 20px;
     font-weight: bold;
@@ -160,7 +175,7 @@ li{
     transition: all 0.3s ease-out;
   }
   .navbar nav li:hover {
-    background: #e7f038;
+    background: #e8eb38;
   }
   .navbar nav li:hover a {
     color: #fff;
@@ -219,7 +234,7 @@ nav.fill ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #e7f038;
+  background: #e8eb38;
   height: 3px;
 }
 nav.stroke ul li a:hover:after {
@@ -237,7 +252,7 @@ nav.fill ul li a:after {
   opacity: 0;
 }
 nav.fill ul li a:hover {
-  color: #e7f038;
+  color: #e8eb38;
   z-index: 1;
 }
 nav.fill ul li a:hover:after {
@@ -253,5 +268,39 @@ nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: #e7f038;
+  color: #e8eb38;
 }
+@media only screen and (max-width: 400px) {
+  .header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .hline { width:100%; height:0; background: #e4e4e4
+  }
+
+  .navbar label i {
+    height: 2px;
+    position: relative;
+
+    width: 18px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: none;
+    height: 3px;
+  }
+
+}
+

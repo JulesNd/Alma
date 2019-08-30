@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+
+#Logoalmaplanete{
+  width: 20%;
+  height: auto;
+}
+
 body {
   font-family: Montserrat, serif;
 
@@ -149,11 +155,7 @@ font{
 
 
 
-#Logoalmaplanete{
-  background-image: url("LOGOALMAPLANETE.jpg");
-  height: 150px;
-  width: 150px;
-}
+
 
 p{
   color: #FFFFFF;
@@ -268,34 +270,6 @@ p{
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
-#pic-1 {
-  background-image: url("NAVY.jpg");
-
-}
-
-#pic-2 {
-  background-image: url("RED.jpg");
-
-}
-
-#pic-3{
-  background-image: url("MUSTARD.jpg");
-}
-#pic-4{
-  background-image: url("ROSE.jpg");
-}
-
-#pic-5{
-  background-image: url("GREY.jpg");
-}
-
-#pic-1a{
-  background-image: url("argumentsboite.jpg");
-}
-
-#pic-2a{
-  background-image: url("boiteok.jpg");
-}
 
 
 
