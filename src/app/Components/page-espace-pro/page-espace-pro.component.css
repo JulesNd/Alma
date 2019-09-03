@@ -26,8 +26,11 @@ p{
 
 #Page{
   font-family: concert, serif;
-  font-size: 3.5vh;
+  font-size: 3.4vh;
   margin-left: 42%;
+  color: #fff;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
 }
 
 #welcome{
@@ -49,6 +52,7 @@ strong{
 .btn-default{
   float: bottom;
   color: white;
+  font-size: 2vh;
 }
 .btn-default:hover{
   background-color: #ffffff;
@@ -83,8 +87,8 @@ strong{
 
 .box {
   margin: 10px;
-  width: 310px;
-  height: 540px;
+  width: 290px;
+  height: 520px;
   text-align: center;
   border-radius: 3px;
   -webkit-transition: 200ms ease-in-out;
@@ -209,4 +213,21 @@ strong{
 
     margin-left: 25%;
   }
+}
+
+@media screen and (max-width:1230px){
+
+  .box {
+    margin: 5px;
+    width: 290px;
+    height: 520px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
 }

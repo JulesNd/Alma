@@ -28,6 +28,8 @@ p{
   font-family: concert, serif;
   font-size: 3.5vh;
   margin-left: 42%;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
 }
 
 #welcome{
@@ -83,8 +85,8 @@ strong{
 
 .box {
   margin: 10px;
-  width: 310px;
-  height: 540px;
+  width: 290px;
+  height: 520px;
   text-align: center;
   border-radius: 3px;
   -webkit-transition: 200ms ease-in-out;
@@ -164,25 +166,25 @@ strong{
 
 /* POSTER*/
 .p1 {
-  background: lightskyblue;  /* fallback for old browsers */
+  background: rgba(135, 206, 250, 0.9);  /* fallback for old browsers */
 
   box-shadow: 0 0 20px skyblue;
 }
 
 .p2 {
-  background: cornflowerblue;  /* fallback for old browsers */
+  background: rgba(100, 149, 237, 0.89);  /* fallback for old browsers */
 
   box-shadow: 0 0 20px skyblue;
 }
 
 .p3 {
-  background: coral;  /* fallback for old browsers */
+  background: rgba(255, 127, 80, 0.89);  /* fallback for old browsers */
 
   box-shadow: 0 0 20px skyblue;
 }
 
 .p4 {
-  background: #e3e81d;  /* fallback for old browsers */
+  background: rgba(227, 232, 29, 0.9);  /* fallback for old browsers */
 
   box-shadow: 0 0 20px skyblue;
 }

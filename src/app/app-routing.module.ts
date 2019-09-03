@@ -27,6 +27,7 @@ import {PageGarconPremierPasComponent} from './Components/Garcons/page-garcon-pr
 import {SantadetailsComponent} from './Components/Filles/chaussures-details/Details Premier Pas Filles/santadetails/santadetails.component';
 import {LoginComponent} from './Components/login/login.component';
 import {AuthGuard} from './core/auth.guard';
+import {MentionlegalesComponent} from './mentionlegales/mentionlegales.component';
 import {PageNouscontacterComponent} from './Components/page-nouscontacter/page-nouscontacter.component';
 import {SignupComponent} from './Components/signup/signup.component';
 import {PageLamarqueComponent} from './Components/page-lamarque/page-lamarque.component';
@@ -56,6 +57,7 @@ import {CamarodetailsComponent} from './Components/Garcons/chaussures-garcon-det
 import {CassiodetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/cassiodetails/cassiodetails.component';
 import {LeondetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/leondetails/leondetails.component';
 import {LuckydetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/luckydetails/luckydetails.component';
+import {DemandedecompteComponent} from './demandedecompte/demandedecompte.component';
 
 const routes: Routes = [
    {path: 'Accueil', component: AccueilContenuComponent , },
@@ -76,9 +78,11 @@ const routes: Routes = [
   {path: 'Floral', component: FloraldetailsComponent },
   {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
+  {path: 'MentionsLegales', component: MentionlegalesComponent},
   {path: 'Developpements-exclusifs', component: DeveloppementsexclusifsComponent},
   {path: 'Mellow', component: MellowdetailsComponent},
   {path: 'Eclipse', component: EclipsedetailsComponent},
+  {path: 'Demandedecompte', component: DemandedecompteComponent},
   {path: 'Santa', component: SantadetailsComponent},
   {path: 'Cookie', component: CookiedetailsComponent},
   {path: 'Cosmos', component: CosmosdetailsComponent},

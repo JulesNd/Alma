@@ -12,6 +12,10 @@ export class LoginComponent implements OnInit {
   constructor(private auth: AuthService) { }
   authError: any;
   ngOnInit() {
+
+
+
+
     this.auth.eventAuthError$.subscribe(data => {
       this.authError = data;
     });
@@ -20,5 +24,6 @@ export class LoginComponent implements OnInit {
     // tslint:disable-next-line:no-unused-expression
     this.auth.login(frm.value.email, frm.value.password);
   }
+
 
 }

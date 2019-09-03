@@ -1,0 +1,23 @@
+.jumbotron{
+  background-color: #e8eb38;
+}
+h3{
+  margin-left: 40%;
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+body{
+  height: 100%;
+}
+
+.mentions{
+  font-size: 3vh;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.title{
+  font-size: 3.5vh;
+
+  padding: 2%;
+}

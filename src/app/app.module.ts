@@ -89,6 +89,9 @@ import { CassiodetailsComponent } from './Components/Garcons/chaussures-garcon-d
 import { LeondetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/leondetails/leondetails.component';
 import { LuckydetailsComponent } from './Components/Garcons/chaussures-garcon-details/details junior garçons/luckydetails/luckydetails.component';
 import {VousdevezvousconnecterComponent} from './Components/page-espace-pro/vousdevezvousconnecter/vousdevezvousconnecter.component';
+import { DemandedecompteComponent } from './demandedecompte/demandedecompte.component';
+import { MentionlegalesComponent } from './mentionlegales/mentionlegales.component';
+
 
 const routes: Routes = [
   {path: 'Accueil', component: AccueilContenuComponent , },
@@ -165,6 +168,9 @@ const routes: Routes = [
       LeondetailsComponent,
       LuckydetailsComponent,
       VousdevezvousconnecterComponent,
+      DemandedecompteComponent,
+      MentionlegalesComponent,
+
 
     ],
   imports: [

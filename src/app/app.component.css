@@ -7,6 +7,9 @@ html,body{
   font-family: concert, serif;
   scroll-behavior: smooth;
 }
+*{
+  font-family: concert, serif;
+}
 header{
   margin-bottom:8%;
 }
@@ -43,6 +46,10 @@ img{
   /**background-image: url("logo-alma-jaune-2.jpg");**/
 }
 
+.foot{
+  color: #ffffff;
+  font-size: 3vh;
+}
 
 
 #1 {
@@ -123,6 +130,9 @@ a {
 .footer-big .footer-widget {
   margin-bottom:40px
 }
+
+
+
 .footer--light {
   background:#e7e8ed
 }
@@ -217,6 +227,13 @@ a:hover {
 }
 
 footer{
+  margin-bottom: 0;
   bottom: 0;
 
+}
+
+@media only screen and (min-width: 968px){
+  .container{
+    margin-left: 22%;
+  }
 }

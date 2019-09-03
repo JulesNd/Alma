@@ -6,6 +6,7 @@
 background-color: #e7f038;
   color: #FFFFFF;
 
+
 }
 
 
@@ -20,9 +21,16 @@ background-color: #e7f038;
 #Explorer{
   margin-left: 5%;
   font-size: 3.5vh;
+  color: #fff;
+  font-weight: 500;
+
 }
 
+#suiveznous{
+  font-weight: 400;
 
+
+}
 
 #notrehistoire{
   width: 110%;
@@ -54,6 +62,7 @@ background-color: #e7f038;
 }
 
 .button {
+  float: right;
 
   color: #e7f038;
   -webkit-box-shadow: 0px 0px 5px 2px #e8eb38;
@@ -221,40 +230,40 @@ background-color: #e7f038;
 /**    **/
 
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 901px){
 
   #ig1{
 
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     margin-left: 5%;
 
   }
   #ig2{
 
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     margin-left: 5%;
     margin-top: 30%;
   }
   #ig3{
 
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     margin-left: 2%;
 
   }
   #ig4{
 
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     margin-left: 1%;
     margin-top: 30%;
   }
   #ig5{
 
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
     margin-left: 1%;
   }
 
@@ -266,6 +275,7 @@ background-color: #e7f038;
   #suiveznous{
     font-size: 3.5vh;
     margin-left: 37%;
+
   }
   #jumbhist{
     width: 100%;
@@ -288,54 +298,7 @@ background-color: #e7f038;
 
 
 }
-@media only screen and (min-width: 961px){
 
-
-  #text{
-    margin-left: 12%;
-    font-size: 2.3em;
-  }
-  #ig1{
-    background-image: url("IG1.JPG");
-    width: 270px;
-    height: 270px;
-    margin-left: 5%;
-
-  }
-  #ig2{
-    background-image: url("IG2.jpg");
-    width: 270px;
-    height: 270px;
-    margin-left: 5%;
-    margin-top: 30%;
-  }
-  #ig3{
-    background-image: url("IG3.jpg");
-    width: 270px;
-    height: 270px;
-    margin-left: 2%;
-
-  }
-  #ig4{
-    background-image: url("IG4.jpg");
-    width: 270px;
-    height: 270px;
-    margin-left: 1%;
-    margin-top: 30%;
-  }
-  #ig5{
-    background-image: url("IG5.jpg");
-    width: 270px;
-    height: 270px;
-    margin-left: 1%;
-  }
-  #suiveznous{
-    font-size: 3rem;
-    margin-left: 35%;
-  }
-
-
-}
 
 
 

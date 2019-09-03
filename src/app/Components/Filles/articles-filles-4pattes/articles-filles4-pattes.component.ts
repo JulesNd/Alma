@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./articles-filles4-pattes.component.css']
 })
 export class ArticlesFilles4PattesComponent implements OnInit {
+  image: any;
 
 
   ngOnInit() {
