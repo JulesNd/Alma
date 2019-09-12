@@ -30,19 +30,19 @@ export class AuthService {
     // @ts-ignore
     this.user = this.afAuth.authState.pipe(
       switchMap(user => {if (user) {
-       return this.db.doc<User>(`users/${user.uid}`).valueChanges();
+        return this.db.doc<User>(`users/${user.uid}`).valueChanges();
       }  else {
-      return of (null); }
+        return of (null); }
       })
     );
   }
-              getUserState() {
-      return this.afAuth.authState;
+  getUserState() {
+    return this.afAuth.authState;
   }
 
   private updateUserData(user) {
     const userRef = this.db.collection('users').doc(user.uid);
-    const data: User = {
+    const data: { uid: any; displayName: any; email: any } = {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
@@ -62,14 +62,14 @@ export class AuthService {
           this.router.navigate(['/EspacePro']);
         }
       });
-}
-              createUser(user) {
+  }
+  createUser(user) {
     this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
       .then(userCredential => {
         this.newUser = user;
         console.log(userCredential);
         userCredential.user.updateProfile({
-          displayName: user.firstName + '' + user.lastName
+          displayName: user.firstName + '' + user.lastName,
         });
 
         this.insertUserData(userCredential)
@@ -82,21 +82,21 @@ export class AuthService {
       }); }
 
 
-              insertUserData(userCredential: firebase.auth.UserCredential) {
-                this._userCredential = userCredential;
-                return this.db.doc('Users/${userCredential.user.uid}').set({
-                email: this.newUser.email,
-                firstname: this.newUser.firstName,
-                lastname: this.newUser.lastName,
-                role: 'network user'
-              });
-              }
+  insertUserData(userCredential: firebase.auth.UserCredential) {
+    this._userCredential = userCredential;
+    return this.db.doc('Users/${userCredential.user.uid}').set({
+      email: this.newUser.email,
+      firstname: this.newUser.firstName,
+      lastname: this.newUser.lastName,
+      role: 'network user'
+    });
+  }
 
-              logout() {
-                localStorage.removeItem('user');
-                this.router.navigate(['/Login']);
-                return this.afAuth.auth.signOut();
-              }
+  logout() {
+    localStorage.removeItem('user');
+    this.router.navigate(['/Login']);
+    return this.afAuth.auth.signOut();
+  }
 
 
 

@@ -1,7 +1,5 @@
-* {
-  box-sizing: border-box;
-  font-family: concert, serif;
-}
+
+
 
 
 #Logoalmaplanete{
@@ -10,7 +8,7 @@
 }
 
 body {
-  font-family: Montserrat, serif;
+  font-family: concert, serif;
 
 }
 #almaplanete{
@@ -53,8 +51,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
-
 
 
 
@@ -196,70 +192,7 @@ p{
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
-.details {
 
-}
-
-.product-title, .price, .sizes, .colors {
-  text-transform: UPPERCASE;
-  font-weight: bold; }
-
-.checked, .price span {
-  color: #ff9f1a; }
-
-.product-title, .rating, .product-description, .price, .vote, .sizes {
-  margin-bottom: 15px; }
-
-.product-title {
-  margin-top: 0; }
-
-.size {
-  margin-right: 10px; }
-.size:first-of-type {
-  margin-left: 40px; }
-
-.color {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  height: 2em;
-  width: 2em;
-  border-radius: 2px; }
-.color:first-of-type {
-  margin-left: 20px; }
-
-.add-to-cart, .like {
-  background: #e7f038;
-  padding: 1.2em 1.5em;
-  border: none;
-  text-transform: UPPERCASE;
-  font-weight: bold;
-  color: #fff;
-  -webkit-transition: background .3s ease;
-  transition: background .3s ease; }
-.add-to-cart:hover, .like:hover {
-  background: #e7f038;
-  color: #fff; }
-
-.not-available {
-  text-align: center;
-  line-height: 2em; }
-.not-available:before {
-  font-family: fontawesome;
-  content: "\f00d";
-  color: #fff; }
-
-.orange {
-  background: #ff9f1a; }
-
-.green {
-  background: #85ad00; }
-
-.blue {
-  background: #0076ad; }
-
-.tooltip-inner {
-  padding: 1.3em; }
 
 @-webkit-keyframes opacity {
   0% {
@@ -414,4 +347,37 @@ margin-left: 5%;
   -moz-animation-delay: 1s;
   -o-animation-duration:1s;
   animation-delay: 1s;
+}
+.glyphicon{
+  font-size: 2vh;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .preview-pic{
+    width: 150%;
+    height: auto;
+  }
+  #chaussure{
+    margin-left: -5%;
+  }
+  #descriptions{
+    margin-left: 10%;
+  }
+
+  .preview-thumbnail.nav-tabs {
+    border: none;
+    margin-top: 2px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+  .preview-thumbnail.nav-tabs li img {
+    max-width: 100%;
+    display: block; }
+  .preview-thumbnail.nav-tabs li a {
+    padding: 0;
+    margin: 0; }
+  .preview-thumbnail.nav-tabs li:last-of-type {
+    margin-right: 0; }
+
 }

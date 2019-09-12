@@ -27,26 +27,8 @@
   margin-bottom: 20px;
 }
 
-.tag-sale {
-  background-color: #e8eb38;
-  width: 86px;
-  height: 98px;
-  position: absolute;
-  color: #fff;
-  right: -41px;
-  z-index: 9;
-  top: -44px;
-  transform: rotate(137deg);
-}
 
-.tag-sale::before {
-  content: "SALE";
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  transform-origin: top center;
-  transform: rotate(222.5deg) translateX(-28px) translateY(-37px);
-}
+
 
 .product-description {
   background-color: #F7F7F7;
@@ -128,11 +110,7 @@
   border-top: 1px solid #D2D2D2;
 }
 
-.product-option h3 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
+
 
 .product-option .product-color ul {
   list-style-type: none;
@@ -145,24 +123,6 @@
   height: 15px;
 }
 
-.product-color li.red {
-  background-color: #F75375;
-}
-.product-color li.blue {
-  background-color: #53A0F7;
-}
-.product-color li.green {
-  background-color: #59CFAF;
-}
-.product-color li.gray {
-  background-color: #C7C7C7;
-}
-.product-color li.black {
-  background-color: #4E5156;
-}
-.product-color li.dark-blue {
-  background-color: #2060AF;
-}
 
 .product-container:hover {
   box-shadow: 0px 10px 25px -2px rgba(0,0,0,0.36);
@@ -192,13 +152,13 @@
 
 #Cannes1, #Cannes2 {
   height: 200px;
-  width: 200px;
+  width: 240px;
   margin-left: 15%;
   margin-top: 15%;
 }
 #Victor1 ,#Victor2{
   height: 170px;
-  width: 220px;
+  width: 260px;
   margin-left: 15%;
   margin-top: 25%;
 }

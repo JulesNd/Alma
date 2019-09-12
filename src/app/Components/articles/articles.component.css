@@ -43,28 +43,10 @@
   margin-left: -35px;
 }
 
-.tag-sale {
-  background-color: #e7f038;
-  width: 86px;
-  height: 98px;
-  position: absolute;
-  color: #fff;
-  right: -41px;
-  z-index: 9;
-  top: -44px;
-  transform: rotate(137deg);
-}
 
-.tag-sale::before {
-  content: "SALE";
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  transform-origin: top center;
-  transform: rotate(222.5deg) translateX(-28px) translateY(-37px);
-}
 
 .product-description {
+
   border-top: 1px solid #EFEFEF;
   padding: 10px 20px;
   margin-bottom: 25%;
@@ -187,12 +169,15 @@
   transition: 1s;
   /*padding: 10px;*/
 }
+
+
 .product-container:hover .product-option {
   display: block;
 }
 .product-container:hover .hover-link {
   opacity: 0.5;
 }
+
 .product-container:hover .product-link {
   opacity: 1;
 }
@@ -206,7 +191,7 @@
 
 #Catty, #Cookie{
   height: 200px;
-  width: 250px;
+  width: 235px;
 margin-left: 8%;
   margin-top: 15%;
 }
@@ -226,4 +211,47 @@ margin-left: 8%;
 .shoedesc{
   font-size: 1.35rem;
   margin: 0;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #Catty, #Cookie{
+    height: 170px;
+    width: 205px;
+    margin-left: 8%;
+    margin-top: 15%;
+  }
+  #Lucky{
+    height: 185px;
+    width: 235px;
+    margin-left: 6%;
+    margin-top: 17%;
+  }
+  #Canino {
+    height: 170px;
+    width: 220px;
+    margin-left: 8%;
+    margin-top: 18%;
+  }
+  .shoedesc{
+    display: none;
+  }
+  .desc{
+    font-size: 2.3vh;
+  }
+  .product-description {
+
+    border-top: 1px solid #EFEFEF;
+    padding: 2px 15px;
+    margin-bottom: 25%;
+    background-color:  #FFFFFF;
+  }
+
+}
+
+@media only screen and (min-width: 901px){
+
+  .desc{
+    display: none;
+  }
+
 }

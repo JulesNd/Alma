@@ -5,7 +5,6 @@ import {PageFille4pattesComponent} from './Components/Filles/Page-Fille-4pattes/
 import {NotreHistoireComponent} from './Components/page-lamarque/notre-histoire/notre-histoire.component';
 import {PageEspaceProComponent} from './Components/page-espace-pro/page-espace-pro.component';
 import { CoupsdecoeursComponent } from './Components/page-espace-pro/coupsdecoeurs/coupsdecoeurs.component';
-import { InspirationsComponent } from './Components/page-lamarque/inspirations/inspirations.component';
 import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.component';
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
 import {PageFilleComponent} from './Components/Filles/page-fille/page-fille.component';
@@ -76,7 +75,6 @@ const routes: Routes = [
   {path: 'NousContacter', component: PageNouscontacterComponent},
   {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
   {path: 'Floral', component: FloraldetailsComponent },
-  {path: 'Inspirations', component: InspirationsComponent},
   {path: 'Projets', component: ProjetsComponent},
   {path: 'MentionsLegales', component: MentionlegalesComponent},
   {path: 'Developpements-exclusifs', component: DeveloppementsexclusifsComponent},
@@ -115,7 +113,7 @@ const routes: Routes = [
   {path: 'Tannage', component: PagetannageComponent},
   {path: 'Noustrouver', component: PageNoustrouverComponent},
   {path: 'Chromefree', component: PagechromefreeComponent},
-  {path: 'Notre-savoir-faire', redirectTo: 'image/upload' , pathMatch: 'full'},
+  // path for image upload//
   {
     path: '', redirectTo: '/Accueil' , pathMatch: 'full'
   },

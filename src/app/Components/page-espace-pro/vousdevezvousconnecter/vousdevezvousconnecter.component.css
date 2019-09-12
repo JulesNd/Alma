@@ -1,8 +1,6 @@
 .btn-default{
   float: bottom;
   color: white;
-  margin-left: 40%;
-  font-size: 3vh;
 }
 .btn-default:hover{
   background-color: #ffffff;
@@ -10,8 +8,17 @@
   border: none!important;
   outline: none!important;
   color: #002147; ;
-
 }
+
+.glyphicon{
+  font-size: 4vh;
+}
+
+#jemeconnecte{
+  margin-left: 40%;
+  font-size: 3vh;
+}
+
 #Page{
   font-family: concert, serif;
   font-size: 3.5vh;
@@ -273,6 +280,10 @@ img {
   }
   .btn{
     font-size: 2vh;
+    margin-left: 20%;
+  }
+
+  #jemeconnecte{
     margin-left: 20%;
   }
 

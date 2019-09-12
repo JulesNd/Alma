@@ -10,6 +10,7 @@ body{
 
 }
 
+
 .container-fluid{
   background-color: #002147;
   width: 100%;
@@ -33,14 +34,14 @@ p{
   text-shadow: 0px 0px 5px #ffffff;
 }
 
-#welcome{
+.welcome{
 
   float: right;
   font-family: concert, serif;
   font-size: 2.5vh;
 }
 
-#logo{
+.logo{
   width: 10%;
   height: auto;
   float: left;
@@ -191,20 +192,8 @@ strong{
 }
 
 
-
-
-
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-  #logo{
+  .logo{
     width: 40%;
     height: auto;
   }

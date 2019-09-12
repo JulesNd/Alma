@@ -6,14 +6,36 @@
   </div>
 </div>
 
-<div *ngIf="user"  class="conatiner">
 
 
+
+
+<div *ngIf="user  "  class="conatiner">
+
+
+  <!-- VUE DE L'ADMIN  !-->
+  <div  style="position: relative ; height: 100%" *ngIf="user.email ==='almafolie9@gmail.com'"  >
+    <div class="container-fluid"  >
+      <img  class="logo" alt="Ace compagny trading , ace , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+      <p class="text welcome"  >
+        Admin Connecté(e)
+        <strong> {{ user?.displayName }}</strong>
+        <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+        <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+      </p>
+    </div>
+    <app-adminview style="padding: 5%"></app-adminview>
+  </div>
+  <!--  -------------    !-->
+
+
+
+<div id="userview" *ngIf="user.email !=='almafolie9@gmail.com'" >
 
   <div class="container-fluid"  >
-    <img  id="logo"  src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+    <img  class="logo" alt="Ace compagny trading , ace , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
 
-    <p class="text" id="welcome" *ngIf="(user)">
+    <p class="text welcome "  >
       Connecté(e)
       <strong> {{ user?.displayName }}</strong>
       <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
@@ -63,6 +85,9 @@
 
 
   </div>
+</div>
+
+
 </div>
 
 </body>

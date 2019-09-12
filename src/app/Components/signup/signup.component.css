@@ -14,21 +14,17 @@
   height: 808px;
 }
 
-#logo {
-height: 200px;
-  width: 200px;
-  margin-left: 35%;
-}
+
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited  {
-  background-color: #e7f038;
-  border-color: #e7f038;
+  background-color: rgba(255, 69, 0, 0.89);
+  border-color: rgba(255, 69, 0, 0.89);
 }
 .btn-primary{
-  border-color: #e7f038;
+  border-color: rgba(255, 69, 0, 0.89);
 }
 .btn-primary:hover {
-  background-color: #e7f038;
+  background-color: rgba(255, 69, 0, 0.89);
 }
 
 #mybutton {
@@ -36,4 +32,12 @@ height: 200px;
   margin-top: 2%;
   height: 70px;
   width: 110px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  #mybutton {
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 50%;
+    height: auto;
+  }
 }

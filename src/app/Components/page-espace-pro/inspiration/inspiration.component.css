@@ -1,6 +1,11 @@
 body{
   font-family: concert, serif;
 }
+.glyphicon{
+
+  font-size: 2vh;
+}
+
 
 .jumbotron{
   background-color:  rgba(255, 69, 0, 0.89);
@@ -132,20 +137,20 @@ a{
   font-weight: 200;
 }
 .one {
-  background: url('https://drive.google.com/uc?export=view&id=1HTpqNFQnt2cH0ciA6zDzRikZFcBwjzWF');
+  background: url('https://drive.google.com/uc?export=view&id=1VfZIF6QrHPJzh4D0FpL7NLeeUCSreHTn');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .two {
-  background: url('https://drive.google.com/uc?export=view&id=1i1fGfX7PlvXiWsIDQwY4bVJmvlfmrpKN');
+  background: url('https://drive.google.com/uc?export=view&id=1GiYfGWcBgkVR7gVpho5XPiScvd8s8qUP');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .three {
-  background: url('https://drive.google.com/uc?export=view&id=1nEDNXD-I34CG0OGWlru4a0gXVzGX5JkC');
+  background: url('https://drive.google.com/uc?export=view&id=1iqfsbcDNWdKYlR8iSy3PQP_F2b12Q_tI');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -174,5 +179,5 @@ background:  linear-gradient(90deg, rgba(131, 58, 180, 0.89) 0%, rgba(253, 29, 2
   color: white;
   margin-left: 30%;
   font-weight: 100;
-  text-shadow: 0px 0px 5px #ffffff;
+
 }

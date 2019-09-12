@@ -1,23 +1,20 @@
 
-html{
-  scroll-behavior: smooth;
-}
-
 header {
   position: relative;
-  height: 75vh;
-  min-height: 25rem;
+  height: auto;
+  min-height: 40rem;
   width: 100%;
   overflow: hidden;
+  margin-top: 5%;
 }
+
 
 header video {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
+
+  width: 90%;
   height: auto;
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -31,16 +28,7 @@ header .container {
   z-index: 2;
 }
 
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 
-  opacity: 0.5;
-  z-index: 1;
-}
 
 @media (pointer: coarse) and (hover: none) {
   header {
@@ -51,26 +39,21 @@ header .overlay {
   }
 }
 
-
-
-@media screen and (min-width: 320px){
-
-}
 .titre{
   font-size: 4rem;
   color: rgba(255, 69, 0, 0.89);
 }
 
 .article{
-  font-size: 2rem;
+  font-size: 2.5vh;
   margin-top: 5%;
 
 }
 
 
-
-
-
+#gar{
+  margin-top: 2%;
+}
 
 #retour{
   margin-top: 1%;
@@ -78,32 +61,17 @@ header .overlay {
 }
 
 
-btn-default
-
-{
-
+btn-default {
   background-color: rgba(255, 69, 0, 0.89);
-
   color:#FFF;
-
   border-color: rgba(255, 69, 0, 0.89);
-
   margin-top: 25%;
-
-
-
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-
-
-
   background-color: rgba(255, 69, 0, 0.89);
-
   color:#FFF;
-
   border-color: rgba(255, 69, 0, 0.89);
-
 }
 font{
   font-size: 2rem;
@@ -120,85 +88,102 @@ background-color: #cccccc;
 padding: 2%;
   background-color: #cccccc;
   color: #FFFFFF;
-
 }
-
-
 
 #chrome{
 width: 350px;
   height: 350px;
-  animation-delay: 7s;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 #vegetal{
   width: 350px;
   height: 350px;
-  animation-delay: 7s;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
-
-
-
 #cardcommentçamarche{
-  background-color: #e9ecef;
   padding: 5%;
-  animation-delay: 2s;
+  border: none;
+  outline: none;
+  background-color: #e9ecef;
+}
+#PACK{
+  width: 50%;
+  height: auto;
+  float: left;
+  background-repeat: no-repeat;
+}
+#PACK1{
+  width: 15%;
+  height: auto;
 
+  background-repeat: no-repeat;
 }
 
 #cardAvantages{
   padding: 5%;
-  animation-delay: 4s;
+  background-color: #e9ecef;
+
 }
-
-
-
+#compar{
+  width: 40%;
+  height: auto;
+  float: left;
+  background-repeat: no-repeat;
+margin-top: 15%;
+  animation-delay: 5ms;
+}
 #imagetannage{
   width: 40%;
   height: auto;
   float: left;
   background-repeat: no-repeat;
-
-  animation-delay: 2s;
+  animation-delay: 5ms;
 }
-
 #imagecomparaison{
   width: 40%;
   height: auto;
   float: left;
   background-repeat: no-repeat;
-
-  animation-delay: 2s;
+  animation-delay: 5ms;
 }
 
 #cardAvantages{
   background-color: #e9ecef;
   padding: 5%;
-  animation-delay: 2s;
-
 }
-
 #cardcomparaison{
-  background-color: #e9ecef;
-  padding: 5%;
-  animation-delay: 2s;
-  width: 50%;
-  float: right;
-}
-
-#Avantage{
-
-  width: 40%;
+  padding: 1%;
+background-color: #e9ecef;
   height: auto;
-  float: right;
-  background-repeat: no-repeat;
-  margin-bottom: 50%;
-  animation-delay: 4s;
+}
+#cardpack{
+  background-color: #e9ecef;
+  padding: 1%;
+  width: 100%;
+  height: auto;
 
+
+}
+#cardgaranties{
+  background-color: #e9ecef;
+  padding: 1%;
+  width: 100%;
+  height: auto;
+}
+.writtings{
+  margin-left: 25%;
+}
+.writtingstitle{
+  margin-left: 15%;
+}
+#Avantage{
+  width: 40%;
+  height: 5%;
+  float: right;
+  animation-delay: 4s;
 }
 #Page{
   font-family: concert, serif;
@@ -208,10 +193,13 @@ width: 350px;
   font-weight: 100;
   text-shadow: 0px 0px 5px #ffffff;
   background-color: rgba(255, 255, 255, 0.35);
-  margin-top: 20%;
+  margin-top: 15%;
   height: auto;
   text-align: center;
   width: 45%;
+}
+.glyphicon{
+  font-size: 2vh;
 }
 
 
@@ -355,7 +343,6 @@ width: 350px;
   animation-duration: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
-  -o-animation-duration:1s;
   animation-delay: 1s;
 }
 
@@ -374,6 +361,7 @@ width: 350px;
   header{
     width: 100%;
     height: auto;
+    background-size: 100% auto;
     background-image: url("https://drive.google.com/uc?export=view&id=1u9c5ybKF1wAKHMuw7eIC9n2MHSX-ZuyF");
     background-repeat: no-repeat;
   }
@@ -384,7 +372,6 @@ width: 350px;
     float: left;
     background-repeat: no-repeat;
 
-    animation-delay: 2s;
   }
 
 
@@ -395,12 +382,11 @@ width: 350px;
     float: right;
     background-repeat: no-repeat;
     margin-bottom: 50%;
-    animation-delay: 4s;
 
   }
   #Page{
     font-family: concert, serif;
-    font-size: 3vh;
+    font-size: 4vh;
     margin-left: 25%;
     color: white;
     font-weight: 100;
@@ -409,10 +395,15 @@ width: 350px;
     margin-top: 35%;
     height: auto;
     text-align: center;
-    width: 45%;
+    width: 60%;
   }
 
-
+  #PACK{
+    width: 80%;
+    height: auto;
+    float: left;
+    background-repeat: no-repeat;
+  }
 
   .titre{
     font-size: 2rem;

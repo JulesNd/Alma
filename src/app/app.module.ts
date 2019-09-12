@@ -17,17 +17,14 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { AccueilContenuComponent } from './Components/accueil-contenu/accueil-contenu.component';
 import { ArticlesComponent } from './Components/articles/articles.component';
-import { DropdownLaMarqueComponent } from './Components/dropdown-la-marque/dropdown-la-marque.component';
 import { PageFilleComponent } from './Components/Filles/page-fille/page-fille.component';
 import { PageGarconComponent } from './Components/Garcons/page-garcon/page-garcon.component';
 import { PageEspaceProComponent } from './Components/page-espace-pro/page-espace-pro.component';
 import { NotreHistoireComponent } from './Components/page-lamarque/notre-histoire/notre-histoire.component';
-import { NotreSavoirFaireComponent } from './Components/page-lamarque/notre-savoir-faire/notre-savoir-faire.component';
 import { PageFille4pattesComponent } from './Components/Filles/Page-Fille-4pattes/page-fille4pattes.component';
 import { ArticlesFilles4PattesComponent } from './Components/Filles/articles-filles-4pattes/articles-filles4-pattes.component';
 import { ArticlesFillesJuniorComponent } from './Components/Filles/articles-filles-junior/articles-filles-junior.component';
 import { CoupsdecoeursComponent } from './Components/page-espace-pro/coupsdecoeurs/coupsdecoeurs.component';
-import { InspirationsComponent } from './Components/page-lamarque/inspirations/inspirations.component';
 import { ProjetsComponent } from './Components/page-espace-pro/projets/projets.component';
 import { DeveloppementsexclusifsComponent } from './Components/page-espace-pro/developpementsexclusifs/developpementsexclusifs.component';
 import { LoginComponent } from './Components/login/login.component';
@@ -50,7 +47,6 @@ import { MellowdetailsComponent } from './Components/Filles/chaussures-details/D
 import { SantadetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/santadetails/santadetails.component';
 import { EmailComponent } from './Components/email/email.component';
 import { SignupComponent } from './Components/signup/signup.component';
-import { MembersComponent } from './Components/members/members.component';
 import {AuthService} from './Services/auth.service';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireModule } from '@angular/fire';
@@ -66,7 +62,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { PageNouscontacterComponent } from './Components/page-nouscontacter/page-nouscontacter.component';
 import {RouterModule, Routes} from '@angular/router';
-import { HistoireimageComponent } from './histoireimage/histoireimage.component';
 import { PagechromefreeComponent } from './Components/page-espace-pro/projets/pagechromefree/pagechromefree.component';
 import { FloraldetailsComponent } from './Components/Filles/chaussures-details/Details Premier Pas Filles/floraldetails/floraldetails.component';
 import { CattydetailsComponent } from './Components/Filles/chaussures-details/Details 4Pattes Filles/cattydetails/cattydetails.component';
@@ -91,6 +86,12 @@ import { LuckydetailsComponent } from './Components/Garcons/chaussures-garcon-de
 import {VousdevezvousconnecterComponent} from './Components/page-espace-pro/vousdevezvousconnecter/vousdevezvousconnecter.component';
 import { DemandedecompteComponent } from './demandedecompte/demandedecompte.component';
 import { MentionlegalesComponent } from './mentionlegales/mentionlegales.component';
+import { AdminviewComponent } from './adminview/adminview.component';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import { ImagesComponent } from './images/images.component';
+import { ImageComponent } from './images/image/image.component';
+import { ImageListComponent } from './images/image/image-list/image-list.component';
 
 
 const routes: Routes = [
@@ -105,17 +106,14 @@ const routes: Routes = [
       NavbarComponent,
       AccueilContenuComponent,
       ArticlesComponent,
-      DropdownLaMarqueComponent,
       PageFilleComponent,
       PageGarconComponent,
       PageEspaceProComponent,
       NotreHistoireComponent,
-      NotreSavoirFaireComponent,
       PageFille4pattesComponent,
       ArticlesFilles4PattesComponent,
       ArticlesFillesJuniorComponent,
       CoupsdecoeursComponent,
-      InspirationsComponent,
       ProjetsComponent,
       DeveloppementsexclusifsComponent,
       LoginComponent,
@@ -139,14 +137,12 @@ const routes: Routes = [
       SantadetailsComponent,
       EmailComponent,
       SignupComponent,
-      MembersComponent,
       InspirationComponent,
       PagealmaplaneteComponent,
       CommentaiderlaplaneteComponent,
       PagetannageComponent,
       PageNoustrouverComponent,
       PageNouscontacterComponent,
-      HistoireimageComponent,
       PagechromefreeComponent,
       FloraldetailsComponent,
       CattydetailsComponent,
@@ -170,8 +166,10 @@ const routes: Routes = [
       VousdevezvousconnecterComponent,
       DemandedecompteComponent,
       MentionlegalesComponent,
-
-
+      AdminviewComponent,
+      ImagesComponent,
+      ImageComponent,
+      ImageListComponent,
     ],
   imports: [
     BrowserModule,
@@ -193,6 +191,8 @@ const routes: Routes = [
     HttpClientJsonpModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     RouterModule.forRoot(routes),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

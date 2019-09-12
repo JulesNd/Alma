@@ -1,4 +1,17 @@
+.btn-default:hover{
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px #ffffff;
+  border: none!important;
+  outline: none!important;
+  color: #e3e81d ;
+}
+.glyphicon{
+  font-size: 2vh;
+}
 
+.btn-default{
+  color: white;
+}
 @media screen and (min-width: 1020px) and (max-width: 1399px){
 
   h2{
