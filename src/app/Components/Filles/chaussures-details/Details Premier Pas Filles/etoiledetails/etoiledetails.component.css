@@ -17,10 +17,7 @@
   overflow: hidden; }
 .tab-content img {
   width: 100%;
-  -webkit-animation-name: opacity;
-  animation-name: opacity;
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s; }
+  }
 
 .card {
   margin-top: 50px;
@@ -141,15 +138,6 @@
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
-#pic-1 {
-  background-image: url("ETOILE1.jpg");
-
-}
-
-#pic-1 {
-  background-image: url("ETOILE2.JPG");
-
-}
 
 
 .row{
@@ -228,7 +216,7 @@
   #sel1{
     width: 30%}
   #alma {
-    background-image: url("../almafondtransp.jpg");
+
     width: 30%;
     height: 15%;
     margin-left: 70%;

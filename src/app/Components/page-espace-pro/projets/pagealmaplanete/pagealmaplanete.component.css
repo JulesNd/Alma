@@ -1,6 +1,84 @@
 
+.boite{
+  width: 30%;
+  height: auto;
+  margin-left: 12.5%;
+  margin-top: 5%;
+}
+
+.ecrits{
+  margin-top: 1%;
+  font-size: 2vh;
+  margin-left: 25%;
+}
+
+#pic-1 , #pic-2 , #pic-3 , #pic-3 , #pic-4 , #pic-5  {
+  width: 85%;
+  height: auto;
+}
+
+h3{
+  font-size: 3vh;
+}
+
+.titre{
+  font-size: 4vh;
+ margin-bottom: 5%;
+  margin-left: 40%;
+  color: #ffffff;
+
+  font-weight: bold;
+}
+.al{
+
+  background: linear-gradient(to right, #30CFD0 0%, #e3e81d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.informations{
+  margin-left: 0;
+}
 
 
+#separation1 , #separation2 , #separation3{
+  width: 50%;
+  margin-left: 0;
+  margin-top: 5%;
+  background-color: #759F9E;
+  position: relative;
+}
+#Page1 , #Page2 , #Page3
+{font-family: concert, serif;
+  font-size: 3.5vh;
+  margin-left: 5%;
+  color: white;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+#separation{
+  width: 73%;
+  margin-left: 12%;
+  margin-top: 5%;
+  background-color: #759F9E;
+  position: relative;
+}
+
+.jumbotron{
+  background-color: #759F9E;
+}
+
+
+#Page{
+  font-family: concert, serif;
+  font-size: 3.5vh;
+  margin-left: 35%;
+  color: white;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+}
 
 #Logoalmaplanete{
   width: 20%;
@@ -20,7 +98,7 @@ body {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 50%;
+  width: 100%;
   margin: 0;
 
 }
@@ -68,7 +146,6 @@ body {
 
   padding: 2%;
 }
-
 
 
 
@@ -122,11 +199,7 @@ font{
   overflow: hidden; }
 .tab-content img {
   width: 100%;
-  -webkit-animation-name: opacity;
-  animation-name: opacity;
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s; }
-
+}
 
 
 .preview-pic{
@@ -145,23 +218,73 @@ font{
 
 }
 
+#latige{
+  margin-left: 5%;
+}
+#lacets{
+  margin-left: 30%;
+}
+
+#pic-1a , #pic-2a , #pic-3a{
+  width: 70%;
+  height: auto;
+  margin-top: 15%;
+}
+
+#pic-1b , #pic-2b , #pic-3b , #pic-4b{
+  width: 70%;
+  height: auto;
+  margin-top: 15%;
+}
+
+
+
 #chaussure{
   width: 80%;
   height: 80%;
-  margin-left: 20%;
+  margin-left: 28%;
 }
 #descriptions{
-  width: 80%;
+  width: 40%;
+  margin-left: 30%;
   background-color: #ffffff;
 
-  -webkit-box-shadow: 0px 0px 4px 3px #e7f038;
-  -moz-box-shadow: 0px 0px 4px 3px #e7f038;
-  box-shadow: 0px 0px 4px 3px #e7f038;
+  -webkit-box-shadow: 0px 0px 4px 3px #759F9E;
+  -moz-box-shadow: 0px 0px 4px 3px #759F9E;
+  box-shadow: 0px 0px 4px 3px #759F9E;
 
 }
 
 
+main {
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+  margin-left: 8%;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: auto;
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(698px, 1fr));
+  grid-gap: 1em;
+  column-gap: 0;
+}
 
+article {
+  border-radius: 10px;
+  margin-left: 15%;
+  color: #fff;
+  width: 58%;
+  height: auto;
+}
+
+article:nth-child(odd) {
+  background-color: #759F9E;
+}
+
+article:nth-child(even) {
+  background-color: lightgrey;
+}
 
 
 p{
@@ -279,6 +402,7 @@ margin-left: 5%;
   width: 190px;
   height:60px;
   margin-top: 0;
+  background-color: #759F9E;
 }
 
 
@@ -353,6 +477,66 @@ margin-left: 5%;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+
+
+  #separation1 , #separation2{
+    width: 70%;
+    margin-left: 0;
+    margin-top: 5%;
+    background-color: #759F9E;
+    position: relative;
+  }
+  #Page1 , #Page2
+  {font-family: concert, serif;
+    font-size: 3.5vh;
+    margin-left: 5%;
+    color: white;
+    font-weight: 100;
+    text-shadow: 0px 0px 5px #ffffff;
+  }
+
+  .titre{
+    margin-left: 30%;
+  }
+
+  .ecrits{
+
+    margin-left: 15%;
+  }
+
+  main {
+    width: 100%;
+    margin: 10px auto;
+    padding: 0 20px;
+
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: auto;
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 1em;
+    column-gap: 0;
+  }
+
+  article {
+    border-radius: 10px;
+    margin-left: 0;
+    color: #fff;
+    width: 70%;
+    height: auto;
+  }
+
+  article:nth-child(odd) {
+    background-color: #759F9E;
+  }
+
+  article:nth-child(even) {
+    background-color: #afbe29;
+  }
+
+
 
   .preview-pic{
     width: 150%;

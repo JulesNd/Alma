@@ -9,7 +9,7 @@ import 'firebase/storage';
 import {AngularFireDatabase, AngularFireObject} from '@angular/fire/database';
 import {FirebaseObjectObservable} from '@angular/fire/database-deprecated';
 
-
+import {User} from '../user';
 
 
 @Component({
@@ -18,6 +18,7 @@ import {FirebaseObjectObservable} from '@angular/fire/database-deprecated';
   styleUrls: ['./adminview.component.css']
 })
 export class AdminviewComponent implements OnInit {
+  user: any;
 
 
 

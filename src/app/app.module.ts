@@ -92,6 +92,8 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import { ImagesComponent } from './images/images.component';
 import { ImageComponent } from './images/image/image.component';
 import { ImageListComponent } from './images/image/image-list/image-list.component';
+import { UserComponent } from './user/user.component';
+
 
 
 const routes: Routes = [
@@ -170,6 +172,7 @@ const routes: Routes = [
       ImagesComponent,
       ImageComponent,
       ImageListComponent,
+      UserComponent,
     ],
   imports: [
     BrowserModule,
@@ -193,6 +196,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
+
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

@@ -134,7 +134,7 @@ a {
 
 
 .footer--light {
-  background:#e7e8ed
+
 }
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
   color:#898b96
@@ -161,9 +161,11 @@ a {
   font-size:18px
 }
 .mini-footer {
-  background:#192027;
+  background:darkgrey;
   text-align:center;
-  padding:32px 0
+  padding:32px 0;
+  bottom: 0;
+  position: relative;
 }
 .mini-footer p {
   margin:0;
@@ -177,6 +179,9 @@ a {
 .mini-footer p a:hover {
   color:#34bfa3
 }
+
+
+
 .widget-about img {
   display:block;
   margin-bottom:30px
@@ -226,10 +231,9 @@ a:hover {
   transition: all 0.2s ease-in;
 }
 
-footer{
-  margin-bottom: 0;
-  bottom: 0;
-
+#footer{
+margin-top: 10%;
+  width: 100%;
 }
 
 @media only screen and (min-width: 968px){

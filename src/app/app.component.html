@@ -5,27 +5,23 @@
 || router.url === '/Tannage'|| router.url === '/Chromefree')">
   <app-navbar      ></app-navbar>
 </header>
-  <body >
+  <body>
   <router-outlet (activate)="onActivate($event)"></router-outlet>
 
-
-  </body>
-
-</div>
-  <footer class="footer-area footer--light">
+  <footer id="footer" class="footer-area footer--light">
 
 
-    <div class="mini-footer bg-light">
+    <div class="mini-footer bg--light">
       <div class="container">
         <div class="row" style="margin-left: 8%">
 
 
           <div class="col-md-3 col-sm-4">
             <div class="footer-widget">
-             <div class="footer-menu footer-menu--1">
-              <h4  class="footer-widget-title" > <a  class="foot" routerLink="/NousContacter"> Nous contacter</a></h4>
+              <div class="footer-menu footer-menu--1">
+                <h4  class="footer-widget-title" > <a  class="foot" routerLink="/NousContacter"> Nous contacter</a></h4>
 
-            </div>
+              </div>
               <!-- end /.footer-menu -->
             </div>
             <!-- Ends: .footer-widget -->
@@ -51,5 +47,12 @@
       </div>
     </div>
   </footer>
+  </body>
+
+</div>
 
 
+
+<script>
+  if (navigator.userAgent.indexOf("Speed Insights")===-1) {}
+  </script>

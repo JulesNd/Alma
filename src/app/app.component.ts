@@ -4,6 +4,7 @@ import {AngularFireAuth} from '@angular/fire/auth';
 import {Router} from '@angular/router';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +17,7 @@ import {Router} from '@angular/router';
 export class AppComponent {
   constructor(
     public router: Router,
-    public afAuth: AngularFireAuth
+    public afAuth: AngularFireAuth,
   ) {}
 
 
