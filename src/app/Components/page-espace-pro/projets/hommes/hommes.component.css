@@ -1,0 +1,137 @@
+#first_17:focus , #last_17:focus{
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none;
+}
+.glyphicon{
+  font-size: 2vh;
+
+}
+
+input:focus {
+
+}
+
+#first_17:focus , #last_17:focus{
+  border-color: rgba(255, 69, 0, 0.89);
+  box-shadow: 0 1px 1px rgba(255, 69, 0, 0.89) inset, 0 0 8px rgba(255, 69, 0, 0.89);
+  outline: 0 none;
+}
+
+.jumbotron{
+  background-color:  #002147;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.btn-default{
+  float: left;
+  color: white;
+}
+
+.Page{
+  font-size: 3.5vh;
+  color: white;
+  font-weight: 500;
+  margin-left: 40%;
+}
+body{
+  font-family: concert, serif;
+}
+
+.desc{
+  font-size : 2vh;
+  color: white;
+  margin-left: 30%;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .Page{
+    font-size: 3.5vh;
+    color: white;
+    font-weight: 500;
+    margin-left: 15%;
+  }
+
+  .desc{
+    font-size : 2vh;
+    color: white;
+    margin-left: 10%;
+    font-weight: 100;
+    text-shadow: 0px 0px 5px #ffffff;
+  }
+
+
+}
+#devexclu{
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.container-fluid{
+  background-color: #002147;
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+#Page{
+  font-family: concert, serif;
+  font-size: 3vh;
+  margin-left: 42%;
+  color: white;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+.btn-default:hover{
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px #ffffff;
+  border: none!important;
+  outline: none!important;
+  color: #002147; ;
+}
+#logo{
+
+  width: 10%;
+  height: auto;
+  float: left;
+}
+#welcome{
+
+  float: right;
+  font-family: concert, serif;
+  font-size: 2.5vh;
+}
+p{
+  color: white;
+}
+
+#demande{
+  font-size: 2vh;
+  word-spacing: normal;
+}
+
+.coeurform{
+  font-family: concert, serif;
+  word-spacing: normal;
+  margin-left: 80%;
+  color: white;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+
+}
+.coeurform:hover{
+  color: rgba(255, 69, 0, 0.89);
+  border: none!important;
+  outline: none!important;
+}
+
+.glyphicon-envelope{
+  font-size: 5vh;
+}
+
+a{
+  text-decoration: none!important;
+}
