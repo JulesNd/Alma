@@ -1,3 +1,45 @@
-<p>
-  coupsdecoeurs works!
-</p>
+<body>
+
+
+
+<div class="container-fluid"  >
+  <img  id="logo" alt="Coups de coeur , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+  </p>
+</div>
+<button  routerLink="/EspacePro"  id="retour" class="btn btn-default btn-lg text"><span class="glyphicon glyphicon-arrow-left"> Retour</span></button>
+
+<img id="devexclu"    src="https://drive.google.com/uc?export=view&id=1dFiFnJ11DuX9RRbc-XBWHiw903xLEka9" >
+
+<div class="jumbotron">
+  <font> <div id="accede" >Accédez aux coups de coeur de la saison quand vous voulez ! </div>
+    <br>
+    Vous avez la possibilité de sélectionner des produits,
+    de nous poser des questions sur un modèle précis ou encore de le personnaliser. </font>
+
+  <div class="desc">
+  </div>
+</div>
+
+<app-articles-coeur></app-articles-coeur>
+
+
+
+
+<div class="help-button-wrapper backbutton">
+  <a href="javascript:void( window.open( 'https://form.jotformeu.com/92601575816360', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=600' ) ) " class="float backbutton">
+
+  <button class="help-button">
+    <span id="heart" class="glyphicon glyphicon-heart"></span>
+    Faire une demande
+  </button>
+  </a>
+</div>
+
+</body>
+

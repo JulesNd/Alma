@@ -1,9 +1,24 @@
+<body>
+<div class="container-fluid"  >
+  <img  id="logo" alt="Coups de coeur , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text use" *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text use">Mon alma</button>
+  </p>
+</div>
+
 <button id="retour"  routerLink="/Projets" class="btn btn-default btn-lg"  >
-  <span class="glyphicon glyphicon-arrow-left"> Retour</span>
+  <span class="glyphicon glyphicon-arrow-left"><font> Retour</font></span>
 </button>
 <img id="ChromeFree"    src="https://drive.google.com/uc?export=view&id=1vltow3Buta4t_FALbkBJ1HAsxioeJQKj" >
 
-
+<div id="focus">
+  Focus Russie
+  <img class="in-left" id="Russie" alt="tannage vegetal" src="https://drive.google.com/uc?export=view&id=1ljgqfoVTYdFn9AfNTbG6nRvsou19HhlM"  >
+</div>
 
 <div class="content" >
 
@@ -15,18 +30,18 @@
 
     <div id="cardpremieres" class="card in-right" style="background-color: #ffffff; border:none!important;">
 
-      <p class="article" id="txtlespremieres">Depuis longtemps la première interieure cuir est considerée
-        comme l'option la  plus adéquate à nos pieds: confortable, durable et respirante.
+      <p class="article" id="txtlespremieres">Depuis longtemps la première intérieure cuir est considerée
+        comme l'option la  plus adéquate pour nos pieds: confortable, durable et respirante.
          Aujourd'hui le choix des matières est beaucoup plus large et  nous pouvons trouver des solutions bien plus adaptées.
 
-        <br>  Avec notre usines en Russie, nous avons crée une gamme avec un concept naturel  pour nos premières, ainsi que pour nos tiges <br>
+        <br>  Avec notre usine en Russie, nous avons créé une gamme avec un concept naturel  pour nos premières, ainsi que pour nos tiges <br>
 
     </div>
 
 
-  <div  id="separation" class="jumbotron">
-    <div id="Page">Voici notre selection
-  </div>
+
+    <div id="Page1">Voici notre sélection
+
   </div>
 
   <div #target id="wrapmicrofibre"  class="wrapper" style="background-color:  #ffffff" >
@@ -43,8 +58,8 @@
         des températures allant jusqu'à 95°C sans rétrécir ni altérer ses qualités techniques.
         Grâce à une membrane composée de molécules hydrophiles, le lavage n’altère pas ses qualités.
         <br>
-        <span class="dot"></span> Recyclable: Fabriqué en polyester, il
-        cause moins de dommages à l'environnement et peut être recyclé.
+        <span class="dot"></span> Recyclable: Fabriquée en polyester, elle
+        cause moins de dommages à l'environnement et peut être recyclée.
         <br>
         <span class="dot"></span> Un tissu antibactérien et hypoallergénique<br>
         <span class="dot"></span> Comme il s’agit d’un tissu en polyester,
@@ -68,13 +83,13 @@
     <div class="card in-left" id="txtPremiereTanveg">
       <p class="jumbotron    titre" >Une première en tannage végétal</p>
       <p class="article">
-        Avec des réglementations très strictes dans la chaussure, la Russie a l’obligation d’utliser des matières
+        Avec des réglementations très strictes dans la chaussure, la Russie a l’obligation d’utiliser des matières
         d’origine animale ou végétale. Grâce à ça, nous cherchons différentes solutions  pour obtenir un
         produit naturel et sans éléments chimiques.<br>
         Le tannage végétal  utilise uniquement des composants naturels et le cuir possède une tenue ferme,
         ainsi qu’une meilleure absorption de l’humidité.<br>
         Plusieurs densités de cuir sont disponibles: pour faire des sandales avec une première épaisse,
-        aux premières amovibles plus fines en cuir sans chrome.<br>
+        aux premières amovibles plus fines.<br>
 
       </p>
     </div>
@@ -98,9 +113,13 @@
       </p>
     </div>
   </div>
+    <div id="wrapperBB" class="wrapper">
+    <div class="jumbotron   titre" id="pBB"  style="font-size: 3.3vh" > <span id="BB"> Projet Bébé</span>  </div>
+      <img   alt="bébé projets" id="imagebb" src="https://drive.google.com/uc?export=view&id=1lNG4xTRdlSMC56hvPz6ia0TphYwBH1FS">
 
 
-
+    </div>
 </div>
 
 </div>
+</body>

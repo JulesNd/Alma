@@ -57,6 +57,10 @@
 
 }
 
+font {
+  font-size: 3vh;
+}
+
 .product-title, .price, .sizes, .colors {
   text-transform: UPPERCASE;
   font-weight: bold; }

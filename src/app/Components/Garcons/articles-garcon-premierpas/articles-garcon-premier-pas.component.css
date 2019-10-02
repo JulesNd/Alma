@@ -209,9 +209,15 @@
   margin-left: 15%;
   margin-top: 20%;
 }
-#Bonny2, #Bonny1{
+#Bonny2{
   height: 140px;
   width: 200px;
   margin-left: 15%;
   margin-top: 20%;
+}
+#Bonny1{
+  height: 132px;
+  width: 200px;
+  margin-left: 15%;
+  margin-top: 23%;
 }

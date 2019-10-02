@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import {Routes, RouterModule, CanActivate} from '@angular/router';
 import { AccueilContenuComponent } from './Components/accueil-contenu/accueil-contenu.component';
 import {PageFille4pattesComponent} from './Components/Filles/Page-Fille-4pattes/page-fille4pattes.component';
@@ -32,13 +34,11 @@ import {SignupComponent} from './Components/signup/signup.component';
 import {PageLamarqueComponent} from './Components/page-lamarque/page-lamarque.component';
 import {InspirationComponent} from './Components/page-espace-pro/inspiration/inspiration.component';
 import {PagealmaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/pagealmaplanete.component';
-import {AppComponent} from './app.component';
 // tslint:disable-next-line:max-line-length
 import {CommentaiderlaplaneteComponent} from './Components/page-espace-pro/projets/pagealmaplanete/commentaiderlaplanete/commentaiderlaplanete.component';
 import {PagetannageComponent} from './Components/page-espace-pro/projets/pagetannage/pagetannage.component';
 import {PageNoustrouverComponent} from './Components/page-noustrouver/page-noustrouver.component';
 import {PagechromefreeComponent} from './Components/page-espace-pro/projets/pagechromefree/pagechromefree.component';
-import {canActivate} from '@angular/fire/auth-guard';
 import {FloraldetailsComponent} from './Components/Filles/chaussures-details/Details Premier Pas Filles/floraldetails/floraldetails.component';
 import {EclipsedetailsComponent} from './Components/Filles/chaussures-details/Details Premier Pas Filles/eclipsedetails/eclipsedetails.component';
 import {CattydetailsComponent} from './Components/Filles/chaussures-details/Details 4Pattes Filles/cattydetails/cattydetails.component';
@@ -57,6 +57,7 @@ import {CassiodetailsComponent} from './Components/Garcons/chaussures-garcon-det
 import {LeondetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/leondetails/leondetails.component';
 import {LuckydetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/luckydetails/luckydetails.component';
 import {DemandedecompteComponent} from './demandedecompte/demandedecompte.component';
+import {HommesComponent} from './Components/page-espace-pro/projets/hommes/hommes.component';
 
 const routes: Routes = [
    {path: 'Accueil', component: AccueilContenuComponent , },
@@ -73,7 +74,7 @@ const routes: Routes = [
   {path: 'EspacePro' , component: PageEspaceProComponent,    },
   {path: 'Login', component: LoginComponent },
   {path: 'NousContacter', component: PageNouscontacterComponent},
-  {path: 'coups-de-coeurs', component: CoupsdecoeursComponent},
+ {path: 'Coupsdecoeur', component: CoupsdecoeursComponent},
   {path: 'Floral', component: FloraldetailsComponent },
   {path: 'Projets', component: ProjetsComponent},
   {path: 'MentionsLegales', component: MentionlegalesComponent},
@@ -108,6 +109,7 @@ const routes: Routes = [
   {path: 'Carliera', component: CarlieradetailsComponent},
   {path: 'Antonia', component: AntoniadetailsComponent },
   {path: 'Signup', component: SignupComponent},
+  {path: 'Hommes', component: HommesComponent},
   {path: 'Almaplanete', component: PagealmaplaneteComponent},
   {path: 'commentaiderlaplanete', component: CommentaiderlaplaneteComponent},
   {path: 'Tannage', component: PagetannageComponent},

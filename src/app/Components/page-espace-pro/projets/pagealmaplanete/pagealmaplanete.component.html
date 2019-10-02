@@ -1,3 +1,14 @@
+
+<div class="container-fluid"  >
+  <img  id="logo" alt="Coups de coeur , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text " *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text">Mon alma</button>
+  </p>
+</div>
 <button id="retour"  routerLink="/Projets" class="btn btn-default btn-lg"  >
   <span class="glyphicon glyphicon-arrow-left"> retour</span>
 </button>
@@ -161,7 +172,7 @@
 
                 <div class="form-group"  style="margin-top: 0; margin-left: 80%"   >
                   <label style="font-size: 2rem">Pointures</label>
-                  <br> du 19 au 24
+                  <br> du 27 au 38
                 </div>
 
               </div>

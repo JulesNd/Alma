@@ -1,0 +1,132 @@
+/*
+ * All Style
+ */
+
+
+.page-title h1 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  color: #485a64;
+  font-weight: bold;
+}
+
+.container.spc{
+  margin-bottom: 20px
+}
+
+/*
+ * Product Page 3
+ */
+
+
+.product-container {
+  background-color: #fff;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.product-description {
+  background-color: #F7F7F7;
+  border-top: 1px solid #EFEFEF;
+  padding: 10px 20px;
+  color: #797979;
+}
+
+.product-image {
+  /*padding: 20px;*/
+  height: 323px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.product-link {
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  color: #e8eb38;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  padding: 35px 0;
+  line-height: 25px;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  opacity: 0;
+  transition: 1s;
+  font-style: italic;
+}
+
+
+
+.hover-link {
+  background-color: #e8eb38;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.product-description h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  display: inline-block;
+  width: 78%;
+}
+
+.product-description p {
+  color: #C4C4C4;
+}
+
+.product-description .price {
+  display: inline-block;
+  width: 20%;
+  font-size: 23px;
+  text-align: right;
+  font-weight: bold;
+  color: #e8eb38;
+  margin-bottom: 5px;
+}
+
+.product-option {
+  border-top: 1px solid #D2D2D2;
+}
+
+
+
+
+
+
+
+
+
+#Photo1, #Photo2,#Photo3,#Photo4,#Photo5,
+#Photo6,#Photo7,#Photo8,#Photo9,#Photo10,
+#Photo11,#Photo12, #Photo13,#Photo14,
+#Photo15, #Photo16,#Photo17,#Photo18,
+#Photo19,#Photo20,#Photo21,#Photo22,
+#Photo23,#Photo24,#Photo25,#Photo26,
+#Photo27,#Photo28,#Photo29,#Photo30,
+#Photo31,#Photo32, #Photo33,#Photo34,
+#Photo35, #Photo36,#Photo37,#Photo38,
+#Photo39,#Photo40, #Photo41,#Photo42,
+#Photo43,#Photo44,#Photo45,#Photo46,
+#Photo47,#Photo48, #Photo49,#Photo50
+{
+  height: 260px;
+  width: 320px;
+  margin-left: 10%;
+  margin-top: 15%;
+}

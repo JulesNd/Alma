@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 import {environment} from '../environments/environment';
 import { FormsModule} from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -87,12 +88,18 @@ import {VousdevezvousconnecterComponent} from './Components/page-espace-pro/vous
 import { DemandedecompteComponent } from './demandedecompte/demandedecompte.component';
 import { MentionlegalesComponent } from './mentionlegales/mentionlegales.component';
 import { AdminviewComponent } from './adminview/adminview.component';
-import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import { ImagesComponent } from './images/images.component';
 import { ImageComponent } from './images/image/image.component';
 import { ImageListComponent } from './images/image/image-list/image-list.component';
 import { UserComponent } from './user/user.component';
+import {ArticlesCoeurComponent} from './Components/page-espace-pro/coupsdecoeurs/articles-coeur/articles-coeur.component';
+import { HommesComponent } from './Components/page-espace-pro/projets/hommes/hommes.component';
+import { ArticlesHommesComponent } from './Components/page-espace-pro/projets/hommes/articles-hommes/articles-hommes.component';
+import { CountercreateComponent } from './countercreate/countercreate.component';
+import { StarReviewComponent } from './Components/star-review/star-review.component';
+
+
 
 
 
@@ -173,13 +180,19 @@ const routes: Routes = [
       ImageComponent,
       ImageListComponent,
       UserComponent,
+      ArticlesCoeurComponent,
+      HommesComponent,
+      ArticlesHommesComponent,
+      CountercreateComponent,
+      StarReviewComponent,
+
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
-    [BrowserAnimationsModule],
+    BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
     MatCardModule,
@@ -196,6 +209,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
+    NgbModule,
+
 
   ],
   providers: [AuthService, AuthGuard],

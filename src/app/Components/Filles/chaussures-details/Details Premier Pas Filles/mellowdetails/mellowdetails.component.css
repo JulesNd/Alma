@@ -13,6 +13,10 @@
 .preview-thumbnail.nav-tabs li:last-of-type {
   margin-right: 0; }
 
+font{
+  font-size: 3vh;
+}
+
 .tab-content {
   overflow: hidden; }
 .tab-content img {

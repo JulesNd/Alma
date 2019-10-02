@@ -30,8 +30,6 @@ export class PageEspaceProComponent implements OnInit {
   logout() {
     this.auth.logout();
   }
-  register() {
-    this.router.navigate(['/Fille']);
-  }
+
 
 }

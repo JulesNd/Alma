@@ -8,6 +8,7 @@
 
 }
 
+
 input:focus {
 
 }
@@ -65,9 +66,32 @@ body{
 #devexclu{
   width: 80%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 2.5%;
   margin-bottom: 0;
   margin-top: 5%;
+}
+
+#accede{
+  margin-left: 18%;
+  text-shadow: 0px 0px 10px rgba(255, 69, 0, 0.89);
+  font-size: 3.5vh;
+}
+
+font{
+  font-family: concert, serif;
+  font-size: 3vh;
+  width: 20%;
+  margin-bottom: 25%;
+
+  position: relative;
+  color: white;
+  font-weight: 100;
+
+}
+
+#enveloppe{
+  font-size: 5vh;
+  margin-left: 5%;
 }
 
 .container-fluid{
@@ -130,8 +154,84 @@ p{
 
 .glyphicon-envelope{
   font-size: 5vh;
+  margin-left: 10%;
 }
+
 
 a{
   text-decoration: none!important;
+}
+
+#retour{
+  color: black;
+}
+#retour:hover{
+  background:rgba(255, 69, 0, 0.89) ;
+  color: #FFFFFF;
+}
+
+.help-button-wrapper {
+
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  text-align: center;
+}
+.help-button {
+  height: 9.5em;
+  width: 9.5em;
+  font-size: 14px;
+  border-radius: 50%;
+  border: 0 none;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: scale(1);
+  transition: all 200ms ease;
+}
+
+.help-button span {
+  display: block;
+  font-size: 2em;
+}
+
+.expanded .help-button {
+  transform: scale(.5);
+  color: rgba(255,255,255,.5);
+  background: #ffaa00;
+}
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 200ms ease;
+  transform: translate(0, 90px) scale(.5);
+  transform-origin: bottom center;
+  opacity: 0;
+}
+.expanded .help-list {
+  transform: translate(0px,20px) scale(1);
+  opacity: 1;
+}
+.help-list li {
+  margin-bottom: 1em;
+}
+.help-list a {
+  color: #212121;
+}
+
+@-webkit-keyframes heartbeat {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); }
+}
+
+.backbutton:hover
+{
+  -webkit-animation-name: heartbeat;
+  -webkit-animation-duration: 300ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
 }

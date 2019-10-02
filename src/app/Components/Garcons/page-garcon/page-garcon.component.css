@@ -69,7 +69,7 @@ body{
 }
 .poster{
   width: 80%;
-  height:50px;
+  height:12%;
   margin: 130% auto;
   position: relative;
   border-radius: 10px;
@@ -78,7 +78,7 @@ body{
   top: 10px;
   color: #fff;
   position: relative;
-  font-size: 2.5vh;
+  font-size: 2.8vh;
   text-align: center;
   font-weight: 200;
 }

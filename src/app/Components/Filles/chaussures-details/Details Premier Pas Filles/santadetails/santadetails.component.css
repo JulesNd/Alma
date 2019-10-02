@@ -17,8 +17,11 @@
   overflow: hidden; }
 .tab-content img {
   width: 100%;
-
    }
+
+font{
+  font-size: 3vh;
+}
 
 .card {
   margin-top: 50px;

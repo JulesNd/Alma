@@ -15,6 +15,7 @@ import {Router} from '@angular/router';
 
 
 export class AppComponent {
+  o: any;
   constructor(
     public router: Router,
     public afAuth: AngularFireAuth,

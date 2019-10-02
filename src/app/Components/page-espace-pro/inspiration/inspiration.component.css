@@ -6,6 +6,9 @@ body{
   font-size: 2vh;
 }
 
+.container{
+  overflow: hidden;
+}
 
 .jumbotron{
   background-color:  rgba(255, 69, 0, 0.89);
@@ -137,20 +140,20 @@ a{
   font-weight: 200;
 }
 .one {
-  background: url('https://drive.google.com/uc?export=view&id=1VfZIF6QrHPJzh4D0FpL7NLeeUCSreHTn');
+  background: url('https://drive.google.com/uc?export=view&id=1HTpqNFQnt2cH0ciA6zDzRikZFcBwjzWF');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .two {
-  background: url('https://drive.google.com/uc?export=view&id=1GiYfGWcBgkVR7gVpho5XPiScvd8s8qUP');
+  background: url('https://drive.google.com/uc?export=view&id=1i1fGfX7PlvXiWsIDQwY4bVJmvlfmrpKN');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .three {
-  background: url('https://drive.google.com/uc?export=view&id=1iqfsbcDNWdKYlR8iSy3PQP_F2b12Q_tI');
+  background: url('https://drive.google.com/uc?export=view&id=1nEDNXD-I34CG0OGWlru4a0gXVzGX5JkC');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

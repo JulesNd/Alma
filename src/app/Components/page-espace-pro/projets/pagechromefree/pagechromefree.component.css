@@ -1,3 +1,55 @@
+.container-fluid{
+  background-color: #002147;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+body{
+  font-family: concert, serif;
+}
+
+.text{
+  color: #ffffff;
+}
+
+#Page{
+  font-family: concert, serif;
+  font-size: 3.5vh;
+  margin-left: 42%;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+#welcome{
+
+  float: right;
+  font-family: concert, serif;
+  font-size: 2.5vh;
+}
+
+#logo{
+  width: 10%;
+  height: auto;
+  float: left;
+}
+strong{
+  margin: 2%;
+}
+#retour{
+  color: #222222;
+}
+#retour:hover{
+  color: #ffffff;
+}
+
+.use {
+  color: #ffffff;
+}
+.use:hover{
+  color: #ffffff;
+  background-color: #ffffff;
+
+}
 
 html{
   scroll-behavior: smooth;
@@ -12,6 +64,25 @@ header {
 }
 .glyphicon{
   font-size: 2vh;
+}
+font{
+  font-family: concert, serif;
+}
+#imagebb{
+  width: 55%;
+  height: auto;
+  margin-left: 35%;
+}
+#wrapperBB{
+  width:85% ;
+}
+
+#pBB{
+  margin-left: 17.5%;
+
+}
+#BB{
+  margin-left: 40%;
 }
 
 header video {
@@ -44,6 +115,14 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+
+#focus{
+  font-size: 3vh;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+
 
 @media (pointer: coarse) and (hover: none) {
   header {
@@ -101,7 +180,9 @@ btn-default
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
 
-
+  box-shadow: 0 5px 15px #ffffff;
+  border: none!important;
+  outline: none!important;
 
   background-color: rgba(255, 69, 0, 0.89);
 
@@ -123,6 +204,19 @@ font{
   animation-delay: 2s;
 }
 
+#Page1{
+  font-family: concert, serif;
+  font-size: 5vh;
+  margin-left: 35%;
+  color: #002147;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+  padding: 5%;
+}
+#Russie{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.68);
+}
+
 #wrapmicrofibre{
   width: 80%;
   margin-left: 10%;
@@ -130,7 +224,7 @@ font{
 
 #txtmicrofibre{
 padding: 0;
-  animation-delay: 2s;
+
   border: none!important;
 
 }
@@ -142,7 +236,7 @@ padding: 0;
 #txtmouton{
 
   padding: 0;
-  animation-delay: 4s;
+
   border: none!important;
 
 }
@@ -152,7 +246,7 @@ padding: 0;
   float: left;
 
 
-  animation-delay: 4s;
+
 
 }
 
@@ -190,8 +284,8 @@ padding: 0;
 
 
 #PremiereTanveg{
-  width: 300px;
-  height: 350px;
+  width: 360px;
+  height: 400px;
   float: right;
   background-repeat: no-repeat;
 

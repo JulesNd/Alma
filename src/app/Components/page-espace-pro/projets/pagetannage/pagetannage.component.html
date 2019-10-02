@@ -1,3 +1,16 @@
+
+
+<div class="container-fluid"  >
+  <img  id="logo" alt="Coups de coeur , espace professionnel" src="https://drive.google.com/uc?export=view&id=1foewSO28-mBrLgtuhYB7QtmvHwTEnvTR">
+
+  <p class="text" id="welcome" *ngIf="(user)">
+    Connecté(e)
+    <strong> {{ user?.displayName }}</strong>
+    <button class="btn btn-default btn-lg text use" *ngIf="user" (click)="logout()">Se deconnecter</button>
+    <button routerLink="/Accueil" class="btn btn-default btn-lg text use">Mon alma</button>
+  </p>
+</div>
+
 <button id="retour"  routerLink="/Projets" class="btn btn-default btn-lg"  ><span class="glyphicon glyphicon-arrow-left"> Retour</span></button>
 <header>
   <div id="video"  class="overlay" autoscroll="true">
@@ -11,8 +24,11 @@
     </div>
   </div>
 </header>
-
-<div class="jumbotron" style="background-color: #FFFFFF"></div>
+<div id="focus">
+  Focus maroc
+<img class="in-left" id="maroc" alt="tannage vegetal" src="https://drive.google.com/uc?export=view&id=1aNeSBOUvVaaowNB1xUtlfgZ_yrQ2zrSc"  >
+</div>
+  <div class="jumbotron" style="background-color: #FFFFFF"></div>
 <div class="content" >
   <div class="wrapper" style="background-color:  rgba(255, 69, 0, 0.89)" >
   <img class="in-left" id="imagetannage" alt="tannage vegetal" src="https://drive.google.com/uc?export=view&id=1YC4LW8_FZM4F3C5MCjgAzjlSdIE5MglZ"  >
@@ -95,7 +111,7 @@
         <p  class="article">
           Nous vous conseillons d'utiliser une boite en carton recyclé et assemblée sans colle pour réduire les déchets
           ainsi que l'utilisation de produits chimiques.
-          Nous recommendons également de ne pas utiliser d'étiquettes et handtags, mais plutot d'indiquer
+          Nous recommandons également de ne pas utiliser d'étiquettes et hangtags, mais plutôt d'indiquer
           toutes les informations sur la boite pour limiter les déchets
         </p>
 

@@ -3,10 +3,9 @@ import * as firebase from 'firebase/app';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {Router, UrlTree} from '@angular/router';
 import {BehaviorSubject, Observable, of} from 'rxjs';
-import {auth} from 'firebase';
+
 import {AngularFirestore} from '@angular/fire/firestore';
-import {FormsModule} from '@angular/forms';
-import {observable} from 'rxjs';
+
 import {switchMap} from 'rxjs/operators';
 import {User} from '../user';
 
@@ -58,7 +57,6 @@ export class AuthService {
       })
       .then(userCredential => {
         if (userCredential) {
-
           this.router.navigate(['/EspacePro']);
         }
       });
@@ -88,7 +86,8 @@ export class AuthService {
       email: this.newUser.email,
       firstname: this.newUser.firstName,
       lastname: this.newUser.lastName,
-      role: 'network user'
+      role: 'network user',
+      status: 'online'
     });
   }
 
@@ -99,6 +98,6 @@ export class AuthService {
   }
 
 
-
-
+  async getUser() {
+  }
 }

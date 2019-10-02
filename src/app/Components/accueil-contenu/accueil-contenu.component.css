@@ -220,9 +220,45 @@ background-color: #e7f038;
 }
 
 /**    **/
+@media only screen and (min-width: 1900px) {
+  #ig1{
 
+    width: 800px;
+    height: 800px;
+    margin-left: 5%;
 
-@media only screen and (min-width: 901px){
+  }
+  #ig2{
+
+    width: 800px;
+    height: 800px;
+    margin-left: 5%;
+    margin-top: 30%;
+  }
+  #ig3{
+
+    width: 800px;
+    height: 800px;
+    margin-left: 2%;
+
+  }
+  #ig4{
+
+    width: 800px;
+    height: 800px;
+    margin-left: 1%;
+    margin-top: 30%;
+  }
+  #ig5{
+
+    width: 800px;
+    height: 800px;
+    margin-left: 1%;
+  }
+
+}
+
+@media only screen and (min-width: 901px) {
 
   #ig1{
 

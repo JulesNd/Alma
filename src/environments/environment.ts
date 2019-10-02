@@ -18,6 +18,10 @@ export const environment = {
     appId: '1:616749970294:web:3f0e6de14a04050d'
 
   },
+  pusher: {
+    key: 'be9f1264fe49f870c465',
+    cluster: 'eu',
+  }
 
 
 };

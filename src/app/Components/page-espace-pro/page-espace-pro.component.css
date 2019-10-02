@@ -165,6 +165,9 @@ strong{
   background-position: center;
 }
 
+#userview{
+  overflow: hidden;
+}
 
 /* POSTER*/
 .p1 {

@@ -1,0 +1,225 @@
+
+.glyphicon{
+  font-size: 2vh;
+
+}
+
+
+
+.jumbotron{
+  background-color: #001a34;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.btn-default{
+  float: left;
+  color:#FFFFFF;
+}
+
+
+#retour{
+  color: black;
+}
+#retour:hover{
+  background:rgba(255, 69, 0, 0.89) ;
+  color: #FFFFFF;
+}
+
+body{
+  font-family: concert, serif;
+}
+
+.desc{
+  font-size : 2vh;
+  color: white;
+  margin-left: 30%;
+}
+#devexclu{
+  width: 80%;
+  height: auto;
+  margin-left: 2.5%;
+  margin-bottom: 0;
+  float: bottom;
+  margin-top: 5%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .Page{
+    font-size: 3.5vh;
+    color: white;
+    font-weight: 500;
+    margin-left: 15%;
+  }
+  #devexclu{
+    margin-left: 10%;
+  }
+  .jumbotron{
+    font-size: 3vh;
+  }
+
+  .desc{
+    font-size : 2vh;
+    color: white;
+    margin-left: 10%;
+    font-weight: 100;
+    text-shadow: 0px 0px 5px #ffffff;
+  }
+
+
+}
+
+
+
+
+.container-fluid{
+  background-color: #002147;
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+font{
+  font-family: concert, serif;
+  font-size: 2.5vh;
+  width: 20%;
+  margin-bottom: 25%;
+
+  position: relative;
+  color: white;
+  font-weight: 100;
+
+}
+#accede{
+  margin-left: 18%;
+  text-shadow: 0px 0px 10px rgba(255, 69, 0, 0.89);
+  font-size: 3.5vh;
+}
+.btn-default:hover{
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px #ffffff;
+  border: none!important;
+  outline: none!important;
+  color: #002147; ;
+}
+#logo{
+
+  width: 10%;
+  height: auto;
+  float: left;
+}
+#welcome{
+
+  float: right;
+  font-family: concert, serif;
+  font-size: 2.5vh;
+}
+p{
+  color: white;
+}
+
+#demande{
+  font-size: 2vh;
+  word-spacing: normal;
+}
+
+.coeurform{
+  font-family: concert, serif;
+  word-spacing: normal;
+
+  color: white;
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #ffffff;
+
+}
+.coeurform:hover{
+  color: #FFBE78;
+  border: none!important;
+  outline: none!important;
+}
+
+.glyphicon-heart{
+ font-size: 8vh;
+}
+#heart{
+  font-size: 6.5vh;
+}
+
+a{
+  text-decoration: none!important;
+}
+font{
+  font-size: 3vh;
+}
+
+.help-button-wrapper {
+
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  text-align: center;
+}
+.help-button {
+  height: 9.5em;
+  width: 9.5em;
+  font-size: 14px;
+  border-radius: 50%;
+  border: 0 none;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transform: scale(1);
+  transition: all 200ms ease;
+}
+.help-button:hover,
+.help-button:focus,
+.help-button:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+.help-button span {
+  display: block;
+  font-size: 2em;
+}
+
+.expanded .help-button {
+  transform: scale(.5);
+  color: rgba(255,255,255,.5);
+  background: #ffaa00;
+}
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 200ms ease;
+  transform: translate(0, 90px) scale(.5);
+  transform-origin: bottom center;
+  opacity: 0;
+}
+.expanded .help-list {
+  transform: translate(0px,20px) scale(1);
+  opacity: 1;
+}
+.help-list li {
+  margin-bottom: 1em;
+}
+.help-list a {
+  color: #212121;
+}
+
+@-webkit-keyframes heartbeat {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); }
+}
+
+.backbutton:hover
+{
+  -webkit-animation-name: heartbeat;
+  -webkit-animation-duration: 300ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
+}
