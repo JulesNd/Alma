@@ -10,6 +10,7 @@ export class AccueilContenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

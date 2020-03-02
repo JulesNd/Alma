@@ -5,7 +5,6 @@
 }
 
 
-
 .jumbotron{
   background-color: #001a34;
   width: 80%;
@@ -38,7 +37,7 @@ body{
 #devexclu{
   width: 80%;
   height: auto;
-  margin-left: 2.5%;
+  margin-left: 5%;
   margin-bottom: 0;
   float: bottom;
   margin-top: 5%;
@@ -52,7 +51,9 @@ body{
     margin-left: 15%;
   }
   #devexclu{
-    margin-left: 10%;
+    margin-left: -22%;
+    width: 150%;
+    height: auto;
   }
   .jumbotron{
     font-size: 3vh;

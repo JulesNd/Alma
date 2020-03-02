@@ -8,7 +8,13 @@
 
 }
 
-
+#devexclu{
+  width: 80%;
+  height: auto;
+  margin-left: 5.2%;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
 input:focus {
 
 }
@@ -60,16 +66,23 @@ body{
     font-weight: 100;
     text-shadow: 0px 0px 5px #ffffff;
   }
+  #devexclu{
+    margin-left: -22%;
+    width: 150%;
+    height: auto;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
+  .jumbotron{
+    background-color:  #002147;
+    width: 100%;
+    margin-top: 5%;
+
+  }
 
 
 }
-#devexclu{
-  width: 80%;
-  height: auto;
-  margin-left: 2.5%;
-  margin-bottom: 0;
-  margin-top: 5%;
-}
+
 
 #accede{
   margin-left: 18%;
@@ -164,6 +177,7 @@ a{
 
 #retour{
   color: black;
+  font-family: concert, serif;
 }
 #retour:hover{
   background:rgba(255, 69, 0, 0.89) ;

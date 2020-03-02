@@ -1,0 +1,24 @@
+
+<div class="main">
+  <ul class="cards" >
+    <li class="cards_item" *ngFor="let Article of ArticleJGarcons | async">
+      <div class="card">
+
+
+        <img   src="https://drive.google.com/uc?export=view&id={{Article.coverimage}}">
+
+
+        <div class="card_content">
+          <h2 routerLink='{{Article.title}}'>
+            {{Article.title}}
+          </h2>
+
+          <button routerLink='{{Article.title}}' class="btn read card_btn">Read More</button>
+          <span *ngIf="user"   (click)="delete(Article.id)"><i  id="trash" class="fas fa-trash"></i></span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../../Services/auth.service';
 import {Router} from '@angular/router';
+import {$} from 'protractor';
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // tslint:disable-next-line:only-arrow-functions
 
 
   }

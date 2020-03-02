@@ -142,7 +142,7 @@ body {
 #almaplanete{
   width: 100%;
   height: auto;
-  margin-left: 2%;
+  margin-left: 0;
 }
 
 /* Float four columns side by side */
@@ -282,7 +282,7 @@ font{
 #pic-1a , #pic-2a , #pic-3a{
   width: 70%;
   height: auto;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #pic-1b , #pic-2b , #pic-3b , #pic-4b{

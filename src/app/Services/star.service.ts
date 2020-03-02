@@ -5,9 +5,11 @@ import 'rxjs/add/operator/map';
 import {AuthService} from './auth.service';
 import * as firebase from 'firebase/app';
 import {User} from '../user';
+// @ts-ignore
+import firestore from 'firebase';
 
 export interface Star {
-  userId: any;
+  userId: firestore.User;
   photoId: any;
   value: number;
 

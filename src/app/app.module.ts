@@ -98,6 +98,19 @@ import { HommesComponent } from './Components/page-espace-pro/projets/hommes/hom
 import { ArticlesHommesComponent } from './Components/page-espace-pro/projets/hommes/articles-hommes/articles-hommes.component';
 import { CountercreateComponent } from './countercreate/countercreate.component';
 import { StarReviewComponent } from './Components/star-review/star-review.component';
+import { JfillesComponent } from './Posts/jfilles/jfilles.component';
+import { JGarconComponent } from './Posts/jgarcon/jgarcon.component';
+import { PattesFillesComponent } from './Posts/pattes-filles/pattes-filles.component';
+import { PattesGarconComponent } from './Posts/pattes-garcon/pattes-garcon.component';
+import { PPFillesComponent } from './Posts/ppfilles/ppfilles.component';
+import { PPGarconsComponent } from './Posts/ppgarcons/ppgarcons.component';
+import { JfillesdashboardComponent } from './Posts/jfilles/jfillesdashboard/jfillesdashboard.component';
+import { JgarcondashboardComponent } from './Posts/jgarcon/jgarcondashboard/jgarcondashboard.component';
+import { PattesFillesdashboardComponent } from './Posts/pattes-filles/pattes-fillesdashboard/pattes-fillesdashboard.component';
+import { PattesGarcondashboardComponent } from './Posts/pattes-garcon/pattes-garcondashboard/pattes-garcondashboard.component';
+import { PpfillesdashboardComponent } from './Posts/ppfilles/ppfillesdashboard/ppfillesdashboard.component';
+import { PpgarcondashboardComponent } from './Posts/ppgarcons/ppgarcondashboard/ppgarcondashboard.component';
+import {AngularFireStorage} from '@angular/fire/storage';
 
 
 
@@ -185,6 +198,18 @@ const routes: Routes = [
       ArticlesHommesComponent,
       CountercreateComponent,
       StarReviewComponent,
+      JfillesComponent,
+      JGarconComponent,
+      PattesFillesComponent,
+      PattesGarconComponent,
+      PPFillesComponent,
+      PPGarconsComponent,
+      JfillesdashboardComponent,
+      JgarcondashboardComponent,
+      PattesFillesdashboardComponent,
+      PattesGarcondashboardComponent,
+      PpfillesdashboardComponent,
+      PpgarcondashboardComponent,
 
     ],
   imports: [

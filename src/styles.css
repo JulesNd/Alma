@@ -24,3 +24,8 @@ a{
   outline:none!important
 }
 button:focus {outline:0;}
+a:visited{
+  outline:none!important;
+  color: rgba(255, 255, 255, 0);
+}
+

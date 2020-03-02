@@ -1,0 +1,36 @@
+<div id="Articledash" >
+  <div class="jumbotron" ><h3> ARTICLES DASHBOARD</h3> </div>
+
+  <div class="form-group">
+    <label >Title</label>
+    <input class="form-control"  [(ngModel)]="title">
+  </div>
+  <div class="form-group">
+    <label >Image de presentation</label>
+    <input class="form-control"  [(ngModel)]="coverimage">
+  </div>
+  <div class="form-group">
+    <label >Couleur 1 </label>
+    <input class="form-control"  [(ngModel)]="color1">
+  </div>
+  <div class="form-group">
+    <label >Couleur 2 </label>
+    <input class="form-control"  [(ngModel)]="color2">
+  </div>
+  <div class="form-group">
+    <label >Couleur 3 </label>
+    <input class="form-control"  [(ngModel)]="color3">
+  </div>
+  <div class="form-group">
+    <label >Couleur 4 </label>
+    <input class="form-control"  [(ngModel)]="color4">
+  </div>
+
+  <div class="form-group">
+    <label >Tailles</label> <br>
+    <input  class="form-control"  [(ngModel)]="size">
+  </div>
+  <button type="submit" class="btn btn-dark" (click)="createPost(); alert()">Publier</button>
+
+</div>
+

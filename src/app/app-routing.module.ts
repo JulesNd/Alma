@@ -58,11 +58,12 @@ import {LeondetailsComponent} from './Components/Garcons/chaussures-garcon-detai
 import {LuckydetailsComponent} from './Components/Garcons/chaussures-garcon-details/details junior garçons/luckydetails/luckydetails.component';
 import {DemandedecompteComponent} from './demandedecompte/demandedecompte.component';
 import {HommesComponent} from './Components/page-espace-pro/projets/hommes/hommes.component';
+import {JfillesComponent} from './Posts/jfilles/jfilles.component';
 
 const routes: Routes = [
    {path: 'Accueil', component: AccueilContenuComponent , },
   {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
-  {path: 'JuniorFilles', component: PageFilleJuniorComponent},
+  {path: 'JuniorFilles', component: JfillesComponent},
   {path: 'PremierPasFilles', component: PageFillePremierPasComponent},
   {path: 'Inspiration', component: InspirationComponent},
   {path: '4PattesGarçons', component: PageGarcon4pattesComponent},
