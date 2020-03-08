@@ -63,7 +63,7 @@ import {JfillesComponent} from './Posts/jfilles/jfilles.component';
 const routes: Routes = [
    {path: 'Accueil', component: AccueilContenuComponent , },
   {path: '4PattesFilles', component: PageFille4pattesComponent ,  },
-  {path: 'JuniorFilles', component: JfillesComponent},
+  {path: 'JuniorFilles', component: PageFilleJuniorComponent},
   {path: 'PremierPasFilles', component: PageFillePremierPasComponent},
   {path: 'Inspiration', component: InspirationComponent},
   {path: '4PattesGarçons', component: PageGarcon4pattesComponent},
